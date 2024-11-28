@@ -2,9 +2,6 @@
 .idea
 .svn
 .nova
-notes/
-vendor/
-build/
 bin/*
 !bin/archive.sh
 !bin/build-plugin-zip.sh
@@ -15,7 +12,6 @@ bin/*
 !bin/phpcsfiles.sh
 !bin/release.sh
 !bin/update-version.sh
-dist/
 node_modules/
 release/
 .vscode

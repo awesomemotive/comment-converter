@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "title": "Comment Converter Link to Follow",
+  "name": "comment-converter/follow-by-email",
+  "description": "Share a link to let visitors follow comments without needing to leave a comment themselves.",
+  "keywords": [
+    "comments",
+    "newsletter",
+    "optin",
+    "form",
+    "subscribe",
+    "subscribe to comments",
+    "follow comments",
+    "comment converter",
+    "convert comments",
+    "optinmonster",
+    "commenting",
+    "comment"
+  ],
+  "version": "1.0.0",
+  "category": "widgets",
+  "icon": "file:../../../../assets/logos/comment-converter-white-logomark.svg",
+  "textdomain": "comment-notifications",
+  "editorScript": "file:./index.js",
+  "viewScript": "file:./view.js",
+  "style": "file:./style-view.css",
+  "attributes": {
+    "text": {
+      "type": "string",
+      "source": "text",
+      "selector": "a",
+      "default": "Follow comments by email without leaving a comment"
+    }
+  },
+  "example": {
+    "attributes": {
+      "text": "Follow comments by email without leaving a comment"
+    }
+  },
+  "usesContext": [
+    "postId"
+  ]
+}

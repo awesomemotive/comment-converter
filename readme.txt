@@ -4,7 +4,7 @@ Tags: comment, subscribe to comments, email marketing, optin, notifications
 Requires at least: 6.2
 Tested up to: 6.7
 Requires PHP: 7.4
-Stable tag: 0.9.1
+Stable tag: 1.0.0
 License: GPLv2 or later
 
 The simplest, most effective WordPress comment notifications plugin, enabling visitors to subscribe to comment replies and your email list in just one click.

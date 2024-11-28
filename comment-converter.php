@@ -10,7 +10,7 @@
  * Plugin URI:  https://commentconverter.com
  * Description: The simplest, most effective WordPress comment notifications plugin, enabling visitors to subscribe to comment replies and your email list in just one click.
  * Author:      Comment Converter Team
- * Version:     0.9.1
+ * Version:     1.0.0
  * Text Domain: comment-notifications
  * Domain Path: languages
  * License: GPLv2 or later
