@@ -1,0 +1,10 @@
+@import './tailwind.scss';
+@import 'style/l10n.scss';
+@import 'style/loading.scss';
+@import 'style/google-fonts';
+@import 'Lib/Components/Tooltip/svg-arrow.scss';
+
+/* no-prefix */
+.comment-converter-app > .ccvtr-loading {
+	margin-top: 149px;
+}

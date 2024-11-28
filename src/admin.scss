@@ -1,0 +1,72 @@
+// Utilities
+@import "style/variables";
+
+/***
+ * Admin Styles
+ *
+ * The styles in this files are not prefixed by `#comment-converter-app` and are loaded in the admin
+ * area even on pages where the Comment Converter plugin is not loaded.
+ */
+
+#toplevel_page_comment-converter-dashboard .wp-submenu {
+	a:hover {
+		color: $primary-yellow-300;
+	}
+
+	li.current a {
+
+		&:hover {
+			color: $primary-yellow-300;
+		}
+
+		color: $primary-yellow-300;
+	}
+}
+
+.ccvtr-follow-badge {
+	background-color: $primary-yellow-300;
+	background-image: url(../assets/badge-icons/white-logo.svg);
+	background-size: 10px 10px;
+	background-repeat: no-repeat;
+	background-position: left 3px top 50%;
+
+	display: inline-flex;
+	align-items: center;
+
+	color: $primary-text-300;
+	padding: 3px 3px 3px 16px;
+	border-radius: 2px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $primary-text-300;
+		color: #fff;
+	}
+}
+
+.ccvtr-follower-badge {
+	background-color: $neutral-30;
+	background-image: url(../assets/badge-icons/person.svg);
+	background-size: 12px 12px;
+	background-repeat: no-repeat;
+	background-position: left 3px top 50%;
+
+	display: inline-flex;
+	align-items: center;
+
+	color: $primary-text-300;
+	padding: 3px 3px 3px 18px;
+	border-radius: 2px;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.wp-list-table {
+	.column-ccvtr-follows {
+		width: 90px;
+	}
+}

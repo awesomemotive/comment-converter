@@ -1,0 +1,5 @@
+body.rtl #comment-converter-app * {
+	// Arial has a better support for Arabic, Hebrew, and other rtl languages.
+	// Ref: wp-admin/css/l10n-rtl.css?ver=6.5.3
+	font-family: Arial, sans-serif;
+}
