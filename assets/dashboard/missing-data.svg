@@ -1,0 +1,533 @@
+<svg width="195.751" height="152.709" viewBox="0 0 197 154" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M196.692 149.538H0.94165V153.162H196.692V149.538Z" fill="#D2D4DE" />
+	<path
+		d="M133.57 57.2174L129.657 65.0436C129.657 65.0436 134.708 74.1315 154.269 63.4025L150.38 52.2939L133.57 57.2174Z"
+		fill="#FBD6B9" />
+	<path
+		d="M167.522 123.982C149.346 130.988 130.999 129.47 130.999 129.47L130.809 141.589C138.949 149.539 152.96 152.19 152.96 152.19L153.909 152.403C171.065 156.179 188.026 145.331 191.802 128.175C192.053 127.042 192.238 125.899 192.362 124.746C196.08 90.5525 182.32 73.0454 182.32 73.0454C173.991 62.4445 153.861 62.084 153.861 62.084C136.174 74.217 130.278 63.8959 130.278 63.8959C120.057 64.0239 108.887 69.4501 108.887 69.4501C105.092 72.1016 92.9827 101.443 92.9827 101.443L108.905 146.626L133.134 147.954L138.825 148.329L142.027 141.138"
+		fill="#FCB63E" />
+	<path
+		d="M117.88 34.1465C117.88 34.1465 115.854 27.4824 116.22 21.9566C116.22 21.9566 108.398 22.8767 116.177 13.8552C116.177 13.8552 116.727 13.6133 115.304 13.5469C115.304 13.5469 109.906 13.1722 118.743 7.67963C118.743 7.67963 132.185 -1.72132 149.346 3.95625C149.346 3.95625 150.987 -0.58771 155.038 0.673972C155.038 0.673972 156.299 2.69456 152.766 4.71515C152.766 4.71515 157.31 4.3357 157.941 7.23851C157.941 7.23851 158.064 8.37214 155.161 7.99742C155.161 7.99742 165.639 11.6544 161.223 30.4611C161.223 30.4611 155.289 29.4508 156.423 37.9078C156.423 37.9078 149.986 40.5593 149.232 30.8405L148.725 19.3478C148.725 19.3478 131.815 28.061 133.328 20.2395C133.328 20.2395 123.842 25.5377 119.445 26.4057L118.686 34.137L117.88 34.1465Z"
+		fill="#1F2858" />
+	<path
+		d="M118.676 34.1512C118.676 34.1512 120.289 61.0354 140.637 58.9532C140.637 58.9532 158.277 56.8994 156.413 37.9078L155.408 25.5376L152.472 13.803L129.187 15.7904L120.024 21.7762L118.036 27.6435L118.676 34.1512Z"
+		fill="#FBD6B9" />
+	<path
+		d="M162.299 30.9355C162.299 30.9355 167.394 33.8667 162.299 40.1135C162.299 40.1135 160.065 42.6701 156.551 40.9673L156.413 37.9079C156.413 37.9079 155.208 32.7331 158.524 30.9355C158.524 30.9355 160.578 29.7497 162.299 30.9355Z"
+		fill="#FBD6B9" />
+	<path
+		d="M119.151 43.2061C121.346 43.2061 123.126 41.1441 123.126 38.6005C123.126 36.0569 121.346 33.9949 119.151 33.9949C116.956 33.9949 115.176 36.0569 115.176 38.6005C115.176 41.1441 116.956 43.2061 119.151 43.2061Z"
+		fill="#FBD6B9" />
+	<path
+		d="M87.9683 80.5836C89.9832 63.7209 112.709 38.5097 85.6761 22.6668C77.8115 18.0577 58.8073 13.9063 48.2111 31.7262C40.4877 49.77 45.6001 63.7484 56.0192 69.2491C72.2954 75.5712 75.7262 65.3915 87.9683 80.5836Z"
+		fill="#F05F34" />
+	<path
+		d="M61.8878 38.7863C61.8878 34.8663 66.3678 31.3863 71.2478 31.3863C76.3678 31.3863 81.4078 33.7463 81.4078 39.3863C81.4078 44.5863 75.4478 46.5863 74.1678 48.4663C73.2078 49.8663 73.5278 51.8263 70.8878 51.8263C69.1678 51.8263 68.3278 50.4263 68.3278 49.1463C68.3278 44.3863 75.3278 43.3063 75.3278 39.3863C75.3278 37.2263 73.8878 35.9463 71.4878 35.9463C66.3678 35.9463 68.3678 41.2263 64.4878 41.2263C63.0878 41.2263 61.8878 40.3863 61.8878 38.7863ZM67.7678 57.7063C67.7678 55.9063 69.2478 54.4263 71.0478 54.4263C72.8478 54.4263 74.3278 55.9063 74.3278 57.7063C74.3278 59.5063 72.8478 60.9863 71.0478 60.9863C69.2478 60.9863 67.7678 59.5063 67.7678 57.7063Z"
+		fill="white" />
+	<g opacity="0.49">
+		<mask id="mask0_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="92" y="62" width="101"
+			height="92">
+			<path
+				d="M167.522 123.982C149.346 130.988 130.999 129.47 130.999 129.47L130.809 141.589C138.949 149.539 152.96 152.19 152.96 152.19L153.909 152.403C171.065 156.179 188.026 145.331 191.802 128.175C192.053 127.042 192.238 125.899 192.362 124.746C196.08 90.5525 182.32 73.0454 182.32 73.0454C173.991 62.4445 153.861 62.084 153.861 62.084C136.174 74.217 130.278 63.8959 130.278 63.8959C120.057 64.0239 108.887 69.4501 108.887 69.4501C105.092 72.1016 92.9827 101.443 92.9827 101.443L108.905 146.626L133.134 147.954L138.825 148.329L142.027 141.138"
+				fill="white" />
+		</mask>
+		<g mask="url(#mask0_821_8815)">
+			<mask id="mask1_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="180" y="56" width="35"
+				height="35">
+				<path d="M214.887 56.8237H180.736V90.9745H214.887V56.8237Z" fill="white" />
+			</mask>
+			<g mask="url(#mask1_821_8815)">
+				<mask id="mask2_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="180" y="56"
+					width="35" height="35">
+					<path d="M214.887 56.8237H180.736V90.9745H214.887V56.8237Z" fill="white" />
+				</mask>
+				<g mask="url(#mask2_821_8815)">
+					<path d="M163.661 73.8991L197.811 39.7483" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M166.099 76.3371L200.249 42.1863" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M168.541 78.7751L202.692 44.6243" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M170.979 81.2177L205.13 47.0669" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M173.417 83.6557L207.568 49.5049" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M175.855 86.0937L210.006 51.9429" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M178.298 88.5366L212.449 54.3857" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M180.736 90.9745L214.887 56.8237" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M183.174 93.4125L217.325 59.2617" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M185.617 95.8505L219.768 61.6997" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M188.055 98.2934L222.205 64.1426" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M190.493 100.731L224.644 66.5806" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M192.931 103.169L227.081 69.0186" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask3_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="180" y="90" width="35"
+				height="36">
+				<path d="M214.887 90.9746H180.736V125.125H214.887V90.9746Z" fill="white" />
+			</mask>
+			<g mask="url(#mask3_821_8815)">
+				<mask id="mask4_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="180" y="90"
+					width="35" height="36">
+					<path d="M214.887 90.9746H180.736V125.125H214.887V90.9746Z" fill="white" />
+				</mask>
+				<g mask="url(#mask4_821_8815)">
+					<path d="M163.661 108.05L197.811 73.8992" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M166.099 110.488L200.249 76.3372" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M168.541 112.926L202.692 78.7751" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M170.979 115.369L205.13 81.2178" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M173.417 117.807L207.568 83.6558" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M175.855 120.245L210.006 86.0938" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M178.298 122.687L212.449 88.5366" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M180.736 125.125L214.887 90.9746" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M183.174 127.563L217.325 93.4126" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M185.617 130.001L219.768 95.8506" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M188.055 132.444L222.205 98.2932" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M190.493 134.882L224.644 100.731" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M192.931 137.32L227.081 103.169" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask5_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="180" y="125" width="35"
+				height="35">
+				<path d="M214.887 125.125H180.736V159.276H214.887V125.125Z" fill="white" />
+			</mask>
+			<g mask="url(#mask5_821_8815)">
+				<mask id="mask6_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="180" y="125"
+					width="35" height="35">
+					<path d="M214.887 125.125H180.736V159.276H214.887V125.125Z" fill="white" />
+				</mask>
+				<g mask="url(#mask6_821_8815)">
+					<path d="M163.661 142.201L197.811 108.05" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M166.099 144.639L200.249 110.488" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M168.541 147.077L202.692 112.926" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M170.979 149.519L205.13 115.369" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M173.417 151.957L207.568 117.807" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M175.855 154.395L210.006 120.245" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M178.298 156.838L212.449 122.688" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M180.736 159.276L214.887 125.125" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M183.174 161.714L217.325 127.563" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M185.617 164.152L219.768 130.001" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M188.055 166.595L222.205 132.444" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M190.493 169.033L224.644 134.882" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M192.931 171.471L227.081 137.32" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask7_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="146" y="56" width="35"
+				height="35">
+				<path d="M180.736 56.8237H146.585V90.9745H180.736V56.8237Z" fill="white" />
+			</mask>
+			<g mask="url(#mask7_821_8815)">
+				<mask id="mask8_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="146" y="56"
+					width="35" height="35">
+					<path d="M180.736 56.8237H146.585V90.9745H180.736V56.8237Z" fill="white" />
+				</mask>
+				<g mask="url(#mask8_821_8815)">
+					<path d="M129.51 73.8991L163.661 39.7483" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M131.948 76.3371L166.098 42.1863" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M134.39 78.7751L168.541 44.6243" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M136.828 81.2177L170.979 47.0669" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M139.266 83.6557L173.417 49.5049" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M141.704 86.0937L175.855 51.9429" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M144.147 88.5366L178.298 54.3857" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M146.585 90.9745L180.736 56.8237" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M149.023 93.4125L183.174 59.2617" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M151.466 95.8505L185.617 61.6997" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M153.904 98.2934L188.054 64.1426" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M156.342 100.731L190.493 66.5806" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M158.78 103.169L192.931 69.0186" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M161.222 105.612L195.373 71.4609" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M163.661 108.05L197.811 73.8989" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask9_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="146" y="90" width="35"
+				height="36">
+				<path d="M180.736 90.9746H146.585V125.125H180.736V90.9746Z" fill="white" />
+			</mask>
+			<g mask="url(#mask9_821_8815)">
+				<mask id="mask10_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="146" y="90"
+					width="35" height="36">
+					<path d="M180.736 90.9746H146.585V125.125H180.736V90.9746Z" fill="white" />
+				</mask>
+				<g mask="url(#mask10_821_8815)">
+					<path d="M129.51 108.05L163.661 73.8992" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M131.948 110.488L166.098 76.3372" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M134.39 112.926L168.541 78.7751" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M136.828 115.369L170.979 81.2178" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M139.266 117.807L173.417 83.6558" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M141.704 120.245L175.855 86.0938" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M144.147 122.687L178.298 88.5366" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M146.585 125.125L180.736 90.9746" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M149.023 127.563L183.174 93.4126" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M151.466 130.001L185.617 95.8506" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M153.904 132.444L188.054 98.2932" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M156.342 134.882L190.493 100.731" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M158.78 137.32L192.931 103.169" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M161.222 139.763L195.373 105.612" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M163.661 142.201L197.811 108.05" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask11_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="146" y="125" width="35"
+				height="35">
+				<path d="M180.736 125.125H146.585V159.276H180.736V125.125Z" fill="white" />
+			</mask>
+			<g mask="url(#mask11_821_8815)">
+				<mask id="mask12_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="146" y="125"
+					width="35" height="35">
+					<path d="M180.736 125.125H146.585V159.276H180.736V125.125Z" fill="white" />
+				</mask>
+				<g mask="url(#mask12_821_8815)">
+					<path d="M129.51 142.201L163.661 108.05" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M131.948 144.639L166.098 110.488" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M134.39 147.077L168.541 112.926" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M136.828 149.519L170.979 115.369" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M139.266 151.957L173.417 117.807" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M141.704 154.395L175.855 120.245" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M144.147 156.838L178.298 122.688" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M146.585 159.276L180.736 125.125" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M149.023 161.714L183.174 127.563" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M151.466 164.152L185.617 130.001" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M153.904 166.595L188.054 132.444" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M156.342 169.033L190.493 134.882" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M158.78 171.471L192.931 137.32" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M161.222 173.914L195.373 139.763" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M163.661 176.351L197.811 142.201" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask13_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="112" y="56" width="35"
+				height="35">
+				<path d="M146.585 56.8237H112.434V90.9745H146.585V56.8237Z" fill="white" />
+			</mask>
+			<g mask="url(#mask13_821_8815)">
+				<mask id="mask14_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="112" y="56"
+					width="35" height="35">
+					<path d="M146.585 56.8237H112.434V90.9745H146.585V56.8237Z" fill="white" />
+				</mask>
+				<g mask="url(#mask14_821_8815)">
+					<path d="M95.3589 73.8991L129.51 39.7483" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M97.797 76.3371L131.948 42.1863" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M100.24 78.7751L134.39 44.6243" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M102.677 81.2177L136.828 47.0669" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M105.116 83.6557L139.266 49.5049" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M107.553 86.0937L141.704 51.9429" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M109.996 88.5366L144.147 54.3857" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M112.434 90.9745L146.585 56.8237" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M114.872 93.4125L149.023 59.2617" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M117.315 95.8505L151.466 61.6997" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M119.753 98.2934L153.904 64.1426" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M122.191 100.731L156.342 66.5806" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M124.629 103.169L158.78 69.0186" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M127.072 105.612L161.223 71.4609" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M129.51 108.05L163.661 73.8989" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask15_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="112" y="90" width="35"
+				height="36">
+				<path d="M146.585 90.9746H112.434V125.125H146.585V90.9746Z" fill="white" />
+			</mask>
+			<g mask="url(#mask15_821_8815)">
+				<mask id="mask16_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="112" y="90"
+					width="35" height="36">
+					<path d="M146.585 90.9746H112.434V125.125H146.585V90.9746Z" fill="white" />
+				</mask>
+				<g mask="url(#mask16_821_8815)">
+					<path d="M95.3589 108.05L129.51 73.8992" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M97.797 110.488L131.948 76.3372" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M100.24 112.926L134.39 78.7751" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M102.677 115.369L136.828 81.2178" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M105.116 117.807L139.266 83.6558" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M107.553 120.245L141.704 86.0938" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M109.996 122.687L144.147 88.5366" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M112.434 125.125L146.585 90.9746" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M114.872 127.563L149.023 93.4126" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M117.315 130.001L151.466 95.8506" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M119.753 132.444L153.904 98.2932" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M122.191 134.882L156.342 100.731" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M124.629 137.32L158.78 103.169" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M127.072 139.763L161.223 105.612" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M129.51 142.201L163.661 108.05" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask17_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="112" y="125" width="35"
+				height="35">
+				<path d="M146.585 125.125H112.434V159.276H146.585V125.125Z" fill="white" />
+			</mask>
+			<g mask="url(#mask17_821_8815)">
+				<mask id="mask18_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="112" y="125"
+					width="35" height="35">
+					<path d="M146.585 125.125H112.434V159.276H146.585V125.125Z" fill="white" />
+				</mask>
+				<g mask="url(#mask18_821_8815)">
+					<path d="M95.3589 142.201L129.51 108.05" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M97.797 144.639L131.948 110.488" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M100.24 147.077L134.39 112.926" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M102.677 149.519L136.828 115.369" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M105.116 151.957L139.266 117.807" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M107.553 154.395L141.704 120.245" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M109.996 156.838L144.147 122.688" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M112.434 159.276L146.585 125.125" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M114.872 161.714L149.023 127.563" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M117.315 164.152L151.466 130.001" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M119.753 166.595L153.904 132.444" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M122.191 169.033L156.342 134.882" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M124.629 171.471L158.78 137.32" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M127.072 173.914L161.223 139.763" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M129.51 176.351L163.661 142.201" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask19_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="78" y="56" width="35"
+				height="35">
+				<path d="M112.434 56.8237H78.2836V90.9745H112.434V56.8237Z" fill="white" />
+			</mask>
+			<g mask="url(#mask19_821_8815)">
+				<mask id="mask20_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="78" y="56"
+					width="35" height="35">
+					<path d="M112.434 56.8237H78.2836V90.9745H112.434V56.8237Z" fill="white" />
+				</mask>
+				<g mask="url(#mask20_821_8815)">
+					<path d="M61.2081 73.8991L95.3589 39.7483" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M63.6462 76.3371L97.797 42.1863" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M66.0889 78.7751L100.24 44.6243" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M68.5269 81.2177L102.678 47.0669" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M70.9647 83.6557L105.116 49.5049" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M73.4031 86.0937L107.554 51.9429" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M75.8456 88.5366L109.996 54.3857" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M78.2835 90.9745L112.434 56.8237" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M80.7216 93.4125L114.872 59.2617" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M83.1642 95.8505L117.315 61.6997" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M85.6021 98.2934L119.753 64.1426" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M88.0402 100.731L122.191 66.5806" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M90.4781 103.169L124.629 69.0186" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M92.9211 105.612L127.072 71.4609" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M95.3589 108.05L129.51 73.8989" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask21_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="78" y="90" width="35"
+				height="36">
+				<path d="M112.434 90.9746H78.2836V125.125H112.434V90.9746Z" fill="white" />
+			</mask>
+			<g mask="url(#mask21_821_8815)">
+				<mask id="mask22_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="78" y="90"
+					width="35" height="36">
+					<path d="M112.434 90.9746H78.2836V125.125H112.434V90.9746Z" fill="white" />
+				</mask>
+				<g mask="url(#mask22_821_8815)">
+					<path d="M61.2081 108.05L95.3589 73.8992" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M63.6462 110.488L97.797 76.3372" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M66.0889 112.926L100.24 78.7751" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M68.5269 115.369L102.678 81.2178" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M70.9647 117.807L105.116 83.6558" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M73.4031 120.245L107.554 86.0938" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M75.8456 122.687L109.996 88.5366" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M78.2835 125.125L112.434 90.9746" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M80.7216 127.563L114.872 93.4126" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M83.1642 130.001L117.315 95.8506" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M85.6021 132.444L119.753 98.2932" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M88.0402 134.882L122.191 100.731" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M90.4781 137.32L124.629 103.169" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M92.9211 139.763L127.072 105.612" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M95.3589 142.201L129.51 108.05" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+			<mask id="mask23_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="78" y="125" width="35"
+				height="35">
+				<path d="M112.434 125.125H78.2836V159.276H112.434V125.125Z" fill="white" />
+			</mask>
+			<g mask="url(#mask23_821_8815)">
+				<mask id="mask24_821_8815" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="78" y="125"
+					width="35" height="35">
+					<path d="M112.434 125.125H78.2836V159.276H112.434V125.125Z" fill="white" />
+				</mask>
+				<g mask="url(#mask24_821_8815)">
+					<path d="M61.2081 142.201L95.3589 108.05" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M63.6462 144.639L97.797 110.488" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M66.0889 147.077L100.24 112.926" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M68.5269 149.519L102.678 115.369" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M70.9647 151.957L105.116 117.807" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M73.4031 154.395L107.554 120.245" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M75.8456 156.838L109.996 122.687" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M78.2835 159.276L112.434 125.125" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M80.7216 161.714L114.872 127.563" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M83.1642 164.152L117.315 130.001" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M85.6021 166.595L119.753 132.444" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M88.0402 169.033L122.191 134.882" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M90.4781 171.471L124.629 137.32" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M92.9211 173.914L127.072 139.763" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+					<path d="M95.3589 176.351L129.51 142.201" stroke="white" stroke-width="1.33309"
+						stroke-miterlimit="10" />
+				</g>
+			</g>
+		</g>
+	</g>
+	<path d="M130.957 131.372L106.183 133.445L110.727 144.24L130.957 140.451V131.372Z" fill="#FBD6B9" />
+	<path
+		d="M46.0776 148.025L27.4465 105.047C26.4741 102.818 27.4892 100.224 29.7137 99.2513C30.2734 99.0094 30.8758 98.8813 31.4829 98.8813H88.8088C91.299 98.8813 93.533 100.409 94.439 102.723L111.676 146.683L144.404 146.147C145.338 146.138 146.102 146.882 146.111 147.817C146.111 147.826 146.111 147.84 146.111 147.85C146.111 148.784 145.357 149.538 144.422 149.538H48.9567C47.8041 149.538 46.7275 148.974 46.0776 148.025Z"
+		fill="#1F2858" />
+</svg>

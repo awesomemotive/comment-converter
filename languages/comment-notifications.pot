@@ -1,0 +1,1941 @@
+# Copyright (C) 2024 Comment Converter Team
+# This file is distributed under the same license as the Comment Notifications plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Comment Notifications 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/comment-notifications\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-06-18T17:56:33+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.9.0\n"
+"X-Domain: comment-notifications\n"
+
+#. Plugin Name of the plugin
+msgid "Comment Notifications"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://commentconverter.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "The simplest, most effective WordPress comment notifications plugin, enabling visitors to subscribe to comment replies and your email list in just one click."
+msgstr ""
+
+#. Author of the plugin
+#: build/follower-dashboard.js:724
+#: build/index.js:909
+#: src/Pages/AboutUs.js:87
+msgid "Comment Converter Team"
+msgstr ""
+
+#. translators: %1$s - WordPress Admin URL. And Comment Converter is the name of the plugin.
+#: comment-converter.php:104
+msgid "Sorry, but your version of WordPress does not meet Comment Converter's required version of <strong>6.0</strong> to run properly. The plugin has been deactivated. <a href=\"%1$s\">Click here to return to the Dashboard</a>."
+msgstr ""
+
+#. translators: %1$s - WordPress Admin URL. And Comment Converter is the name of the plugin.
+#: comment-converter.php:109
+msgid "Sorry, but the version of PHP that you site is running does not meet Comment Converter's required version of <strong>7.4</strong> to run properly. The plugin has been deactivated. <a href=\"%1$s\">Click here to return to the Dashboard</a>."
+msgstr ""
+
+#. translators: Comment Converter is the name of the plugin.
+#: comment-converter.php:223
+msgid "Sorry, but your version of WordPress does not meet Comment Converter's required version of <strong>6.0</strong> to run properly."
+msgstr ""
+
+#. translators: Comment Converter is the name of the plugin.
+#: comment-converter.php:236
+msgid "Sorry, but the version of PHP that you site is running does not meet Comment Converter's required version of <strong>7.4</strong> to run properly."
+msgstr ""
+
+#. translators: Comment Converter is the name of the plugin.
+#: includes/Bootstrap/Admin/ClassicEditor.php:105
+msgid "Comment Converter"
+msgstr ""
+
+#: includes/Bootstrap/Admin/ClassicEditor.php:136
+#: build/Gutenberg/plugin-post-settings.js:28
+#: src/Gutenberg/plugins/post-settings/index.js:112
+msgid "Allow comment following"
+msgstr ""
+
+#: includes/Bootstrap/Admin/ClassicEditor.php:155
+#: build/Gutenberg/plugin-post-settings.js:28
+#: src/Gutenberg/plugins/post-settings/index.js:127
+msgid "Total followers from this post"
+msgstr ""
+
+#: includes/Bootstrap/Admin/ClassicEditor.php:160
+msgid "View followers"
+msgstr ""
+
+#: includes/Bootstrap/Admin/ListTables.php:135
+msgid "Follows"
+msgstr ""
+
+#. translators: %s is replaced with the number of active follows.
+#: includes/Bootstrap/Admin/ListTables.php:155
+msgid "This post has %s active follow"
+msgid_plural "This post has %s active follows"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s is replaced with the number of active follows.
+#: includes/Bootstrap/Admin/ListTables.php:257
+msgid "This comment has %s active follow"
+msgid_plural "This comment has %s active follows"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Bootstrap/Admin/Pages.php:225
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/routes.js:22
+msgid "Dashboard"
+msgstr ""
+
+#. translators: Comment Converter is the name of the plugin.
+#: includes/Bootstrap/Admin/Pages.php:233
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/routes.js:15
+msgid "Welcome to Comment Converter"
+msgstr ""
+
+#: includes/Bootstrap/Admin/Pages.php:242
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/routes.js:29
+#: src/Pages/routes.js:34
+msgid "Followers"
+msgstr ""
+
+#: includes/Bootstrap/Admin/Pages.php:249
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/routes.js:40
+msgid "Single Follower"
+msgstr ""
+
+#: includes/Bootstrap/Admin/Pages.php:258
+#: includes/Bootstrap/Admin/Pages.php:265
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/routes.js:49
+msgid "Notifications"
+msgstr ""
+
+#: includes/Bootstrap/Admin/Pages.php:283
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/routes.js:74
+msgid "Options"
+msgstr ""
+
+#: includes/Bootstrap/Admin/Pages.php:290
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/routes.js:80
+msgid "About Us"
+msgstr ""
+
+#: includes/Bootstrap/Admin/Pages.php:301
+msgid "Upgrade to Growth"
+msgstr ""
+
+#: includes/Bootstrap/Admin/Pages.php:302
+#: build/follower-dashboard.js:721
+#: build/follower-dashboard.js:724
+#: build/index.js:906
+#: build/index.js:909
+#: src/Pages/GettingStarted.js:50
+#: src/Pages/routes.js:86
+msgid "Upgrade to Pro"
+msgstr ""
+
+#. translators: %1$s - Comment Converter plugin reviews url - Comment Converter is the name of the plugin.
+#: includes/Bootstrap/Admin/Pages.php:407
+msgid "Please rate <strong>Comment Converter</strong> <a class=\"stars\" href=\"%1$s\" target=\"_blank\" rel=\"noopener\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">WordPress.org</a> to help us spread the word. Thank you from the Comment Converter team!"
+msgstr ""
+
+#: includes/Bootstrap/Frontend/CommentForm.php:296
+msgid "Follow replies to my comment"
+msgstr ""
+
+#: includes/Bootstrap/Frontend/CommentForm.php:297
+msgid "Follow all comments and replies by email"
+msgstr ""
+
+#: includes/Bootstrap/Frontend/CommentForm.php:298
+msgid "Do not follow comments or replies"
+msgstr ""
+
+#: includes/Bootstrap/Frontend/CommentForm.php:308
+msgid "Follow Comments"
+msgstr ""
+
+#: includes/Bootstrap/Frontend/CommentForm.php:326
+msgid "Subscribe to our newsletter"
+msgstr ""
+
+#: includes/Bootstrap/Frontend/FollowerDashboardPage.php:98
+#: build/follower-dashboard.js:1054
+#: src/FollowerDashboard/Dashboard.js:209
+msgid "Follower Dashboard"
+msgstr ""
+
+#: includes/Bootstrap/Frontend/FollowerDashboardPage.php:198
+#: includes/RestApi/Controllers/FollowerController.php:80
+#: includes/RestApi/Controllers/FollowerController.php:123
+#: build/follower-dashboard.js:1054
+#: src/FollowerDashboard/DashboardWrapper.js:20
+msgid "Follower not found."
+msgstr ""
+
+#: includes/Bootstrap/Frontend/FollowerDashboardPage.php:331
+msgid "Invalid link. Missing required information."
+msgstr ""
+
+#: includes/Bootstrap/Frontend/FollowerDashboardPage.php:338
+msgid "Invalid subscription."
+msgstr ""
+
+#: includes/Bootstrap/Frontend/FollowerDashboardPage.php:344
+msgid "Subscription not found."
+msgstr ""
+
+#: includes/Bootstrap/Frontend/FollowerDashboardPage.php:350
+#: includes/Bootstrap/Frontend/FollowerDashboardPage.php:404
+msgid "Invalid link. Authentication failure."
+msgstr ""
+
+#: includes/Bootstrap/Frontend/FollowerDashboardPage.php:354
+msgid "Invalid link. Authorization failure."
+msgstr ""
+
+#: includes/Bootstrap/Frontend/FollowerDashboardPage.php:376
+#: includes/Bootstrap/Frontend/FollowerDashboardPage.php:413
+msgid "An expected error occurred. Please try again. If the issue persists, kindly contact the site administrator for further assistance."
+msgstr ""
+
+#: includes/Bootstrap/Frontend/FollowingBadge.php:314
+msgid "You're following the replies for this comment."
+msgstr ""
+
+#: includes/Bootstrap/Frontend/FollowingBadge.php:330
+msgid "You're following all comments for this post."
+msgstr ""
+
+#: includes/Emails/ConfirmationEmail.php:138
+msgid "You're Now Following The Conversation At [Post_Title]"
+msgstr ""
+
+#: includes/Emails/ConfirmationEmail.php:140
+msgid "Confirmation required to follow comments: [Post_Title]"
+msgstr ""
+
+#. translators: %s is the site title or domain.
+#: includes/Emails/NotificationEmail.php:114
+msgid "Comment Digest from %s"
+msgstr ""
+
+#: includes/Emails/NotificationEmail.php:117
+msgid "New Comment: "
+msgstr ""
+
+#: includes/Exceptions/RestApi/RestApiException.php:131
+msgid "An unexpected error occurred."
+msgstr ""
+
+#: includes/RestApi/Controllers/AMPluginsController.php:88
+msgid "Security token invalid!"
+msgstr ""
+
+#: includes/RestApi/Controllers/AMPluginsController.php:93
+msgid "Plugin Id required."
+msgstr ""
+
+#: includes/RestApi/Controllers/AMPluginsController.php:100
+msgid "Plugin install URL required."
+msgstr ""
+
+#: includes/RestApi/Controllers/BaseController.php:61
+#: includes/RestApi/Controllers/FollowerController.php:114
+msgid "The payload is required."
+msgstr ""
+
+#. translators: 1: JSON property name.
+#: includes/RestApi/Controllers/BaseController.php:70
+#: includes/RestApi/Controllers/BaseController.php:110
+msgid "Missing JSON property: %1$s"
+msgstr ""
+
+#: includes/RestApi/Controllers/BaseController.php:154
+msgid "Invalid validation rule."
+msgstr ""
+
+#. translators: Invalid param error. 1: the param name.
+#: includes/RestApi/Controllers/BaseController.php:170
+msgid "Missing required value for \"%1$s\" param."
+msgstr ""
+
+#. translators: Invalid param error. 1: the invalid value, 2: the param name.
+#: includes/RestApi/Controllers/BaseController.php:179
+#: includes/RestApi/Controllers/BaseController.php:188
+msgid "Invalid value \"%1$s\" for \"%2$s\" param."
+msgstr ""
+
+#: includes/RestApi/Controllers/FollowController.php:137
+msgid "The ids param is required."
+msgstr ""
+
+#: includes/RestApi/Controllers/FollowController.php:206
+msgid "Follow not found."
+msgstr ""
+
+#: includes/RestApi/Controllers/FollowController.php:242
+#: includes/RestApi/Controllers/FollowController.php:291
+msgid "The follow could not be created."
+msgstr ""
+
+#: includes/RestApi/Controllers/FollowController.php:258
+msgid "An error occured when creating the follow."
+msgstr ""
+
+#: includes/RestApi/Controllers/FollowController.php:301
+msgid "Comment not found."
+msgstr ""
+
+#: includes/RestApi/Controllers/FollowController.php:311
+msgid "An error occured when creating the comment follow."
+msgstr ""
+
+#: includes/RestApi/Controllers/PostSettingsController.php:64
+msgid "The post id param is required."
+msgstr ""
+
+#: includes/RestApi/Controllers/SettingsController.php:136
+msgid "The settings could not be saved due to invalid values."
+msgstr ""
+
+#: includes/RestApi/Controllers/SettingsController.php:237
+msgid "A valid \"to\" parameter is required."
+msgstr ""
+
+#: includes/RestApi/Controllers/SettingsController.php:246
+msgid "The test email could not be sent."
+msgstr ""
+
+#: includes/RestApi/Controllers/UploadController.php:44
+msgid "Missing file parameter."
+msgstr ""
+
+#: includes/RestApi/Controllers/UploadController.php:58
+msgid "Invalid image file."
+msgstr ""
+
+#: includes/RestApi/Controllers/UploadController.php:64
+msgid "Image file size exceeds the maximum limit of 5MB."
+msgstr ""
+
+#: includes/RestApi/Controllers/UploadController.php:70
+msgid "Missing path parameter."
+msgstr ""
+
+#: includes/RestApi/Controllers/UploadController.php:78
+msgid "Upload directory could be be created. "
+msgstr ""
+
+#: includes/RestApi/Controllers/UploadController.php:86
+msgid "File could not be uploaded."
+msgstr ""
+
+#: includes/RestApi/RestApi.php:238
+#: includes/RestApi/RestApi.php:270
+msgid "Invalid route."
+msgstr ""
+
+#: includes/RestApi/RestApi.php:290
+msgid "The handler for the route is invalid"
+msgstr ""
+
+#: includes/Settings/Settings.php:73
+msgid "Manage Followed Comments"
+msgstr ""
+
+#: includes/Settings/Settings.php:74
+msgid "Would you like to be notified by email when someone replies to this comment?"
+msgstr ""
+
+#: includes/Settings/Settings.php:75
+msgid "Thank you for following this discussion."
+msgstr ""
+
+#: includes/Settings/Settings.php:76
+msgid "Thank you for requesting to follow this discussion. To confirm your request, please click the confirmation link in the email we just sent to your inbox."
+msgstr ""
+
+#: includes/Settings/Settings.php:77
+msgid "Thank you for subscribing to our newsletter. Please check your email for your next steps."
+msgstr ""
+
+#: includes/Settings/Settings.php:78
+msgid "Thank you for following this discussion, and for joining our newsletter."
+msgstr ""
+
+#: includes/Settings/Settings.php:79
+msgid "Thank you for requesting to follow this discussion, and for joining our newsletter. To confirm your request, please click the confirmation link in the email we just sent to your inbox."
+msgstr ""
+
+#: includes/Settings/Settings.php:80
+msgid "You are no longer following this comment/replies at [Post_Title]."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:54
+msgid "Instantly get more subscribers, leads, and sales with the #1 conversion optimization toolkit. Create high converting popups, announcement bars, spin a wheel, and more with smart targeting and personalization."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:69
+msgid "The best drag & drop WordPress form builder. Easily create beautiful contact forms, surveys, payment forms, and more with our 1300+ form templates. Trusted by over 6 million websites as the best forms plugin."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:84
+msgid "The leading WordPress analytics plugin that shows you how people find and use your website, so you can make data driven decisions to grow your business. Properly set up Google Analytics without writing code."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:99
+msgid "Improve your WordPress email deliverability and make sure that your website emails reach user’s inbox with the #1 SMTP plugin for WordPress. Over 3 million websites use it to fix WordPress email issues."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:119
+msgid "The original WordPress SEO plugin and toolkit that improves your website’s search rankings. Comes with all the SEO features like Local SEO, WooCommerce SEO, sitemaps, SEO optimizer, schema, and more."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:139
+msgid "The fastest drag & drop landing page builder for WordPress. Create custom landing pages without writing code, connect them with your CRM, collect subscribers, and grow your audience. Trusted by 1 million sites."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:159
+msgid "Turn your website visitors into brand ambassadors! Easily grow your email list, website traffic, and social media followers with the most powerful giveaways & contests plugin for WordPress."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:174
+msgid "TrustPulse is the honest marketing platform that leverages and automates the real power of social proof to instantly increase trust, conversions and sales."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:189
+msgid "Connect with your visitors after they leave your website with the leading web push notification software. Over 10,000+ businesses worldwide use PushEngage to send 15 billion notifications each month."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:198
+msgid "Easily display Instagram content on your WordPress site without writing any code. Comes with multiple templates, ability to show content from multiple accounts, hashtags, and more. Trusted by 1 million websites."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:212
+msgid "Easily display Facebook content on your WordPress site without writing any code. Comes with multiple templates, ability to embed albums, group content, reviews, live videos, comments, and reactions."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:226
+msgid "Easily display YouTube videos on your WordPress site without writing any code. Comes with multiple layouts, ability to embed live streams, video filtering, ability to combine multiple channel videos, and more."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:240
+msgid "Easily display Twitter content in WordPress without writing any code. Comes with multiple layouts, ability to combine multiple Twitter feeds, Twitter card support, tweet moderation, and more."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:254
+msgid "Easily display Google reviews, Yelp reviews, and more in a clean customizable feed. Comes with multiple layouts, customizable review content, leave-a-review link, review moderation, and more."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:268
+msgid "The most advanced WordPress search plugin. Customize your WordPress search algorithm, reorder search results, track search metrics, and everything you need to leverage search to grow your business."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:277
+msgid "The #1 affiliate management plugin for WordPress. Easily create an affiliate program for your eCommerce store or membership site within minutes and start growing your sales with the power of referral marketing."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:286
+msgid "The #1 Stripe payments plugin for WordPress. Start accepting one-time and recurring payments on your WordPress site without setting up a shopping cart. No code required."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:300
+msgid "The best WordPress eCommerce plugin for selling digital downloads. Start selling eBooks, software, music, digital art, and more within minutes. Accept payments, manage subscriptions, advanced access control, and more."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:314
+msgid "A simple & powerful event calendar plugin for WordPress that comes with all the event management features including payments, scheduling, timezones, ticketing, recurring events, and more."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:328
+msgid "Top-rated WordPress donation and fundraising plugin. Over 10,000+ non-profit organizations and website owners use Charitable to create fundraising campaigns and raise more money online."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:337
+msgid "Future proof your WordPress customizations with the most popular code snippet management plugin for WordPress. Trusted by over 1,500,000+ websites for easily adding code to WordPress right from the admin area."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:356
+msgid "Leading WordPress backup & site migration plugin. Over 1,500,000+ smart website owners use Duplicator to make reliable and secure WordPress backups to protect their websites. It also makes website migration really easy."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:371
+msgid "Connect your WordPress plugins, sites and apps together with powerful automations. Save time and money with the #1 automation plugin for WordPress!"
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:437
+#: includes/Utils/AMPlugins.php:516
+msgid "Sorry, not allowed!"
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:465
+msgid "Missing required installer!"
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:471
+msgid "Plugin failed to install!"
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:486
+msgid "Plugin installed & activated."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:492
+msgid "Plugin installed."
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:527
+msgid "Could not activate plugin. Error: "
+msgstr ""
+
+#: includes/Utils/AMPlugins.php:547
+msgid "Plugin activated."
+msgstr ""
+
+#: includes/Utils/AMPlugins/AMPlugin.php:69
+msgid "Plugin info not found."
+msgstr ""
+
+#: includes/Utils/AMPlugins/AMPlugin.php:126
+msgid "Not Installed"
+msgstr ""
+
+#: includes/Utils/AMPlugins/AMPlugin.php:129
+msgid "Active"
+msgstr ""
+
+#: includes/Utils/AMPlugins/AMPlugin.php:130
+msgid "Inactive"
+msgstr ""
+
+#: includes/Utils/VariableReplacer.php:162
+msgid "Follow not set."
+msgstr ""
+
+#: includes/Utils/VariableReplacer.php:202
+msgid "Post not set."
+msgstr ""
+
+#: includes/Utils/VariableReplacer.php:239
+msgid "Follower not set."
+msgstr ""
+
+#: views/emails/comment-following-notification-message.php:22
+msgid "There is a new comment on:"
+msgstr ""
+
+#: views/emails/comment-following-notification-message.php:35
+#: build/follower-dashboard.js:322
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:151
+msgid "View Comment"
+msgstr ""
+
+#: views/emails/comment-following-notification-message.php:36
+msgid "Posted by"
+msgstr ""
+
+#: views/emails/comment-following-notification-message.php:41
+msgid "Reply to Comment"
+msgstr ""
+
+#: views/emails/comment-following-notification-message.php:54
+msgid "You have requested to be notified any time a new reply is added to your comment on:"
+msgstr ""
+
+#: views/emails/comment-following-notification-message.php:73
+#: views/emails/follow-confirmation-message.php:59
+msgid "Manage Subscriptions"
+msgstr ""
+
+#: views/emails/follow-confirmation-message.php:22
+msgid "You opted to follow the conversation at"
+msgstr ""
+
+#: views/emails/follow-confirmation-message.php:24
+msgid "You're now following the conversation at"
+msgstr ""
+
+#: views/emails/follow-confirmation-message.php:34
+msgid "Click the button below to confirm your subscription."
+msgstr ""
+
+#: views/emails/follow-confirmation-message.php:37
+#: build/follower-dashboard.js:310
+#: build/follower-dashboard.js:322
+#: build/index.js:310
+#: build/index.js:499
+#: src/Components/FollowsTable/dropdownValues.js:6
+#: src/Components/FollowsTable/followColumns.js:196
+msgid "Confirm"
+msgstr ""
+
+#: views/emails/follow-confirmation-message.php:40
+msgid "If you do not recognise this, click the link below to unsubscribe."
+msgstr ""
+
+#: views/emails/follow-confirmation-message.php:41
+#: views/emails/follow-confirmation-message.php:62
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:22
+msgid "Unsubscribe"
+msgstr ""
+
+#: views/emails/follow-confirmation-message.php:63
+msgid "From Following"
+msgstr ""
+
+#: build/follower-dashboard.js:157
+#: build/index.js:159
+#: src/Common/WordPress/ListTable/BulkActions.js:11
+msgid "Bulk Actions"
+msgstr ""
+
+#: build/follower-dashboard.js:157
+#: build/index.js:159
+#: src/Common/WordPress/ListTable/BulkActions.js:36
+msgid "Select bulk action"
+msgstr ""
+
+#: build/follower-dashboard.js:157
+#: build/index.js:159
+#: src/Common/WordPress/ListTable/BulkActions.js:45
+msgid "Apply"
+msgstr ""
+
+#: build/follower-dashboard.js:157
+#: build/index.js:159
+#: src/Common/WordPress/ListTable/FilterAction.js:13
+msgid "Filter by date"
+msgstr ""
+
+#: build/follower-dashboard.js:157
+#: build/index.js:159
+#: src/Common/WordPress/ListTable/FilterAction.js:24
+msgid "Filter by type"
+msgstr ""
+
+#: build/follower-dashboard.js:157
+#: build/index.js:159
+#: src/Common/WordPress/ListTable/FilterAction.js:34
+msgid "Filter"
+msgstr ""
+
+#: build/follower-dashboard.js:252
+#: build/index.js:254
+#: src/Common/WordPress/ListTable/SearchBox.js:23
+msgid "Search:"
+msgstr ""
+
+#: build/follower-dashboard.js:252
+#: build/index.js:254
+#: src/Common/WordPress/ListTable/SearchBox.js:33
+msgid "Search"
+msgstr ""
+
+#: build/follower-dashboard.js:258
+#: build/index.js:260
+#: src/Common/WordPress/ListTable/PaginationControls.js:125
+msgid "First page"
+msgstr ""
+
+#: build/follower-dashboard.js:258
+#: build/index.js:260
+#: src/Common/WordPress/ListTable/PaginationControls.js:126
+msgid "Previous page"
+msgstr ""
+
+#: build/follower-dashboard.js:258
+#: build/index.js:260
+#: src/Common/WordPress/ListTable/PaginationControls.js:131
+msgid "Current Page"
+msgstr ""
+
+#: build/follower-dashboard.js:258
+#: build/index.js:260
+#: src/Common/WordPress/ListTable/PaginationControls.js:146
+msgid "Next page"
+msgstr ""
+
+#: build/follower-dashboard.js:258
+#: build/index.js:260
+#: src/Common/WordPress/ListTable/PaginationControls.js:147
+msgid "Last page"
+msgstr ""
+
+#: build/follower-dashboard.js:307
+#: build/index.js:309
+#: src/Common/WordPress/ListTable/ColumnHeaders.js:35
+msgid "Select All"
+msgstr ""
+
+#: build/follower-dashboard.js:307
+#: build/index.js:309
+#: src/Common/WordPress/ListTable/WpListTable.js:262
+msgid "No records found."
+msgstr ""
+
+#: build/follower-dashboard.js:307
+#: build/index.js:309
+#: src/Common/WordPress/ListTable/WpListTable.js:304
+msgid "Select"
+msgstr ""
+
+#. translators: 1: Start of the range, 2: End of the range, 3: Total items
+#: build/follower-dashboard.js:308
+#: build/index.js:310
+#: src/Common/WordPress/ListTable/WpListTable.js:358
+msgid "Showing %1$d to %2$d of %3$d entries"
+msgstr ""
+
+#. translators: Comment Converter is the name of the plugin.
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/Welcome.js:17
+msgid "Welcome to Comment Converter!"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/Dashboard/Widgets/Welcome.js:54
+#: src/Pages/Components/GettingStarted/Welcome.js:37
+msgid "Getting Started Guide"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/Welcome.js:45
+msgid "You’re now growing your community and influence with every comment."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/Welcome.js:47
+msgid "To learn more about how to get even more comments and engagement, check out our Experts Guide to Getting More Blog Comments below."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/Welcome.js:53
+msgid "P.S. We’ve got tons of new features ready to roll out soon with our Pro version. Click the button below to be notified as soon as it launches."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/Welcome.js:67
+msgid "Read The Guide"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/Welcome.js:70
+msgid "Join Pro Waitlist"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/Upgrade.js:30
+msgid "Coming Soon"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/Upgrade.js:55
+msgid "Join the Pro Waitlist"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:6
+msgid "Keep the conversation going! Invite every commenter to join your exclusive email circle."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:11
+msgid "Add Commenters to Email List"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:14
+msgid "We ensure every new friend is real, increasing the quality of your email list and keeping it spam-free."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:19
+msgid "Lead Verification"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:22
+msgid "Let visitors follow their passions and get updates on what matters most, personalizing their experience."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:27
+msgid "Category/Tag Follows"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:30
+msgid "Make your comments beautiful with our stylish templates, because every word you say should look as good as it sounds."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:35
+msgid "Comment Form Templates"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:38
+msgid "Authors deserve the spotlight! Notify authors when their stories spark conversations so they can reply."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:43
+#: src/Pages/Components/GettingStarted/featuresData.js:85
+msgid "Author Notifications"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:46
+msgid "Let visitors keep tabs on their favorite commenters, never missing a reply from their most interesting follows."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:51
+msgid "Commenter Following"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:54
+msgid "Fill your comments into lively reactions with gifs, adding a splash of fun to every conversation."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:59
+msgid "Giphy Integration"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:62
+msgid "Jump into discussions with ease using our handy comment starters, sparking conversation right away."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:67
+msgid "Default Comment Templates"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:73
+msgid "Email Marketing Integrations"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:76
+msgid "Email Templates"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:79
+msgid "Notification Templates"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:82
+msgid "Role Management"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:88
+msgid "Following Feed"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:91
+msgid "Default Comments"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:94
+msgid "Social Login"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:97
+msgid "TrustPulse Integration"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:100
+msgid "Subscription Segmentation"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:106
+msgid "Choose from our proven playbooks and turnkey templates – or start from scratch using our Canvas technology."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:111
+msgid "Popups, Floating Bars + More"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:114
+msgid "Choose from 35+ native email marketing integrations, or use Zapier or Uncanny Automator to automate your workflow."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:119
+msgid "Email Integrations"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:122
+msgid "Show the perfect offer every time to unlock the maximum potential from every page and visitor on your website."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:127
+msgid "Stop Abandoning Visitors"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:130
+msgid "OptinMonster makes it easy to create smart lead capture and optin forms in minutes, not hours."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/featuresData.js:135
+msgid "Drag and Drop Editor"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/Gutenberg/blocks/follow-by-email/view.js:1
+#: build/index.js:12
+#: src/utils/error.js:23
+msgid "An error occurred."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/follower-dashboard.js:724
+#: build/index.js:12
+#: build/index.js:909
+#: src/Pages/AboutUs.js:99
+#: src/Pages/Components/GettingStarted/OptinMonster.js:51
+msgid "Activated"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/follower-dashboard.js:724
+#: build/index.js:12
+#: build/index.js:909
+#: src/Pages/AboutUs.js:101
+#: src/Pages/Components/GettingStarted/OptinMonster.js:53
+msgid "Activate Plugin"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/follower-dashboard.js:724
+#: build/index.js:12
+#: build/index.js:909
+#: src/Pages/AboutUs.js:104
+#: src/Pages/Components/GettingStarted/OptinMonster.js:56
+msgid "Activating…"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/follower-dashboard.js:724
+#: build/index.js:12
+#: build/index.js:909
+#: src/Pages/AboutUs.js:108
+#: src/Pages/Components/GettingStarted/OptinMonster.js:60
+msgid "Install Plugin"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/follower-dashboard.js:724
+#: build/index.js:12
+#: build/index.js:909
+#: src/Pages/AboutUs.js:111
+#: src/Pages/Components/GettingStarted/OptinMonster.js:63
+msgid "Installing…"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/follower-dashboard.js:310
+#: build/index.js:12
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/Announcements.js:47
+#: src/Pages/Components/GettingStarted/OptinMonster.js:84
+msgid "Learn More"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/OptinMonster.js:87
+msgid "Get OptinMonster To Boost Your Email List Growth Even More!"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/OptinMonster.js:91
+msgid "The Most Powerful Lead Generation and Customer Acquisition Software … Without the High Costs"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/GettingStarted/OptinMonster.js:97
+msgid "OptinMonster"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/Dashboard/Widgets/Welcome.js:22
+msgid "Getting Started"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/Dashboard/Widgets/Welcome.js:25
+msgid "Welcome Back"
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/Dashboard/Widgets/Welcome.js:29
+msgid "You’re already on your way to turning commenters into subscribers and sales by enabling visitors to follow comments by email with just one click. See what else you can do in our Guide to Getting Started with Comment Converter below."
+msgstr ""
+
+#: build/follower-dashboard.js:309
+#: build/index.js:12
+#: src/Pages/Components/Dashboard/Widgets/Welcome.js:41
+msgid "Read the Guide"
+msgstr ""
+
+#. translators: Comment Converter is the name of the plugin.
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/Upsell.js:63
+msgid "Turn Comment Followers into Subscribers With Comment Converter Pro."
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/Upsell.js:68
+msgid "Effortlessly add commenters to your email marketing list."
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/Upsell.js:69
+msgid "Effortlessly add commenters to your email marketing list to keep the conversation flowing."
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/Upsell.js:86
+msgid "Go Pro Today"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/StarFollowers.js:13
+msgid "Star Followers"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/MostFollowed.js:14
+msgid "Most Followed"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/MostFollowed.js:28
+msgid "(no title)"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/RecentlyFollowedComments.js:13
+msgid "Recently Followed Comments"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/Announcements.js:16
+msgid "Announcements"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/Announcements.js:59
+msgid "More Announcements →"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/MainDashboard.js:46
+msgid "Total Followers"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/MissingData.js:38
+msgid "Where’s all the data?"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/MissingData.js:41
+msgid "As you grow your followers, this dashboard will fill with proof of your growth."
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/MissingData.js:48
+msgid "Here are a few ways you can take action on getting your first follower today:"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/MissingData.js:61
+msgid "How To Get WordPress Comments"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/MissingData.js:71
+msgid "Is Commenting Still Effective?"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:13
+#: src/Pages/Components/Dashboard/Widgets/MissingData.js:81
+msgid "The Experts Guide to Getting More Blog Comments"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:487
+#: src/Common/dropdownValues.js:11
+msgid "Immediately"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:487
+#: src/Common/dropdownValues.js:12
+msgid "Daily"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:487
+#: src/Common/dropdownValues.js:13
+msgid "Weekly"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: build/index.js:487
+#: src/Common/dropdownValues.js:21
+#: src/Components/FollowsTable/dropdownValues.js:77
+msgid "Follow All Comments"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:487
+#: src/Common/dropdownValues.js:22
+msgid "Follow Replies Only"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:487
+#: src/Common/dropdownValues.js:23
+msgid "Do Not Follow"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:10
+msgid "Switch to Follow All Comments"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:14
+msgid "Switch to Follow Only Replies"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/follower-dashboard.js:909
+#: build/index.js:310
+#: build/index.js:507
+#: src/Components/FollowsTable/dropdownValues.js:18
+#: src/Components/FollowsTable/FollowsTable.js:309
+msgid "Delete"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:30
+msgid "All"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:34
+msgid "Pending"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:38
+msgid "Confirmed"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:50
+msgid "All Time"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:54
+msgid "Last 7 Days"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:58
+msgid "Last 30 Days"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:65
+msgid "View Follows"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:69
+msgid "Send Email"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:73
+msgid "Edit"
+msgstr ""
+
+#: build/follower-dashboard.js:310
+#: build/index.js:310
+#: src/Components/FollowsTable/dropdownValues.js:81
+msgid "Follow Only Replies"
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:21
+msgid "Follower"
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:25
+msgid "Followed From"
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:26
+msgid "Comment"
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:29
+#: src/Components/FollowsTable/followColumns.js:161
+msgid "Follow Type"
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:35
+msgid "Followed On"
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:41
+msgid "Subscriber"
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:47
+msgid "Action"
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:200
+msgid "Confirmed at this date."
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:177
+#: src/Components/FollowsTable/followColumns.js:191
+msgid "Created at this date."
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/frontend/confirmation.js:1
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:209
+#: src/Frontend/ConfirmationMessages/index.js:47
+msgid "Yes"
+msgstr ""
+
+#: build/follower-dashboard.js:322
+#: build/frontend/confirmation.js:1
+#: build/index.js:499
+#: src/Components/FollowsTable/followColumns.js:209
+#: src/Frontend/ConfirmationMessages/index.js:50
+msgid "No"
+msgstr ""
+
+#: build/follower-dashboard.js:370
+#: build/index.js:555
+#: src/Common/Form/Form.js:147
+msgid "Invalid empty value."
+msgstr ""
+
+#: build/follower-dashboard.js:370
+#: build/follower-dashboard.js:719
+#: build/index.js:555
+#: build/index.js:904
+#: src/Common/Form/FollowerForm.js:114
+#: src/Common/Form/Form.js:158
+msgid "Update Settings"
+msgstr ""
+
+#: build/follower-dashboard.js:370
+#: build/follower-dashboard.js:719
+#: build/Gutenberg/blocks/follow-by-email/view.js:1
+#: build/index.js:555
+#: build/index.js:904
+#: src/Common/Form/FollowerForm.js:117
+#: src/Common/Form/Form.js:161
+#: src/Gutenberg/blocks/follow-by-email/view.js:65
+msgid "Cancel"
+msgstr ""
+
+#: build/follower-dashboard.js:380
+#: build/index.js:565
+#: src/Common/Form/ShortcodeList.js:9
+msgid "Post Title"
+msgstr ""
+
+#: build/follower-dashboard.js:380
+#: build/index.js:565
+#: src/Common/Form/ShortcodeList.js:11
+msgid "Displays the post title and links to the post on the front end of the site"
+msgstr ""
+
+#: build/follower-dashboard.js:380
+#: build/index.js:565
+#: src/Common/Form/ShortcodeList.js:60
+msgid "Copy To Clipboard"
+msgstr ""
+
+#: build/follower-dashboard.js:451
+#: build/index.js:636
+#: src/Common/Form/CommentFormForm.js:11
+msgid "Follower dashboard link text"
+msgstr ""
+
+#: build/follower-dashboard.js:451
+#: build/index.js:636
+#: src/Common/Form/CommentFormForm.js:17
+msgid "After commenting"
+msgstr ""
+
+#: build/follower-dashboard.js:451
+#: build/index.js:636
+#: src/Common/Form/CommentFormForm.js:23
+msgid "After following (single opt-in)"
+msgstr ""
+
+#: build/follower-dashboard.js:451
+#: build/index.js:636
+#: src/Common/Form/CommentFormForm.js:29
+msgid "After following (double opt-in)"
+msgstr ""
+
+#: build/follower-dashboard.js:451
+#: build/index.js:636
+#: src/Common/Form/CommentFormForm.js:55
+msgid "Shortcodes"
+msgstr ""
+
+#: build/follower-dashboard.js:455
+#: build/index.js:640
+#: src/Common/Form/EmailPreviewInline.js:46
+msgid "Send a test email:"
+msgstr ""
+
+#: build/follower-dashboard.js:455
+#: build/index.js:640
+#: src/Common/Form/EmailPreviewInline.js:48
+msgid "Enter your email…"
+msgstr ""
+
+#: build/follower-dashboard.js:455
+#: build/index.js:640
+#: src/Common/Form/EmailPreviewInline.js:57
+msgid "Send Test Email"
+msgstr ""
+
+#: build/follower-dashboard.js:455
+#: build/index.js:640
+#: src/Common/Form/EmailPreviewInline.js:67
+#: src/Common/Form/EmailsForm.js:27
+msgid "Please, enter a valid email address."
+msgstr ""
+
+#: build/follower-dashboard.js:455
+#: build/index.js:640
+#: src/Common/Form/EmailsForm.js:35
+msgid "Sender name"
+msgstr ""
+
+#: build/follower-dashboard.js:455
+#: build/index.js:640
+#: src/Common/Form/EmailsForm.js:41
+msgid "From email address"
+msgstr ""
+
+#: build/follower-dashboard.js:455
+#: build/index.js:640
+#: src/Common/Form/EmailsForm.js:46
+msgid "Reply to email address"
+msgstr ""
+
+#: build/follower-dashboard.js:455
+#: build/index.js:640
+#: src/Common/Form/EmailsForm.js:54
+msgid "Email preview"
+msgstr ""
+
+#. translators: Comment Converter is the name of the plugin.
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:19
+msgid "Enable Comment Converter on these types of content"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:25
+msgid "Follower dashboard slug"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:31
+msgid "Following badge"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:42
+msgid "Default Icons"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:44
+msgid "Customize the color of default icons"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:55
+msgid "Following badge color"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:96
+msgid "Enable double opt-in"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:103
+msgid "Enable author engagement"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:105
+msgid "Automatically subscribe Authors to comments and replies to their own articles."
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:111
+msgid "Allow only logged in users to follow"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:130
+msgid "Disallow List"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:151
+msgid "Add Email"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/OptionsForm.js:143
+msgid "Only valid emails are allowed."
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/FollowerForm.js:72
+msgid "Name"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/FollowerForm.js:81
+msgid "Default follow setting"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/FollowerForm.js:93
+msgid "Notification email"
+msgstr ""
+
+#: build/follower-dashboard.js:719
+#: build/index.js:904
+#: src/Common/Form/FollowerForm.js:103
+msgid "Notification frequency"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/GettingStarted.js:24
+msgid "See All Features"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/GettingStarted.js:29
+msgid "We’re making comments cool again with all these solutions for growing your community…"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/GettingStarted.js:34
+msgid "and even more coming soon in Comment Converter Pro!"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/GettingStarted.js:42
+msgid "Coming Soon Features"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/SingleFollower.js:69
+msgid "Follower Profile"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Common/Form/EmailPreview.js:45
+#: src/Pages/SingleFollower.js:72
+msgid "Go Back"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/SingleFollower.js:83
+msgid "Copied!"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/SingleFollower.js:80
+msgid "Profile Dashboard Link"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/follower-dashboard.js:1054
+#: build/index.js:906
+#: src/FollowerDashboard/Dashboard.js:221
+#: src/Pages/SingleFollower.js:91
+msgid "Followed Comments"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/routes.js:54
+msgid "Comment Form"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/routes.js:60
+msgid "Emails"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/AboutUs.js:41
+msgid "When we started Comment Converter, we had one goal in mind: to help small businesses grow and compete with the big guys."
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/AboutUs.js:47
+msgid "We were tired of seeing only the companies with the deepest pockets get access to quality lead generation software to grow their list, leads and sales. So we set out to create a best-in-class tool at a price even small businesses could afford."
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/AboutUs.js:53
+msgid "With decades of experience building community online, we understand that someone leaving a comment on your blog is one of your MOST engaged visitors… and yet, most websites do nothing to harness the power of that moment."
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/AboutUs.js:59
+msgid "With Comment Converter, you now can!"
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/AboutUs.js:65
+msgid "From the blogger just getting started or small independent local businesses, to growing eCommerce stores and even Fortune 500 companies… we help the most reputable brands online make targeted offers to the right person, at the right time."
+msgstr ""
+
+#: build/follower-dashboard.js:721
+#: build/index.js:906
+#: src/Pages/AboutUs.js:71
+msgid "Thank you for the opportunity to help you win and win more often!"
+msgstr ""
+
+#. translators: Comment Converter is the name of the plugin.
+#: build/follower-dashboard.js:724
+#: build/index.js:909
+#: src/Pages/AboutUs.js:82
+msgid "The Comment Converter Team"
+msgstr ""
+
+#: build/follower-dashboard.js:724
+#: build/index.js:909
+#: src/Pages/AboutUs.js:130
+msgid "Status"
+msgstr ""
+
+#: build/follower-dashboard.js:901
+#: build/index.js:487
+#: src/Common/Modals/ConfirmationModal.js:9
+msgid "Proceed"
+msgstr ""
+
+#. translators: %d: The name or ID of the follower
+#: build/follower-dashboard.js:903
+#: build/index.js:501
+#: src/Components/FollowsTable/FollowsTable.js:231
+msgid "Follower \"%s\""
+msgstr ""
+
+#. translators: %s: The title or ID of the post
+#: build/follower-dashboard.js:905
+#: build/index.js:503
+#: src/Components/FollowsTable/FollowsTable.js:238
+msgid "Post \"%s\""
+msgstr ""
+
+#. translators: %s: The ID of the comment
+#: build/follower-dashboard.js:907
+#: build/index.js:505
+#: src/Components/FollowsTable/FollowsTable.js:243
+msgid "Comment \"%s\""
+msgstr ""
+
+#. translators: %s: the string representing the parameter
+#: build/follower-dashboard.js:909
+#: build/index.js:507
+#: src/Components/FollowsTable/FollowsTable.js:247
+msgid "View Follows for %s"
+msgstr ""
+
+#: build/follower-dashboard.js:909
+#: build/index.js:507
+#: src/Components/FollowsTable/FollowsTable.js:261
+msgid "View All"
+msgstr ""
+
+#: build/follower-dashboard.js:909
+#: build/index.js:507
+#: src/Components/FollowsTable/FollowsTable.js:310
+msgid "This action will remove the follow(s), associated notifications, and all records."
+msgstr ""
+
+#: build/follower-dashboard.js:909
+#: src/FollowerDashboard/OutputMessage.js:6
+msgid "You have successfully confirmed your follow."
+msgstr ""
+
+#: build/follower-dashboard.js:909
+#: src/FollowerDashboard/OutputMessage.js:7
+msgid "You have successfully unsubscribed from this post."
+msgstr ""
+
+#: build/follower-dashboard.js:1054
+#: src/FollowerDashboard/Dashboard.js:212
+msgid "Manage your follower settings including name, email notifications, and how often you receive updates."
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/index.js:1
+#: src/Gutenberg/blocks/follow-by-email/edit.js:11
+msgid "TEXT"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/view.js:1
+#: src/Gutenberg/blocks/follow-by-email/view.js:41
+msgid "Share your email address below and we’ll let you know anytime new comments or replies are posted."
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/view.js:1
+#: src/Gutenberg/blocks/follow-by-email/view.js:48
+msgid "Your Name"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/view.js:1
+#: src/Gutenberg/blocks/follow-by-email/view.js:51
+msgid "The name field is required."
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/view.js:1
+#: src/Gutenberg/blocks/follow-by-email/view.js:55
+msgid "Your Email Address"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/view.js:1
+#: src/Gutenberg/blocks/follow-by-email/view.js:58
+msgid "A valid email is required."
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/view.js:1
+#: src/Gutenberg/blocks/follow-by-email/view.js:64
+msgid "Save"
+msgstr ""
+
+#. translators: {TITLE} will be replaced with the post title.
+#: build/Gutenberg/blocks/follow-by-email/view.js:3
+#: src/Gutenberg/blocks/follow-by-email/view.js:211
+msgid "Follow Comments and Replies to ‘{TITLE}’"
+msgstr ""
+
+#: build/Gutenberg/plugin-post-settings.js:28
+#: src/Gutenberg/plugins/post-settings/index.js:103
+msgid "Review settings"
+msgstr ""
+
+#: build/Gutenberg/plugin-post-settings.js:28
+#: src/Gutenberg/plugins/post-settings/index.js:140
+msgid "View Followers"
+msgstr ""
+
+#. translators: Comment Converter is the name of the plugin.
+#: build/Gutenberg/plugin-post-settings.js:30
+#: src/Gutenberg/plugins/post-settings/index.js:147
+msgid "Currently your <strong>WordPress discussion settings</strong> do not require an email when commenting. We recommend changing this so that Comment Converter can perform correctly. "
+msgstr ""
+
+#: build/index.js:909
+#: src/Components/QuickLinks/QuickLinks.js:9
+msgid "Suggest a Feature"
+msgstr ""
+
+#: build/index.js:909
+#: src/Components/QuickLinks/QuickLinks.js:21
+msgid "Support & Docs"
+msgstr ""
+
+#: build/index.js:909
+#: src/Components/QuickLinks/QuickLinks.js:103
+msgid "See Quick Links"
+msgstr ""
+
+#: src/Common/Form/EmailPreview.js:13
+#: src/Common/Form/EmailPreview.js:16
+msgid "Post Title Here"
+msgstr ""
+
+#: src/Common/Form/EmailPreview.js:19
+msgid "This is an example comment that would appear inside the email for the follower to read and decide to take action on."
+msgstr ""
+
+#: src/Common/Form/EmailPreview.js:24
+msgid "Comment Author's name"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block title"
+msgid "Comment Converter Link to Follow"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block description"
+msgid "Share a link to let visitors follow comments without needing to leave a comment themselves."
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "comments"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "newsletter"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "optin"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "form"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "subscribe"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "subscribe to comments"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "follow comments"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "comment converter"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "convert comments"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "optinmonster"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "commenting"
+msgstr ""
+
+#: build/Gutenberg/blocks/follow-by-email/block.json
+#: src/Gutenberg/blocks/follow-by-email/block.json
+msgctxt "block keyword"
+msgid "comment"
+msgstr ""

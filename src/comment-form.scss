@@ -1,0 +1,47 @@
+@import "node_modules/@wordpress/base-styles/colors";
+
+/**
+* The styles in this file are meant to extend the styles in the Gutenberg's Post Comments Form block
+* to the fields from Comment Converter.
+*/
+
+.wp-block-post-comments-form {
+
+	// Scope to Comment Converter Fields
+	p[class*="comment-form-ccvtr-"] {
+
+		// Ref.: https://github.com/WordPress/gutenberg/blob/56a48fb35f546925b12828ba994e126955e57e25/packages/block-library/src/post-comments-form/style.scss#L34C1-L39C3
+		select {
+			background-color: inherit;
+			border: 1px solid $gray-600;
+			font-size: 1em;
+			font-family: inherit;
+
+			// Ref.: https://github.com/WordPress/gutenberg/blob/56a48fb35f546925b12828ba994e126955e57e25/packages/block-library/src/post-comments-form/style.scss#L43C10-L43C10
+			padding: calc(0.667em + 2px); // The extra 2px is added to match outline buttons.
+		}
+
+	}
+
+	// Ref.: https://github.com/WordPress/gutenberg/blob/56a48fb35f546925b12828ba994e126955e57e25/packages/block-library/src/post-comments-form/style.scss#L46C1-L55C3
+	.comment-form {
+		p[class*="comment-form-ccvtr-"] {
+			select {
+				box-sizing: border-box;
+				display: block;
+				width: 100%
+			}
+		}
+	}
+
+	// Ref.: https://github.com/WordPress/gutenberg/blob/56a48fb35f546925b12828ba994e126955e57e25/packages/block-library/src/post-comments-form/style.scss#L66C1-L73C3
+	.comment-form-ccvtr-subscribe {
+		display: flex;
+		gap: 0.25em;
+
+		#wp-comment-ccvtr-subscribe {
+			margin-top: 0.35em;
+		}
+	}
+
+}
