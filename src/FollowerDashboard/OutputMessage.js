@@ -3,8 +3,11 @@ import { useLocation } from 'react-router-dom';
 import { Alert } from '../Common/Alert/Alert';
 
 const msgByPage = {
-	confirm: __('You have successfully confirmed your follow.', 'comment-notifications'),
-	unsubscribe: __('You have successfully unsubscribed from this post.', 'comment-notifications'),
+	confirm: __('You have successfully confirmed your follow.', 'subscribe-to-comment-notifications-comment-converter'),
+	unsubscribe: __(
+		'You have successfully unsubscribed from this post.',
+		'subscribe-to-comment-notifications-comment-converter'
+	),
 };
 
 export const OutputMessage = (props) => {

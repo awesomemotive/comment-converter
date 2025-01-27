@@ -43,7 +43,10 @@ export const MainDashboard = ({ data }) => {
 			<div className="flex flex-row items-start">
 				<div className="w-1/2 ccvtr-left-widgets">
 					<div className="mb-4 mr-2 rtl:!mr-0 rtl:ml-2">
-						<TotalWidget count={totalFollowers} title={__('Total Followers', 'comment-notifications')} />
+						<TotalWidget
+							count={totalFollowers}
+							title={__('Total Followers', 'subscribe-to-comment-notifications-comment-converter')}
+						/>
 					</div>
 
 					{starFollowers && starFollowers.length > 0 && (

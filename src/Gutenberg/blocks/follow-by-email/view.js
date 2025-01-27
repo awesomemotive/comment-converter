@@ -40,29 +40,29 @@ const Modal = {
 					<p>
 						${__(
 							'Share your email address below and we’ll let you know anytime new comments or replies are posted.',
-							'comment-notifications'
+							'subscribe-to-comment-notifications-comment-converter'
 						)}
 					</p>
 					<form id="ccvtr-modal-form" class="ccvtr-modal-form">
 						<div class="ccvtr-input-wrapper">
-							<label for="ccvtr-modal-name">${__('Your Name', 'comment-notifications')}:</label>
+							<label for="ccvtr-modal-name">${__('Your Name', 'subscribe-to-comment-notifications-comment-converter')}:</label>
 							<input type="text" name="name" id="ccvtr-modal-name" required />
 							<div class="ccvtr-error-message">
-								${__('The name field is required.', 'comment-notifications')}
+								${__('The name field is required.', 'subscribe-to-comment-notifications-comment-converter')}
 							</div>
 						</div>
 						<div class="ccvtr-input-wrapper">
-							<label for="ccvtr-modal-email">${__('Your Email Address', 'comment-notifications')}:</label>
+							<label for="ccvtr-modal-email">${__('Your Email Address', 'subscribe-to-comment-notifications-comment-converter')}:</label>
 							<input type="email" name="email" id="ccvtr-modal-email" required />
 							<div class="ccvtr-error-message">
-								${__('A valid email is required.', 'comment-notifications')}
+								${__('A valid email is required.', 'subscribe-to-comment-notifications-comment-converter')}
 							</div>
 						</div>
 					</form>
 				</div>
 				<div class="ccvtr-modal-action-buttons">
-					<button id="save-button">${__('Save', 'comment-notifications')}</button>
-					<button id="cancel-button">${__('Cancel', 'comment-notifications')}</button>
+					<button id="save-button">${__('Save', 'subscribe-to-comment-notifications-comment-converter')}</button>
+					<button id="cancel-button">${__('Cancel', 'subscribe-to-comment-notifications-comment-converter')}</button>
 				</div>
 				<div class="ccvtr-modal-error-message"></div>
 			</div>
@@ -208,10 +208,10 @@ const Modal = {
 		const modalTitle = this.modal.querySelector('.ccvtr-modal-title');
 
 		// translators: {TITLE} will be replaced with the post title.
-		modalTitle.innerHTML = __('Follow Comments and Replies to ‘{TITLE}’', 'comment-notifications').replace(
-			'{TITLE}',
-			decodeHtml(postTitle)
-		);
+		modalTitle.innerHTML = __(
+			'Follow Comments and Replies to ‘{TITLE}’',
+			'subscribe-to-comment-notifications-comment-converter'
+		).replace('{TITLE}', decodeHtml(postTitle));
 
 		this.form.dataset.postId = postId;
 		this.form.dataset.nonce = nonce;

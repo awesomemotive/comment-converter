@@ -18,7 +18,7 @@
     "commenting",
     "comment"
   ],
-  "version": "1.0.0",
+  "version": "0.9.1",
   "category": "widgets",
   "icon": "file:../../../../assets/logos/comment-converter-white-logomark.svg",
   "textdomain": "comment-notifications",

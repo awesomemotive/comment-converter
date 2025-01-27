@@ -108,7 +108,8 @@ export function PaginationControls(props) {
 		const classes = classNames(
 			'flex justify-center items-center border rounded w-[30px] h-[30px] text-xl leading-none pb-[1px]',
 			{
-				'bg-neutral10 border-neutral80 text-neutral200 hover:bg-white hover:border-neutral100 hover:text-neutral400': !disabled,
+				'bg-neutral10 border-neutral80 text-neutral200 hover:bg-white hover:border-neutral100 hover:text-neutral400':
+					!disabled,
 				'bg-transparent border-neutral40 text-neutral60': disabled,
 			}
 		);
@@ -122,13 +123,25 @@ export function PaginationControls(props) {
 
 	return (
 		<span className="flex items-center gap-x-[5px]">
-			{renderPageBtn('first-page', __('First page', 'comment-notifications'), '«', handleFirstPageClick, currPage === 1)}
-			{renderPageBtn('previous-page', __('Previous page', 'comment-notifications'), '‹', handlePreviousPageClick, currPage === 1)}
+			{renderPageBtn(
+				'first-page',
+				__('First page', 'subscribe-to-comment-notifications-comment-converter'),
+				'«',
+				handleFirstPageClick,
+				currPage === 1
+			)}
+			{renderPageBtn(
+				'previous-page',
+				__('Previous page', 'subscribe-to-comment-notifications-comment-converter'),
+				'‹',
+				handlePreviousPageClick,
+				currPage === 1
+			)}
 
 			<span className="flex items-center gap-x-[5px]">
 				<StyledTextInput
 					className="max-w-8"
-					label={__('Current Page', 'comment-notifications')}
+					label={__('Current Page', 'subscribe-to-comment-notifications-comment-converter')}
 					labelHidden={true}
 					name="paged"
 					value={pageInput}
@@ -143,8 +156,20 @@ export function PaginationControls(props) {
 				</span>
 			</span>
 
-			{renderPageBtn('next-page', __('Next page', 'comment-notifications'), '›', handleNextPageClick, currPage === totalPages)}
-			{renderPageBtn('last-page', __('Last page', 'comment-notifications'), '»', handleLastPageClick, currPage === totalPages)}
+			{renderPageBtn(
+				'next-page',
+				__('Next page', 'subscribe-to-comment-notifications-comment-converter'),
+				'›',
+				handleNextPageClick,
+				currPage === totalPages
+			)}
+			{renderPageBtn(
+				'last-page',
+				__('Last page', 'subscribe-to-comment-notifications-comment-converter'),
+				'»',
+				handleLastPageClick,
+				currPage === totalPages
+			)}
 		</span>
 	);
 }

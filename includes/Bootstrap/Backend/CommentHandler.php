@@ -353,7 +353,7 @@ class CommentHandler {
 		wp_enqueue_style( 'ccvtr-confirmation-messages-style', Utils::dir_url( 'build/frontend/style-confirmation.css' ), array(), $asset_file['version'] );
 		wp_register_script( 'ccvtr-confirmation-messages-script', Utils::dir_url( 'build/frontend/confirmation.js' ), $asset_file['dependencies'], $asset_file['version'], true );
 		wp_localize_script( 'ccvtr-confirmation-messages-script', 'ccData', $js_data );
-		wp_set_script_translations( 'ccvtr-confirmation-messages-script', 'comment-notifications', Utils::dir_path( 'languages' ) );
+		wp_set_script_translations( 'ccvtr-confirmation-messages-script', 'subscribe-to-comment-notifications-comment-converter', Utils::dir_path( 'languages' ) );
 		wp_enqueue_script( 'ccvtr-confirmation-messages-script' );
 	}
 

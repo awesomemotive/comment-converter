@@ -10,7 +10,7 @@ export const RecentlyFollowedComments = ({ data }) => {
 	const { goToPage } = useNavigation();
 
 	return (
-		<Accordion title={__('Recently Followed Comments', 'comment-notifications')}>
+		<Accordion title={__('Recently Followed Comments', 'subscribe-to-comment-notifications-comment-converter')}>
 			{data && data.length > 0 && (
 				<List>
 					{data.map((item) => (

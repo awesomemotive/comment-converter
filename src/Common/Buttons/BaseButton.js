@@ -32,7 +32,7 @@ const lnkSizeMap = {
 export function BaseButton(props) {
 	const { btnClassName, children, className, size = 'medium', ...rest } = props;
 	const classes = classNames(
-		'cursor-pointer flex flex-row rounded-[3px] items-center text-center justify-center !leading-none',
+		'cursor-pointer flex flex-row rounded-[3px] items-center text-center justify-center !leading-none shadow-none',
 		btnSizeMap[size],
 		btnClassName,
 		className
@@ -56,7 +56,7 @@ export const PrimaryButton = (props) => {
 	return (
 		<BaseButton
 			{...props}
-			btnClassName="btn-primary text-white bg-primaryGreen border border-primaryGreen hover:bg-green200 hover:border-green200"
+			btnClassName="btn-primary text-white bg-primaryGreen border border-primaryGreen hover:bg-green200 hover:border-green200 shadow-none"
 		/>
 	);
 };
@@ -64,7 +64,7 @@ export const PrimaryButton = (props) => {
 export const SecondaryButton = (props) => {
 	const { btnClassName, ...rest } = props;
 	const classes = classNames(
-		'btn-secondary text-primaryText bg-neutral20 border border-neutral80 hover:bg-white hover:border-primaryText',
+		'btn-secondary text-primaryText bg-neutral20 border border-neutral80 hover:bg-white hover:border-primaryText shadow-none',
 		btnClassName
 	);
 	return <BaseButton {...rest} btnClassName={classes} />;
@@ -78,7 +78,7 @@ export const GreyButton = (props) => {
 	return (
 		<BaseButton
 			{...props}
-			btnClassName="btn-grey text-primaryText bg-neutral30 border border-neutral30 hover:bg-neutral40 hover:border-neutral40 !rounded"
+			btnClassName="btn-grey text-primaryText bg-neutral30 border border-neutral30 hover:bg-neutral40 hover:border-neutral40 !rounded shadow-none"
 		/>
 	);
 };
@@ -88,7 +88,7 @@ export const TextLinkButton = (props) => {
 
 	const classes = classNames(
 		'btn-text-link',
-		'flex flex-row text-primaryBlue hover:text-primaryBlue hover:underline cursor-pointer font-normal text-left',
+		'flex flex-row text-primaryBlue hover:text-primaryBlue hover:underline cursor-pointer font-normal text-left shadow-none',
 		lnkSizeMap[size],
 		className
 	);

@@ -44,10 +44,10 @@ import { __ } from '@wordpress/i18n';
 				</div>
 				<div class="ccvtr-buttons">
 					<button id="yesBtn" class="ccvtr-primary-btn">
-						${__('Yes', 'comment-notifications')}
+						${__('Yes', 'subscribe-to-comment-notifications-comment-converter')}
 					</button>
 					<button id="noBtn" class="ccvtr-secondary-btn">
-						${__('No', 'comment-notifications')}
+						${__('No', 'subscribe-to-comment-notifications-comment-converter')}
 					</button>
 				</div>
 			`;

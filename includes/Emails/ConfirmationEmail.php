@@ -135,9 +135,9 @@ class ConfirmationEmail extends BaseEmail {
 	 */
 	public function build_subject() {
 		if ( self::TYPE_SINGLE_OPT_IN === $this->type ) {
-			$subject = __( 'You\'re Now Following The Conversation At [Post_Title]', 'comment-notifications' );
+			$subject = __( 'You\'re Now Following The Conversation At [Post_Title]', 'subscribe-to-comment-notifications-comment-converter' );
 		} else {
-			$subject = __( 'Confirmation required to follow comments: [Post_Title]', 'comment-notifications' );
+			$subject = __( 'Confirmation required to follow comments: [Post_Title]', 'subscribe-to-comment-notifications-comment-converter' );
 		}
 
 		$this->set_subject( $this->variable_replacer->replace( $subject ) );

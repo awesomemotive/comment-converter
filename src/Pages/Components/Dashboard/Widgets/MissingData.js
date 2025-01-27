@@ -35,19 +35,19 @@ export const MissingData = () => {
 					width="197"
 				/>
 				<h2 className="text-primaryText text-[28px] font-bold tracking-[-0.03em] mb-4">
-					{__('Where’s all the data?', 'comment-notifications')}
+					{__('Where’s all the data?', 'subscribe-to-comment-notifications-comment-converter')}
 				</h2>
 				<p className="w-[500px] text-primaryText100 text-xl leading-7 font-normal mb-4">
 					{__(
 						'As you grow your followers, this dashboard will fill with proof of your growth.',
-						'comment-notifications'
+						'subscribe-to-comment-notifications-comment-converter'
 					)}
 				</p>
 				<hr className="border border-neutral40 w-[510px] mb-4" />
 				<p className={infoTextClass}>
 					{__(
-						'Here are a few ways you can take action on getting your first follower today:',
-						'comment-notifications'
+						'Here are a few ways you can take action on getting your first follower:',
+						'subscribe-to-comment-notifications-comment-converter'
 					)}
 				</p>
 				<ul className={listClass}>
@@ -58,7 +58,10 @@ export const MissingData = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							{__('How To Get WordPress Comments', 'comment-notifications')}
+							{__(
+								'How To Get WordPress Comments',
+								'subscribe-to-comment-notifications-comment-converter'
+							)}
 						</TextLink>
 					</li>
 					<li>
@@ -68,7 +71,10 @@ export const MissingData = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							{__('Is Commenting Still Effective?', 'comment-notifications')}
+							{__(
+								'Is Commenting Still Effective?',
+								'subscribe-to-comment-notifications-comment-converter'
+							)}
 						</TextLink>
 					</li>
 					<li>
@@ -78,7 +84,10 @@ export const MissingData = () => {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							{__('The Experts Guide to Getting More Blog Comments', 'comment-notifications')}
+							{__(
+								'The Experts Guide to Getting More Blog Comments',
+								'subscribe-to-comment-notifications-comment-converter'
+							)}
 						</TextLink>
 					</li>
 				</ul>

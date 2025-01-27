@@ -6,13 +6,13 @@
  * @author  Comment Converter Team
  *
  * @wordpress-plugin
- * Plugin Name: Comment Notifications
+ * Plugin Name: Comment Notifications - Get Visitors to Subscribe to Comments AND Your Email List!
  * Plugin URI:  https://commentconverter.com
  * Description: The simplest, most effective WordPress comment notifications plugin, enabling visitors to subscribe to comment replies and your email list in just one click.
  * Author:      Comment Converter Team
- * Version:     1.0.0
- * Text Domain: comment-notifications
- * Domain Path: languages
+ * Version:     0.9.1
+ * Text Domain: subscribe-to-comment-notifications-comment-converter
+ * Domain Path: /languages
  * License: GPLv2 or later
  *
  * Requires at least:    6.2
@@ -102,12 +102,12 @@ class CommentConverterLoader {
 
 			if ( in_array( 'wp', $this->failed_requirements, true ) ) {
 				/* translators: %1$s - WordPress Admin URL. And Comment Converter is the name of the plugin. */
-				wp_die( wp_kses_post( sprintf( __( 'Sorry, but your version of WordPress does not meet Comment Converter\'s required version of <strong>6.0</strong> to run properly. The plugin has been deactivated. <a href="%1$s">Click here to return to the Dashboard</a>.', 'comment-notifications' ), esc_url( admin_url() ) ) ) );
+				wp_die( wp_kses_post( sprintf( __( 'Sorry, but your version of WordPress does not meet Comment Converter\'s required version of <strong>6.0</strong> to run properly. The plugin has been deactivated. <a href="%1$s">Click here to return to the Dashboard</a>.', 'subscribe-to-comment-notifications-comment-converter' ), esc_url( admin_url() ) ) ) );
 			}
 
 			if ( in_array( 'php', $this->failed_requirements, true ) ) {
 				/* translators: %1$s - WordPress Admin URL. And Comment Converter is the name of the plugin. */
-				wp_die( wp_kses_post( sprintf( __( 'Sorry, but the version of PHP that you site is running does not meet Comment Converter\'s required version of <strong>7.4</strong> to run properly. The plugin has been deactivated. <a href="%1$s">Click here to return to the Dashboard</a>.', 'comment-notifications' ), esc_url( admin_url() ) ) ) );
+				wp_die( wp_kses_post( sprintf( __( 'Sorry, but the version of PHP that you site is running does not meet Comment Converter\'s required version of <strong>7.4</strong> to run properly. The plugin has been deactivated. <a href="%1$s">Click here to return to the Dashboard</a>.', 'subscribe-to-comment-notifications-comment-converter' ), esc_url( admin_url() ) ) ) );
 			}
 		}
 
@@ -150,7 +150,7 @@ class CommentConverterLoader {
 	 * @return void
 	 */
 	public function load_plugin_textdomain() {
-		$domain = 'comment-notifications';
+		$domain = 'subscribe-to-comment-notifications-comment-converter';
 
 		// phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 		$locale = apply_filters( 'plugin_locale', get_locale(), $domain );
@@ -221,7 +221,7 @@ class CommentConverterLoader {
 				<p>
 					<?php
 						/* translators: Comment Converter is the name of the plugin. */
-						echo wp_kses_post( __( 'Sorry, but your version of WordPress does not meet Comment Converter\'s required version of <strong>6.0</strong> to run properly.', 'comment-notifications' ) );
+						echo wp_kses_post( __( 'Sorry, but your version of WordPress does not meet Comment Converter\'s required version of <strong>6.0</strong> to run properly.', 'subscribe-to-comment-notifications-comment-converter' ) );
 					?>
 				</p>
 			</div>
@@ -234,7 +234,7 @@ class CommentConverterLoader {
 				<p>
 					<?php
 						/* translators: Comment Converter is the name of the plugin. */
-						echo wp_kses_post( __( 'Sorry, but the version of PHP that you site is running does not meet Comment Converter\'s required version of <strong>7.4</strong> to run properly.', 'comment-notifications' ) );
+						echo wp_kses_post( __( 'Sorry, but the version of PHP that you site is running does not meet Comment Converter\'s required version of <strong>7.4</strong> to run properly.', 'subscribe-to-comment-notifications-comment-converter' ) );
 					?>
 				</p>
 			</div>

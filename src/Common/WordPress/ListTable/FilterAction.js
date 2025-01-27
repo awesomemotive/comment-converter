@@ -10,7 +10,7 @@ export function FilterAction(props) {
 		<div className="flex items-center gap-x-1.5">
 			<SelectInput
 				className="min-w-[120px]"
-				label={__('Filter by date', 'comment-notifications')}
+				label={__('Filter by date', 'subscribe-to-comment-notifications-comment-converter')}
 				labelHidden={true}
 				name="filter_date_action"
 				value={dateFilterControl.value}
@@ -21,7 +21,7 @@ export function FilterAction(props) {
 			{typeFilterControl.options.length ? (
 				<SelectInput
 					className="min-w-[120px]"
-					label={__('Filter by type', 'comment-notifications')}
+					label={__('Filter by type', 'subscribe-to-comment-notifications-comment-converter')}
 					labelHidden={true}
 					name="filter_action"
 					value={typeFilterControl.value}
@@ -31,7 +31,7 @@ export function FilterAction(props) {
 				/>
 			) : null}
 			<SecondaryButton onClick={onFilter} size="small">
-				{__('Filter', 'comment-notifications')}
+				{__('Filter', 'subscribe-to-comment-notifications-comment-converter')}
 			</SecondaryButton>
 		</div>
 	);

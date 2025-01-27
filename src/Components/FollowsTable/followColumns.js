@@ -18,33 +18,33 @@ export const columns = {
 const columnDefinitions = {
 	[columns.FOLLOWER]: {
 		slug: columns.FOLLOWER,
-		label: __('Follower', 'comment-notifications'),
+		label: __('Follower', 'subscribe-to-comment-notifications-comment-converter'),
 		sortable: true,
 		classes: 'w-[400px]',
 	},
-	[columns.FOLLOWED_FROM]: __('Followed From', 'comment-notifications'),
-	[columns.COMMENT]: __('Comment', 'comment-notifications'),
+	[columns.FOLLOWED_FROM]: __('Followed From', 'subscribe-to-comment-notifications-comment-converter'),
+	[columns.COMMENT]: __('Comment', 'subscribe-to-comment-notifications-comment-converter'),
 	[columns.FOLLOW_TYPE]: {
 		slug: columns.FOLLOW_TYPE,
-		label: __('Follow Type', 'comment-notifications'),
+		label: __('Follow Type', 'subscribe-to-comment-notifications-comment-converter'),
 		sortable: true,
 		classes: 'w-[230px]',
 	},
 	[columns.CREATED]: {
 		slug: columns.CREATED,
-		label: __('Followed On', 'comment-notifications'),
+		label: __('Followed On', 'subscribe-to-comment-notifications-comment-converter'),
 		sortable: true,
 		classes: 'w-[200px]',
 	},
 	[columns.HAS_SUBSCRIBED]: {
 		slug: columns.HAS_SUBSCRIBED,
-		label: __('Subscriber', 'comment-notifications'),
+		label: __('Subscriber', 'subscribe-to-comment-notifications-comment-converter'),
 		sortable: true,
 		classes: 'w-[100px]',
 	},
 	[columns.ACTION]: {
 		slug: columns.ACTION,
-		label: __('Action', 'comment-notifications'),
+		label: __('Action', 'subscribe-to-comment-notifications-comment-converter'),
 		classes: 'w-[60px]',
 	},
 };
@@ -148,7 +148,7 @@ export function buildTableRowData(follow, columnSlugs, handlers) {
 							rel="noopener noreferrer"
 							size="small"
 						>
-							{__('View Comment', 'comment-notifications')}
+							{__('View Comment', 'subscribe-to-comment-notifications-comment-converter')}
 						</TextLinkButton>
 					</div>
 				);
@@ -158,7 +158,7 @@ export function buildTableRowData(follow, columnSlugs, handlers) {
 						<FollowTypeSelectInput
 							className="w-[190px]"
 							commentId={follow.comment_id}
-							label={__('Follow Type', 'comment-notifications')}
+							label={__('Follow Type', 'subscribe-to-comment-notifications-comment-converter')}
 							labelHidden={true}
 							id={follow.id}
 							name="type"
@@ -174,7 +174,7 @@ export function buildTableRowData(follow, columnSlugs, handlers) {
 						<span
 							className="text-xs text-primaryText200"
 							key={`created-${follow.id}`}
-							title={__('Created at this date.', 'comment-notifications')}
+							title={__('Created at this date.', 'subscribe-to-comment-notifications-comment-converter')}
 						>
 							{createdFormatted || created}
 						</span>
@@ -185,16 +185,26 @@ export function buildTableRowData(follow, columnSlugs, handlers) {
 					<span className="text-xs text-primaryText200" key={`created-${follow.id}`}>
 						{!follow.confirmed ? (
 							<>
-								<span title={__('Created at this date.', 'comment-notifications')}>
+								<span
+									title={__(
+										'Created at this date.',
+										'subscribe-to-comment-notifications-comment-converter'
+									)}
+								>
 									{createdFormatted || created}
 								</span>
 
 								<TextLinkButton size="small" onClick={handleConfirmClick}>
-									{__('Confirm', 'comment-notifications')}
+									{__('Confirm', 'subscribe-to-comment-notifications-comment-converter')}
 								</TextLinkButton>
 							</>
 						) : (
-							<span title={__('Confirmed at this date.', 'comment-notifications')}>
+							<span
+								title={__(
+									'Confirmed at this date.',
+									'subscribe-to-comment-notifications-comment-converter'
+								)}
+							>
 								{confirmedFormatted || confirmed}
 							</span>
 						)}
@@ -203,7 +213,9 @@ export function buildTableRowData(follow, columnSlugs, handlers) {
 			case columns.HAS_SUBSCRIBED:
 				return (
 					<span className="text-xs text-primaryBlue" key={`subscribed-${follow.id}`}>
-						{hasSubscribed ? __('Yes', 'comment-notifications') : __('No', 'comment-notifications')}
+						{hasSubscribed
+							? __('Yes', 'subscribe-to-comment-notifications-comment-converter')
+							: __('No', 'subscribe-to-comment-notifications-comment-converter')}
 					</span>
 				);
 			case columns.ACTION:

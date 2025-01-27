@@ -159,7 +159,7 @@ class VariableReplacer {
 	public function get_follow() {
 		if ( ! isset( $this->follow ) ) {
 			// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
-			throw new \Exception( __( 'Follow not set.', 'comment-notifications' ) );
+			throw new \Exception( __( 'Follow not set.', 'subscribe-to-comment-notifications-comment-converter' ) );
 		}
 
 		return $this->follow;
@@ -199,7 +199,7 @@ class VariableReplacer {
 		}
 
 		// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
-		throw new \Exception( __( 'Post not set.', 'comment-notifications' ) );
+		throw new \Exception( __( 'Post not set.', 'subscribe-to-comment-notifications-comment-converter' ) );
 	}
 
 	/**
@@ -236,6 +236,6 @@ class VariableReplacer {
 		}
 
 		// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
-		throw new \Exception( __( 'Follower not set.', 'comment-notifications' ) );
+		throw new \Exception( __( 'Follower not set.', 'subscribe-to-comment-notifications-comment-converter' ) );
 	}
 }

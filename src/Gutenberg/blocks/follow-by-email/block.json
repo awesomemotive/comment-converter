@@ -5,7 +5,7 @@
 	"name": "comment-converter/follow-by-email",
 	"description": "Share a link to let visitors follow comments without needing to leave a comment themselves.",
 	"keywords": ["comments", "newsletter", "optin", "form", "subscribe", "subscribe to comments", "follow comments", "comment converter", "convert comments", "optinmonster", "commenting", "comment"],
-	"version": "1.0.0",
+	"version": "0.9.1",
 	"category": "widgets",
 	"icon": "file:../../../../assets/logos/comment-converter-white-logomark.svg",
 	"textdomain": "comment-notifications",

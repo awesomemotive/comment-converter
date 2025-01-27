@@ -41,7 +41,7 @@ class UploadController extends BaseController {
 			$data = $request->get_file_params();
 
 			if ( empty( $data['file'] ) ) {
-				throw new InvalidParamException( esc_html__( 'Missing file parameter.', 'comment-notifications' ) );
+				throw new InvalidParamException( esc_html__( 'Missing file parameter.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			$file = $data['file'];
@@ -55,19 +55,19 @@ class UploadController extends BaseController {
 			$file_info = wp_check_filetype( basename( $file['name'] ), $allowed_mimes );
 
 			if ( empty( $file_info['type'] ) ) {
-				throw new InvalidParamException( esc_html__( 'Invalid image file.', 'comment-notifications' ) );
+				throw new InvalidParamException( esc_html__( 'Invalid image file.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			// Validate image size.
 			$max_size = 5 * MB_IN_BYTES;
 			if ( $file['size'] > $max_size ) {
-				throw new InvalidParamException( esc_html__( 'Image file size exceeds the maximum limit of 5MB.', 'comment-notifications' ) );
+				throw new InvalidParamException( esc_html__( 'Image file size exceeds the maximum limit of 5MB.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			$path = $this->get_param( $request, 'path', 'key' );
 
 			if ( empty( $path ) ) {
-				throw new InvalidParamException( esc_html__( 'Missing path parameter.', 'comment-notifications' ) );
+				throw new InvalidParamException( esc_html__( 'Missing path parameter.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			$upload_dir    = wp_upload_dir();
@@ -75,7 +75,7 @@ class UploadController extends BaseController {
 
 			wp_mkdir_p( $dir_full_path );
 			if ( ! is_dir( $dir_full_path ) ) {
-				throw new RestApiException( esc_html__( 'Upload directory could be be created. ', 'comment-notifications' ) );
+				throw new RestApiException( esc_html__( 'Upload directory could be be created. ', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			// Disable the default form data check.
@@ -83,7 +83,7 @@ class UploadController extends BaseController {
 			$file_data = wp_handle_upload( $file, $overrides );
 
 			if ( isset( $file_data['error'] ) ) {
-				throw new RestApiException( esc_html__( 'File could not be uploaded.', 'comment-notifications' ) );
+				throw new RestApiException( esc_html__( 'File could not be uploaded.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			$url = $file_data['url'];

@@ -132,7 +132,7 @@ class ListTables {
 	 * @return array The updated columns.
 	 */
 	public function add_follows_column( $columns ) {
-		$columns[ self::FOLLOW_COLUMN_NAME ] = __( 'Follows', 'comment-notifications' );
+		$columns[ self::FOLLOW_COLUMN_NAME ] = __( 'Follows', 'subscribe-to-comment-notifications-comment-converter' );
 		return $columns;
 	}
 
@@ -152,7 +152,7 @@ class ListTables {
 				$count,
 				array( 'post_id' => $post_id ),
 				/* translators: %s is replaced with the number of active follows. */
-				sprintf( _n( 'This post has %s active follow', 'This post has %s active follows', $count, 'comment-notifications' ), $count )
+				sprintf( _n( 'This post has %s active follow', 'This post has %s active follows', $count, 'subscribe-to-comment-notifications-comment-converter' ), $count )
 			);
 		}
 	}
@@ -254,7 +254,7 @@ class ListTables {
 				$count,
 				array( 'comment_id' => $comment_id ),
 				/* translators: %s is replaced with the number of active follows. */
-				sprintf( _n( 'This comment has %s active follow', 'This comment has %s active follows', $count, 'comment-notifications' ), $count )
+				sprintf( _n( 'This comment has %s active follow', 'This comment has %s active follows', $count, 'subscribe-to-comment-notifications-comment-converter' ), $count )
 			);
 		}
 	}
@@ -318,7 +318,7 @@ class ListTables {
 		$url = Urls::internal_admin( 'followers', $args );
 
 		echo sprintf(
-			'<a href="%s" target="_blank" title="%s"><span class="ccvtr-follow-badge">%s</span></a>',
+			'<a href="%s" target="_blank" title="%s" class="ccvtr-follow-badge-column"><span class="ccvtr-follow-badge">%s</span></a>',
 			esc_url( $url ),
 			esc_attr( $title ),
 			esc_html( $count )

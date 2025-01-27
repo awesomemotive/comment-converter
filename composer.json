@@ -1,5 +1,5 @@
 {
-	"name": "awesomemotive/comment-converter-plugin",
+	"name": "awesomemotive/subscribe-to-comment-notifications-comment-converter",
 	"description": "Plugin to help you sell to new and existing commenters on your WordPress site.",
 	"type": "wordpress-plugin",
 	"require": {
@@ -8,7 +8,8 @@
 	"require-dev": {
 		"php": ">=7.0.0",
 		"10up/wp_mock": "^0.4.2",
-		"awesomemotive/am-cli-tools": "1.4.3",
+		"awesomemotive/am-cli-tools": "^1.4.6",
+		"awesomemotive/optinmonster-coding-standards": "^1.0",
 		"jtsternberg/phpunit-helper-assertions": ">=0.3.1",
 		"phpspec/phpspec": "^6.3.0",
 		"phpunit/phpunit": "^9.0.0",
@@ -16,12 +17,6 @@
 		"yoast/wp-test-utils": "^1.1"
 	},
 	"scripts": {
-		"phplint": [
-			"./bin/phplint --standard=./phpcs.xml.dist"
-		],
-		"phpcs": [
-			"./bin/phpcsfiles.sh"
-		],
 		"tests": [
 			"clear;echo \"Run Unit Tests:\n\";./bin/phpunit -v && echo \"\nRun Spec Tests:\n\"; ./bin/phpspec run -vvv"
 		]
@@ -30,6 +25,10 @@
 		{
 			"type": "vcs",
 			"url": "https://github.com/awesomemotive/am-cli-tools"
+		},
+		{
+			"type": "vcs",
+			"url": "https://github.com/awesomemotive/optinmonster-coding-standards"
 		}
 	],
 	"config": {

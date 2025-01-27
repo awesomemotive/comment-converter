@@ -3,23 +3,23 @@ import { __ } from '@wordpress/i18n';
 export const allBulkActionOptions = [
 	{
 		value: 'confirm',
-		label: __('Confirm', 'comment-notifications'),
+		label: __('Confirm', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		value: 'follow-all',
-		label: __('Switch to Follow All Comments', 'comment-notifications'),
+		label: __('Switch to Follow All Comments', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		value: 'follow-replies',
-		label: __('Switch to Follow Only Replies', 'comment-notifications'),
+		label: __('Switch to Follow Only Replies', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		value: 'delete',
-		label: __('Delete', 'comment-notifications'),
+		label: __('Delete', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		value: 'unsubscribe',
-		label: __('Unsubscribe', 'comment-notifications'),
+		label: __('Unsubscribe', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 ];
 export const singleOptInBulkActionOptions = allBulkActionOptions.filter((action) => 'confirm' !== action.value);
@@ -27,19 +27,19 @@ export const singleOptInBulkActionOptions = allBulkActionOptions.filter((action)
 export const allFilterOptions = [
 	{
 		value: '',
-		label: __('All', 'comment-notifications'),
+		label: __('All', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		value: 'pending',
-		label: __('Pending', 'comment-notifications'),
+		label: __('Pending', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		value: 'confirmed',
-		label: __('Confirmed', 'comment-notifications'),
+		label: __('Confirmed', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	// {
 	// 	value: 'subscribed',
-	// 	label: __('Subscribed', 'comment-notifications'),
+	// 	label: __('Subscribed', 'subscribe-to-comment-notifications-comment-converter'),
 	// },
 ];
 export const singleOptInFilterOptions = [];
@@ -47,37 +47,37 @@ export const singleOptInFilterOptions = [];
 export const dateFilterOptions = [
 	{
 		value: '',
-		label: __('All Time', 'comment-notifications'),
+		label: __('All Time', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		value: 'last-7-days',
-		label: __('Last 7 Days', 'comment-notifications'),
+		label: __('Last 7 Days', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		value: 'last-30-days',
-		label: __('Last 30 Days', 'comment-notifications'),
+		label: __('Last 30 Days', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 ];
 
 export const followerActions = [
 	{
 		slug: 'view-follows',
-		label: __('View Follows', 'comment-notifications'),
+		label: __('View Follows', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		slug: 'send-email',
-		label: __('Send Email', 'comment-notifications'),
+		label: __('Send Email', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		slug: 'edit',
-		label: __('Edit', 'comment-notifications'),
+		label: __('Edit', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		slug: 'follow-all',
-		label: __('Follow All Comments', 'comment-notifications'),
+		label: __('Follow All Comments', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 	{
 		slug: 'follow-replies',
-		label: __('Follow Only Replies', 'comment-notifications'),
+		label: __('Follow Only Replies', 'subscribe-to-comment-notifications-comment-converter'),
 	},
 ];

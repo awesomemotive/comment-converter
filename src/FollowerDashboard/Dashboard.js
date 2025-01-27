@@ -205,20 +205,17 @@ export const Dashboard = (props) => {
 			<StyledWhiteBox className="!shadow-none">
 				<OutputMessage className="w-full mb-4" />
 				<div className="flex flex-col mb-[30px]">
-					<h1 className="mx-0 mt-0 mb-5 text-2xl font-bold text-black">
-						{__('Follower Dashboard', 'comment-notifications')}
-					</h1>
 					<p className="text-base font-normal text-black">
 						{__(
 							'Manage your follower settings including name, email notifications, and how often you receive updates.',
-							'comment-notifications'
+							'subscribe-to-comment-notifications-comment-converter'
 						)}
 					</p>
 				</div>
 				<FollowerForm data={data} onSave={handleSaveSettings} submissionStatus={updateFollowerResult} />
 				<hr className="w-full my-[52px] text-[#abb7ce] before:content-none after:content-none" />
 				<h2 className="mx-0 mt-0 mb-4 text-lg font-semibold text-black">
-					{__('Followed Comments', 'comment-notifications')}
+					{__('Followed Comments', 'subscribe-to-comment-notifications-comment-converter')}
 				</h2>
 				<div className="w-full">
 					<FollowsTable

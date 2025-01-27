@@ -20,5 +20,5 @@ export const parseErrorResponse = (error) => {
 		return error.error;
 	}
 
-	return __('An error occurred.', 'comment-notifications');
+	return __('An error occurred.', 'subscribe-to-comment-notifications-comment-converter');
 };

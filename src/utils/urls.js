@@ -66,8 +66,7 @@ export const upgrade = (utmArgs = {}) => {
 
 	const wpfParams = `wpf14180386_1|first=${user.first}&wpf14180386_1|last=${user.last}&wpf14180386_2=${user.email}&wpf14180386_3=${user.domain}`;
 
-	// For the future: https://www.commentconverter.com/lite-upgrade?utm_source=plugin&utm_medium=admin-notices&utm_campaign=upgrade&utm_content=Welcome-Upsell-Box
-	return marketing(`early-access?${utmParams}&${wpfParams}`);
+	return `${adminBaseUrl}admin.php?page=comment-converter-upgrade&${utmParams}&${wpfParams}`;
 };
 
 export const video = {

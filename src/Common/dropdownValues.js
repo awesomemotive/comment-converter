@@ -8,9 +8,9 @@ import { ReactComponent as PersonCheck } from '../../assets/badge-icons/person-c
 import { ReactComponent as PersonPlus } from '../../assets/badge-icons/person-plus.svg';
 
 export const notificationFrequencyOptions = [
-	{ value: 'immediately', label: __('Immediately', 'comment-notifications') },
-	{ value: 'daily', label: __('Daily', 'comment-notifications') },
-	{ value: 'weekly', label: __('Weekly', 'comment-notifications') },
+	{ value: 'immediately', label: __('Immediately', 'subscribe-to-comment-notifications-comment-converter') },
+	{ value: 'daily', label: __('Daily', 'subscribe-to-comment-notifications-comment-converter') },
+	{ value: 'weekly', label: __('Weekly', 'subscribe-to-comment-notifications-comment-converter') },
 ];
 
 export const FOLLOW_TYPE_COMMENT_REPLIES = 'replies';
@@ -18,9 +18,18 @@ export const FOLLOW_TYPE_ALL_COMMENTS = 'all';
 export const FOLLOW_TYPE_NO_FOLLOW = 'no';
 
 export const followTypeOptions = [
-	{ value: FOLLOW_TYPE_ALL_COMMENTS, label: __('Follow All Comments', 'comment-notifications') },
-	{ value: FOLLOW_TYPE_COMMENT_REPLIES, label: __('Follow Replies Only', 'comment-notifications') },
-	{ value: FOLLOW_TYPE_NO_FOLLOW, label: __('Do Not Follow', 'comment-notifications') },
+	{
+		value: FOLLOW_TYPE_ALL_COMMENTS,
+		label: __('Follow All Comments', 'subscribe-to-comment-notifications-comment-converter'),
+	},
+	{
+		value: FOLLOW_TYPE_COMMENT_REPLIES,
+		label: __('Follow Replies Only', 'subscribe-to-comment-notifications-comment-converter'),
+	},
+	{
+		value: FOLLOW_TYPE_NO_FOLLOW,
+		label: __('Do Not Follow', 'subscribe-to-comment-notifications-comment-converter'),
+	},
 ];
 
 export const getPostTypeOptions = () => dropdownValues.post_types;

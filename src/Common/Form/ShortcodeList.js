@@ -6,39 +6,42 @@ import { Tooltip } from '../Tooltip/Tooltip';
 const shortcodes = [
 	[
 		'[Post_Title]',
-		__('Post Title', 'comment-notifications'),
+		__('Post Title', 'subscribe-to-comment-notifications-comment-converter'),
 		'[Post_Title] ' +
-			__('Displays the post title and links to the post on the front end of the site', 'comment-notifications'),
+			__(
+				'Displays the post title and links to the post on the front end of the site',
+				'subscribe-to-comment-notifications-comment-converter'
+			),
 	],
 	/* [
 		'[Comment_Author]',
-		__('Comment Author', 'comment-notifications'),
-		'[Comment_Author] ' + __('Displays the comment author’s name', 'comment-notifications'),
+		__('Comment Author', 'subscribe-to-comment-notifications-comment-converter'),
+		'[Comment_Author] ' + __('Displays the comment author’s name', 'subscribe-to-comment-notifications-comment-converter'),
 	],
 	[
 		'[Comment_Content]',
-		__('Comment Content', 'comment-notifications'),
-		'[Comment_Content] ' + __('Displays the content of the comment', 'comment-notifications'),
+		__('Comment Content', 'subscribe-to-comment-notifications-comment-converter'),
+		'[Comment_Content] ' + __('Displays the content of the comment', 'subscribe-to-comment-notifications-comment-converter'),
 	],
 	[
 		'[View_Comment]',
-		__('View Comment', 'comment-notifications'),
-		'[View_Comment] ' + __('Text link “View Comment” that links directly to the comment', 'comment-notifications'),
+		__('View Comment', 'subscribe-to-comment-notifications-comment-converter'),
+		'[View_Comment] ' + __('Text link “View Comment” that links directly to the comment', 'subscribe-to-comment-notifications-comment-converter'),
 	],
 	[
 		'[Reply_To_Comment]',
-		__('Reply To Comment', 'comment-notifications'),
-		'[Reply_To_Comment] ' + __('Links to Reply to permalink', 'comment-notifications'),
+		__('Reply To Comment', 'subscribe-to-comment-notifications-comment-converter'),
+		'[Reply_To_Comment] ' + __('Links to Reply to permalink', 'subscribe-to-comment-notifications-comment-converter'),
 	],
 	[
 		'[Manage_Subscriptions]',
-		__('Manage Subscriptions', 'comment-notifications'),
-		'[Manage_Subscriptions] ' + __('Links to the follower’s Dashboard on the website', 'comment-notifications'),
+		__('Manage Subscriptions', 'subscribe-to-comment-notifications-comment-converter'),
+		'[Manage_Subscriptions] ' + __('Links to the follower’s Dashboard on the website', 'subscribe-to-comment-notifications-comment-converter'),
 	],
 	[
 		'[Unsubscribe]',
-		__('Unsubscribe', 'comment-notifications'),
-		'[Unsubscribe] ' + __('Enables the follower to unsubscribe from notifications', 'comment-notifications'),
+		__('Unsubscribe', 'subscribe-to-comment-notifications-comment-converter'),
+		'[Unsubscribe] ' + __('Enables the follower to unsubscribe from notifications', 'subscribe-to-comment-notifications-comment-converter'),
 	], */
 ];
 
@@ -57,7 +60,7 @@ function ShortcodeListItem({ variable, title, description }) {
 			{copied ? (
 				<IconCheck2 className="w-[13px] h-[13px] text-primaryGreen" />
 			) : (
-				<Tooltip content={__('Copy To Clipboard', 'comment-notifications')}>
+				<Tooltip content={__('Copy To Clipboard', 'subscribe-to-comment-notifications-comment-converter')}>
 					<span>
 						<IconDuplicate
 							className="w-[13px] h-[13px] text-primaryBlue cursor-pointer"

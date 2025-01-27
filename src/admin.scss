@@ -14,7 +14,6 @@
 	}
 
 	li.current a {
-
 		&:hover {
 			color: $primary-yellow-300;
 		}
@@ -23,19 +22,26 @@
 	}
 }
 
+.ccvtr-follow-badge-column {
+	&:focus {
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+
 .ccvtr-follow-badge {
 	background-color: $primary-yellow-300;
 	background-image: url(../assets/badge-icons/white-logo.svg);
-	background-size: 10px 10px;
+	background-size: 15px 15px;
 	background-repeat: no-repeat;
-	background-position: left 3px top 50%;
+	background-position: left 5px top 50%;
 
 	display: inline-flex;
 	align-items: center;
 
 	color: $primary-text-300;
-	padding: 3px 3px 3px 16px;
-	border-radius: 2px;
+	padding: 8px 10px 8px 25px;
+	border-radius: 3px;
 	font-size: 12px;
 	font-weight: 700;
 	line-height: 1;

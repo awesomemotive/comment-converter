@@ -21,33 +21,29 @@ export const GettingStarted = () => {
 						features={comingSoonFeatures}
 						ctaButton={
 							<SecondaryButton as="a" size="xlarge" href={urls.marketing('features')} target="_blank">
-								{__('See All Features', 'comment-notifications')}
+								{__('See All Features', 'subscribe-to-comment-notifications-comment-converter')}
 							</SecondaryButton>
 						}
 						subtitle={
 							<>
 								{__(
 									'We’re making comments cool again with all these solutions for growing your community…',
-									'comment-notifications'
+									'subscribe-to-comment-notifications-comment-converter'
 								)}
 								<br />
 								{__(
 									'and even more coming soon in Comment Converter Pro!',
-									'comment-notifications'
+									'subscribe-to-comment-notifications-comment-converter'
 								)}
 							</>
 						}
-						title={
-							<>
-								{__('Coming Soon Features', 'comment-notifications')}
-							</>
-						}
+						title={<>{__('Coming Soon In Pro', 'subscribe-to-comment-notifications-comment-converter')}</>}
 					/>
 				</div>
 
 				<div className="w-full mb-6">
 					<Upgrade
-						title={__('Upgrade to Pro', 'comment-notifications')}
+						title={__('Upgrade to Pro', 'subscribe-to-comment-notifications-comment-converter')}
 						features={proFeatures.map((f) => f.title)}
 					/>
 				</div>

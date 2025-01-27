@@ -70,14 +70,14 @@ class Settings {
 			),
 
 			'comment_form' => array(
-				'follower_dashboard_link_text'     => __( 'Manage Followed Comments', 'comment-notifications' ),
-				'notification_after_commenting'    => __( 'Would you like to be notified by email when someone replies to this comment?', 'comment-notifications' ),
-				'notification_after_following_single_opt_in' => __( 'Thank you for following this discussion.', 'comment-notifications' ),
-				'notification_after_following_double_opt_in' => __( 'Thank you for requesting to follow this discussion. To confirm your request, please click the confirmation link in the email we just sent to your inbox.', 'comment-notifications' ),
-				'notification_after_subscribing'   => __( 'Thank you for subscribing to our newsletter. Please check your email for your next steps.', 'comment-notifications' ),
-				'notification_after_following_and_subscribing_single_opt_in' => __( 'Thank you for following this discussion, and for joining our newsletter.', 'comment-notifications' ),
-				'notification_after_following_and_subscribing_double_opt_in' => __( 'Thank you for requesting to follow this discussion, and for joining our newsletter. To confirm your request, please click the confirmation link in the email we just sent to your inbox.', 'comment-notifications' ),
-				'notification_after_unsubscribing' => __( 'You are no longer following this comment/replies at [Post_Title].', 'comment-notifications' ),
+				'follower_dashboard_link_text'     => __( 'Manage Followed Comments', 'subscribe-to-comment-notifications-comment-converter' ),
+				'notification_after_commenting'    => __( 'Would you like to be notified by email when someone replies to this comment?', 'subscribe-to-comment-notifications-comment-converter' ),
+				'notification_after_following_single_opt_in' => __( 'Thank you for following this discussion.', 'subscribe-to-comment-notifications-comment-converter' ),
+				'notification_after_following_double_opt_in' => __( 'Thank you for requesting to follow this discussion. To confirm your request, please click the confirmation link in the email we just sent to your inbox.', 'subscribe-to-comment-notifications-comment-converter' ),
+				'notification_after_subscribing'   => __( 'Thank you for subscribing to our newsletter. Please check your email for your next steps.', 'subscribe-to-comment-notifications-comment-converter' ),
+				'notification_after_following_and_subscribing_single_opt_in' => __( 'Thank you for following this discussion, and for joining our newsletter.', 'subscribe-to-comment-notifications-comment-converter' ),
+				'notification_after_following_and_subscribing_double_opt_in' => __( 'Thank you for requesting to follow this discussion, and for joining our newsletter. To confirm your request, please click the confirmation link in the email we just sent to your inbox.', 'subscribe-to-comment-notifications-comment-converter' ),
+				'notification_after_unsubscribing' => __( 'You are no longer following this comment/replies at [Post_Title].', 'subscribe-to-comment-notifications-comment-converter' ),
 			),
 		);
 	}

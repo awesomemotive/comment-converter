@@ -51,7 +51,7 @@ class AMPlugins {
 					'class'  => 'optinmonster',
 					'check'  => array( 'class' => 'OMAPI' ),
 					'name'   => 'OptinMonster',
-					'desc'   => __( 'Instantly get more subscribers, leads, and sales with the #1 conversion optimization toolkit. Create high converting popups, announcement bars, spin a wheel, and more with smart targeting and personalization.', 'comment-notifications' ),
+					'desc'   => __( 'Instantly get more subscribers, leads, and sales with the #1 conversion optimization toolkit. Create high converting popups, announcement bars, spin a wheel, and more with smart targeting and personalization.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/optinmonster.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -66,7 +66,7 @@ class AMPlugins {
 					'class'  => 'wpforms-litewpformsphp',
 					'check'  => array( 'function' => 'wpforms' ),
 					'name'   => 'WPForms',
-					'desc'   => __( 'The best drag & drop WordPress form builder. Easily create beautiful contact forms, surveys, payment forms, and more with our 1300+ form templates. Trusted by over 6 million websites as the best forms plugin.', 'comment-notifications' ),
+					'desc'   => __( 'The best drag & drop WordPress form builder. Easily create beautiful contact forms, surveys, payment forms, and more with our 1300+ form templates. Trusted by over 6 million websites as the best forms plugin.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/wpforms-lite.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -81,7 +81,7 @@ class AMPlugins {
 					'class'  => 'google-analytics-for-wordpressgoogleanalyticsphp',
 					'check'  => array( 'function' => 'MonsterInsights' ),
 					'name'   => 'MonsterInsights',
-					'desc'   => __( 'The leading WordPress analytics plugin that shows you how people find and use your website, so you can make data driven decisions to grow your business. Properly set up Google Analytics without writing code.', 'comment-notifications' ),
+					'desc'   => __( 'The leading WordPress analytics plugin that shows you how people find and use your website, so you can make data driven decisions to grow your business. Properly set up Google Analytics without writing code.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -96,7 +96,7 @@ class AMPlugins {
 					'class'  => 'wp-mail-smtpwp-mail-smtpphp',
 					'check'  => array( 'function' => 'wp_mail_smtp' ),
 					'name'   => 'WP Mail SMTP',
-					'desc'   => __( 'Improve your WordPress email deliverability and make sure that your website emails reach user’s inbox with the #1 SMTP plugin for WordPress. Over 3 million websites use it to fix WordPress email issues.', 'comment-notifications' ),
+					'desc'   => __( 'Improve your WordPress email deliverability and make sure that your website emails reach user’s inbox with the #1 SMTP plugin for WordPress. Over 3 million websites use it to fix WordPress email issues.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/wp-mail-smtp.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -116,7 +116,7 @@ class AMPlugins {
 						),
 					),
 					'name'   => 'AIOSEO',
-					'desc'   => __( 'The original WordPress SEO plugin and toolkit that improves your website’s search rankings. Comes with all the SEO features like Local SEO, WooCommerce SEO, sitemaps, SEO optimizer, schema, and more.', 'comment-notifications' ),
+					'desc'   => __( 'The original WordPress SEO plugin and toolkit that improves your website’s search rankings. Comes with all the SEO features like Local SEO, WooCommerce SEO, sitemaps, SEO optimizer, schema, and more.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/all-in-one-seo-pack.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -136,7 +136,7 @@ class AMPlugins {
 						),
 					),
 					'name'   => 'SeedProd',
-					'desc'   => __( 'The fastest drag & drop landing page builder for WordPress. Create custom landing pages without writing code, connect them with your CRM, collect subscribers, and grow your audience. Trusted by 1 million sites.', 'comment-notifications' ),
+					'desc'   => __( 'The fastest drag & drop landing page builder for WordPress. Create custom landing pages without writing code, connect them with your CRM, collect subscribers, and grow your audience. Trusted by 1 million sites.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/coming-soon.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -156,7 +156,7 @@ class AMPlugins {
 						),
 					),
 					'name'   => 'RafflePress',
-					'desc'   => __( 'Turn your website visitors into brand ambassadors! Easily grow your email list, website traffic, and social media followers with the most powerful giveaways & contests plugin for WordPress.', 'comment-notifications' ),
+					'desc'   => __( 'Turn your website visitors into brand ambassadors! Easily grow your email list, website traffic, and social media followers with the most powerful giveaways & contests plugin for WordPress.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/rafflepress.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -171,7 +171,7 @@ class AMPlugins {
 					'class'  => 'trustpulseapitrustpulsephp',
 					'check'  => array( 'class' => 'TPAPI' ),
 					'name'   => 'TrustPulse',
-					'desc'   => __( 'TrustPulse is the honest marketing platform that leverages and automates the real power of social proof to instantly increase trust, conversions and sales.', 'comment-notifications' ),
+					'desc'   => __( 'TrustPulse is the honest marketing platform that leverages and automates the real power of social proof to instantly increase trust, conversions and sales.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/trustpulse-api.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -186,7 +186,7 @@ class AMPlugins {
 					'class'  => 'pushengagemainphp',
 					'check'  => array( 'constant' => 'PUSHENGAGE_VERSION' ),
 					'name'   => 'PushEngage',
-					'desc'   => __( 'Connect with your visitors after they leave your website with the leading web push notification software. Over 10,000+ businesses worldwide use PushEngage to send 15 billion notifications each month.', 'comment-notifications' ),
+					'desc'   => __( 'Connect with your visitors after they leave your website with the leading web push notification software. Over 10,000+ businesses worldwide use PushEngage to send 15 billion notifications each month.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/pushengage.zip',
 					'action' => 'install',
 				),
@@ -195,7 +195,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-sb-instagram.png' ),
 					'check'  => array( 'constant' => 'SBIVER' ),
 					'name'   => 'Smash Balloon Instagram Feeds',
-					'desc'   => __( 'Easily display Instagram content on your WordPress site without writing any code. Comes with multiple templates, ability to show content from multiple accounts, hashtags, and more. Trusted by 1 million websites.', 'comment-notifications' ),
+					'desc'   => __( 'Easily display Instagram content on your WordPress site without writing any code. Comes with multiple templates, ability to show content from multiple accounts, hashtags, and more. Trusted by 1 million websites.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/instagram-feed.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -209,7 +209,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-sb-fb.png' ),
 					'check'  => array( 'constant' => 'CFFVER' ),
 					'name'   => 'Smash Balloon Facebook Feeds',
-					'desc'   => __( 'Easily display Facebook content on your WordPress site without writing any code. Comes with multiple templates, ability to embed albums, group content, reviews, live videos, comments, and reactions.', 'comment-notifications' ),
+					'desc'   => __( 'Easily display Facebook content on your WordPress site without writing any code. Comes with multiple templates, ability to embed albums, group content, reviews, live videos, comments, and reactions.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/custom-facebook-feed.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -223,7 +223,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-sb-youtube.png' ),
 					'check'  => array( 'constant' => 'SBYVER' ),
 					'name'   => 'Smash Balloon YouTube Feeds',
-					'desc'   => __( 'Easily display YouTube videos on your WordPress site without writing any code. Comes with multiple layouts, ability to embed live streams, video filtering, ability to combine multiple channel videos, and more.', 'comment-notifications' ),
+					'desc'   => __( 'Easily display YouTube videos on your WordPress site without writing any code. Comes with multiple layouts, ability to embed live streams, video filtering, ability to combine multiple channel videos, and more.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/feeds-for-youtube.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -237,7 +237,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-sb-twitter.png' ),
 					'check'  => array( 'constant' => 'CTF_VERSION' ),
 					'name'   => 'Smash Balloon Twitter Feeds',
-					'desc'   => __( 'Easily display Twitter content in WordPress without writing any code. Comes with multiple layouts, ability to combine multiple Twitter feeds, Twitter card support, tweet moderation, and more.', 'comment-notifications' ),
+					'desc'   => __( 'Easily display Twitter content in WordPress without writing any code. Comes with multiple layouts, ability to combine multiple Twitter feeds, Twitter card support, tweet moderation, and more.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/custom-twitter-feeds.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -251,7 +251,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-sb-rf.png' ),
 					'check'  => array( 'constant' => 'SBRVER' ),
 					'name'   => 'Smash Balloon Reviews Feed',
-					'desc'   => __( 'Easily display Google reviews, Yelp reviews, and more in a clean customizable feed. Comes with multiple layouts, customizable review content, leave-a-review link, review moderation, and more.', 'comment-notifications' ),
+					'desc'   => __( 'Easily display Google reviews, Yelp reviews, and more in a clean customizable feed. Comes with multiple layouts, customizable review content, leave-a-review link, review moderation, and more.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/reviews-feed.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -265,7 +265,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-searchwp.png' ),
 					'check'  => array( 'constant' => 'SEARCHWP_VERSION' ),
 					'name'   => 'SearchWP',
-					'desc'   => __( 'The most advanced WordPress search plugin. Customize your WordPress search algorithm, reorder search results, track search metrics, and everything you need to leverage search to grow your business.', 'comment-notifications' ),
+					'desc'   => __( 'The most advanced WordPress search plugin. Customize your WordPress search algorithm, reorder search results, track search metrics, and everything you need to leverage search to grow your business.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://searchwp.com/',
 					'action' => 'redirect',
 				),
@@ -274,7 +274,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-affwp.png' ),
 					'check'  => array( 'function' => 'affiliate_wp' ),
 					'name'   => 'AffiliateWP',
-					'desc'   => __( 'The #1 affiliate management plugin for WordPress. Easily create an affiliate program for your eCommerce store or membership site within minutes and start growing your sales with the power of referral marketing.', 'comment-notifications' ),
+					'desc'   => __( 'The #1 affiliate management plugin for WordPress. Easily create an affiliate program for your eCommerce store or membership site within minutes and start growing your sales with the power of referral marketing.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://affiliatewp.com',
 					'action' => 'redirect',
 				),
@@ -283,7 +283,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-wp-simple-pay.png' ),
 					'check'  => array( 'constant' => 'SIMPLE_PAY_VERSION' ),
 					'name'   => 'WP Simple Pay',
-					'desc'   => __( 'The #1 Stripe payments plugin for WordPress. Start accepting one-time and recurring payments on your WordPress site without setting up a shopping cart. No code required.', 'comment-notifications' ),
+					'desc'   => __( 'The #1 Stripe payments plugin for WordPress. Start accepting one-time and recurring payments on your WordPress site without setting up a shopping cart. No code required.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/stripe.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -297,7 +297,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-edd.png' ),
 					'check'  => array( 'function' => 'EDD' ),
 					'name'   => 'Easy Digital Downloads',
-					'desc'   => __( 'The best WordPress eCommerce plugin for selling digital downloads. Start selling eBooks, software, music, digital art, and more within minutes. Accept payments, manage subscriptions, advanced access control, and more.', 'comment-notifications' ),
+					'desc'   => __( 'The best WordPress eCommerce plugin for selling digital downloads. Start selling eBooks, software, music, digital art, and more within minutes. Accept payments, manage subscriptions, advanced access control, and more.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/easy-digital-downloads.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -311,7 +311,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-sugarcalendar.png' ),
 					'check'  => array( 'class' => 'Sugar_Calendar\\Requirements_Check' ),
 					'name'   => 'Sugar Calendar',
-					'desc'   => __( 'A simple & powerful event calendar plugin for WordPress that comes with all the event management features including payments, scheduling, timezones, ticketing, recurring events, and more.', 'comment-notifications' ),
+					'desc'   => __( 'A simple & powerful event calendar plugin for WordPress that comes with all the event management features including payments, scheduling, timezones, ticketing, recurring events, and more.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/sugar-calendar-lite.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -325,7 +325,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-charitable.png' ),
 					'check'  => array( 'class' => 'Charitable' ),
 					'name'   => 'WP Charitable',
-					'desc'   => __( 'Top-rated WordPress donation and fundraising plugin. Over 10,000+ non-profit organizations and website owners use Charitable to create fundraising campaigns and raise more money online.', 'comment-notifications' ),
+					'desc'   => __( 'Top-rated WordPress donation and fundraising plugin. Over 10,000+ non-profit organizations and website owners use Charitable to create fundraising campaigns and raise more money online.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/charitable.zip',
 					'action' => 'install',
 				),
@@ -334,7 +334,7 @@ class AMPlugins {
 					'icon'   => Utils::dir_url( 'assets/images/am-plugins/plugin-wpcode.png' ),
 					'check'  => array( 'function' => 'WPCode' ),
 					'name'   => 'WPCode',
-					'desc'   => __( 'Future proof your WordPress customizations with the most popular code snippet management plugin for WordPress. Trusted by over 1,500,000+ websites for easily adding code to WordPress right from the admin area.', 'comment-notifications' ),
+					'desc'   => __( 'Future proof your WordPress customizations with the most popular code snippet management plugin for WordPress. Trusted by over 1,500,000+ websites for easily adding code to WordPress right from the admin area.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/insert-headers-and-footers.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -353,7 +353,7 @@ class AMPlugins {
 						),
 					),
 					'name'   => 'Duplicator',
-					'desc'   => __( 'Leading WordPress backup & site migration plugin. Over 1,500,000+ smart website owners use Duplicator to make reliable and secure WordPress backups to protect their websites. It also makes website migration really easy.', 'comment-notifications' ),
+					'desc'   => __( 'Leading WordPress backup & site migration plugin. Over 1,500,000+ smart website owners use Duplicator to make reliable and secure WordPress backups to protect their websites. It also makes website migration really easy.', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/duplicator.zip',
 					'action' => 'install',
 					'pro'    => array(
@@ -368,7 +368,7 @@ class AMPlugins {
 					'class'  => 'uncanny-automatoruncanny-automatorphp',
 					'check'  => array( 'constant' => 'AUTOMATOR_PLUGIN_VERSION' ),
 					'name'   => 'Uncanny Automator',
-					'desc'   => __( 'Connect your WordPress plugins, sites and apps together with powerful automations. Save time and money with the #1 automation plugin for WordPress!', 'comment-notifications' ),
+					'desc'   => __( 'Connect your WordPress plugins, sites and apps together with powerful automations. Save time and money with the #1 automation plugin for WordPress!', 'subscribe-to-comment-notifications-comment-converter' ),
 					'url'    => 'https://downloads.wordpress.org/plugin/uncanny-automator.zip',
 					'action' => 'install',
 					'data'   => array(
@@ -434,7 +434,7 @@ class AMPlugins {
 	 */
 	public function install_plugin( AMPlugin $plugin ) {
 
-		$not_allowed_exception = new PluginInstallationException( esc_html__( 'Sorry, not allowed!', 'comment-notifications' ), rest_authorization_required_code() );
+		$not_allowed_exception = new PluginInstallationException( esc_html__( 'Sorry, not allowed!', 'subscribe-to-comment-notifications-comment-converter' ), rest_authorization_required_code() );
 
 		// Check for permissions.
 		if ( ! current_user_can( 'install_plugins' ) ) {
@@ -462,13 +462,13 @@ class AMPlugins {
 
 		// Error check.
 		if ( ! method_exists( $installer, 'install' ) ) {
-			throw new PluginInstallationException( esc_html__( 'Missing required installer!', 'comment-notifications' ), 500 );
+			throw new PluginInstallationException( esc_html__( 'Missing required installer!', 'subscribe-to-comment-notifications-comment-converter' ), 500 );
 		}
 
 		$result = $installer->install( esc_url_raw( $plugin['url'] ) );
 
 		if ( ! $installer->plugin_info() ) {
-			throw new PluginInstallationException( esc_html__( 'Plugin failed to install!', 'comment-notifications' ), 500 );
+			throw new PluginInstallationException( esc_html__( 'Plugin failed to install!', 'subscribe-to-comment-notifications-comment-converter' ), 500 );
 		}
 
 		update_option(
@@ -483,13 +483,13 @@ class AMPlugins {
 			$this->activate_plugin( $plugin_basename );
 
 			return array(
-				'message'      => esc_html__( 'Plugin installed & activated.', 'comment-notifications' ),
+				'message'      => esc_html__( 'Plugin installed & activated.', 'subscribe-to-comment-notifications-comment-converter' ),
 				'is_activated' => true,
 				'basename'     => $plugin_basename,
 			);
 		} catch ( \Exception $e ) {
 			return array(
-				'message'          => esc_html__( 'Plugin installed.', 'comment-notifications' ),
+				'message'          => esc_html__( 'Plugin installed.', 'subscribe-to-comment-notifications-comment-converter' ),
 				'is_activated'     => false,
 				'basename'         => $plugin_basename,
 				'activation_error' => $e->getMessage(),
@@ -513,7 +513,7 @@ class AMPlugins {
 		// Check for permissions.
 		if ( ! current_user_can( 'activate_plugins' ) ) {
 			// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
-			throw new PluginInstallationException( esc_html__( 'Sorry, not allowed!', 'comment-notifications' ), rest_authorization_required_code() );
+			throw new PluginInstallationException( esc_html__( 'Sorry, not allowed!', 'subscribe-to-comment-notifications-comment-converter' ), rest_authorization_required_code() );
 		}
 
 		if ( ! function_exists( 'get_plugin_data' ) ) {
@@ -524,7 +524,7 @@ class AMPlugins {
 
 		if ( is_wp_error( $activate ) ) {
 			// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
-			throw new PluginInstallationException( esc_html__( 'Could not activate plugin. Error: ', 'comment-notifications' ) . $activate->get_error_message(), $activate->get_error_code() );
+			throw new PluginInstallationException( esc_html__( 'Could not activate plugin. Error: ', 'subscribe-to-comment-notifications-comment-converter' ) . $activate->get_error_message(), $activate->get_error_code() );
 		}
 
 		/**
@@ -547,7 +547,7 @@ class AMPlugins {
 		}
 
 		return array(
-			'message'      => esc_html__( 'Plugin activated.', 'comment-notifications' ),
+			'message'      => esc_html__( 'Plugin activated.', 'subscribe-to-comment-notifications-comment-converter' ),
 			'basename'     => $plugin_id,
 			'is_activated' => true,
 		);

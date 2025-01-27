@@ -111,10 +111,10 @@ class NotificationEmail extends BaseEmail {
 		}
 
 		// translators: %s is the site title or domain.
-		$subject = sprintf( __( 'Comment Digest from %s', 'comment-notifications' ), $site_title );
+		$subject = sprintf( __( 'Comment Digest from %s', 'subscribe-to-comment-notifications-comment-converter' ), $site_title );
 
 		if ( 1 === count( $this->comments ) ) {
-			$subject = __( 'New Comment: ', 'comment-notifications' ) . get_the_title( $this->comments[0]->comment_post_ID );
+			$subject = __( 'New Comment: ', 'subscribe-to-comment-notifications-comment-converter' ) . get_the_title( $this->comments[0]->comment_post_ID );
 		}
 
 		$this->set_subject( $subject );

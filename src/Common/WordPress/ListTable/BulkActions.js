@@ -8,7 +8,7 @@ export function BulkActions(props) {
 
 	const parsedActions = [
 		{
-			label: __('Bulk Actions', 'comment-notifications'),
+			label: __('Bulk Actions', 'subscribe-to-comment-notifications-comment-converter'),
 			value: '',
 		},
 		...actions,
@@ -33,7 +33,7 @@ export function BulkActions(props) {
 		<div className="flex items-center gap-x-1.5">
 			<SelectInput
 				className="min-w-[220px]"
-				label={__('Select bulk action', 'comment-notifications')}
+				label={__('Select bulk action', 'subscribe-to-comment-notifications-comment-converter')}
 				labelHidden={true}
 				name="bulk_action"
 				value={value}
@@ -42,7 +42,7 @@ export function BulkActions(props) {
 				size="small"
 			/>
 			<SecondaryButton onClick={onApply} size="small">
-				{__('Apply', 'comment-notifications')}
+				{__('Apply', 'subscribe-to-comment-notifications-comment-converter')}
 			</SecondaryButton>
 		</div>
 	);

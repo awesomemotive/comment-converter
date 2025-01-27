@@ -77,7 +77,7 @@ class FollowerController extends BaseController {
 		$follower = $this->follower_repository->get_by_id( $id );
 
 		if ( empty( $follower ) ) {
-			return new \WP_REST_Response( array( 'error' => esc_html__( 'Follower not found.', 'comment-notifications' ) ), 404 );
+			return new \WP_REST_Response( array( 'error' => esc_html__( 'Follower not found.', 'subscribe-to-comment-notifications-comment-converter' ) ), 404 );
 		}
 
 		return new \WP_REST_Response(
@@ -111,7 +111,7 @@ class FollowerController extends BaseController {
 			$updated_record = $request->get_json_params();
 
 			if ( empty( $updated_record ) ) {
-				throw new InvalidParamException( esc_html__( 'The payload is required.', 'comment-notifications' ) );
+				throw new InvalidParamException( esc_html__( 'The payload is required.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 		} catch ( RestApiException $e ) {
 			return $e->to_response();
@@ -120,7 +120,7 @@ class FollowerController extends BaseController {
 		$follower = $this->follower_repository->get_by_id( $id );
 
 		if ( empty( $follower ) ) {
-			return new \WP_REST_Response( array( 'error' => esc_html__( 'Follower not found.', 'comment-notifications' ) ), 404 );
+			return new \WP_REST_Response( array( 'error' => esc_html__( 'Follower not found.', 'subscribe-to-comment-notifications-comment-converter' ) ), 404 );
 		}
 
 		$editable_attrs = array( 'name', 'notification_email', 'notification_frequency', 'default_follow_type' );

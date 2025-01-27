@@ -134,7 +134,7 @@ class FollowController extends BaseController {
 			$follow_ids = $this->get_param( $request, 'ids', 'array' );
 
 			if ( empty( $follow_ids ) ) {
-				throw new InvalidParamException( esc_html__( 'The ids param is required.', 'comment-notifications' ) );
+				throw new InvalidParamException( esc_html__( 'The ids param is required.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 		} catch ( RestApiException $e ) {
 			return $e->to_response();
@@ -203,7 +203,7 @@ class FollowController extends BaseController {
 		$follower = $this->follow_repository->get_by_id( $id );
 
 		if ( empty( $follower ) ) {
-			return new \WP_REST_Response( array( 'error' => esc_html__( 'Follow not found.', 'comment-notifications' ) ), 404 );
+			return new \WP_REST_Response( array( 'error' => esc_html__( 'Follow not found.', 'subscribe-to-comment-notifications-comment-converter' ) ), 404 );
 		}
 
 		$affected = $this->follow_repository->delete( $id );
@@ -239,7 +239,7 @@ class FollowController extends BaseController {
 			$nonce     = $this->get_param( $request, 'nonce', 'string' );
 
 			if ( ! wp_verify_nonce( $nonce, 'ccvtr-follow-by-email-' . $post_id ) ) {
-				throw new AuthorizationException( esc_html__( 'The follow could not be created.', 'comment-notifications' ) );
+				throw new AuthorizationException( esc_html__( 'The follow could not be created.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 		} catch ( RestApiException $e ) {
 			return $e->to_response();
@@ -255,7 +255,7 @@ class FollowController extends BaseController {
 				$subscribe
 			);
 		} catch ( \Exception $e ) {
-			return ( new RestApiException( esc_html__( 'An error occured when creating the follow.', 'comment-notifications' ) ) )
+			return ( new RestApiException( esc_html__( 'An error occured when creating the follow.', 'subscribe-to-comment-notifications-comment-converter' ) ) )
 				->set_extra_error( $e->getMessage() )
 				->to_response();
 		}
@@ -288,7 +288,7 @@ class FollowController extends BaseController {
 
 			// Validate nonce.
 			if ( ! wp_verify_nonce( $nonce, 'ccvtr-follow-confirmation-' . $comment_id ) ) {
-				throw new AuthorizationException( esc_html__( 'The follow could not be created.', 'comment-notifications' ) );
+				throw new AuthorizationException( esc_html__( 'The follow could not be created.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 		} catch ( RestApiException $e ) {
 			return $e->to_response();
@@ -298,7 +298,7 @@ class FollowController extends BaseController {
 			$comment = get_comment( $comment_id );
 
 			if ( empty( $comment ) ) {
-				return new \WP_REST_Response( array( 'error' => esc_html__( 'Comment not found.', 'comment-notifications' ) ), 404 );
+				return new \WP_REST_Response( array( 'error' => esc_html__( 'Comment not found.', 'subscribe-to-comment-notifications-comment-converter' ) ), 404 );
 			}
 
 			$this->follow_control->process_follow_and_subscription(
@@ -308,7 +308,7 @@ class FollowController extends BaseController {
 				)
 			);
 		} catch ( \Exception $e ) {
-			return ( new RestApiException( esc_html__( 'An error occured when creating the comment follow.', 'comment-notifications' ) ) )
+			return ( new RestApiException( esc_html__( 'An error occured when creating the comment follow.', 'subscribe-to-comment-notifications-comment-converter' ) ) )
 				->set_extra_error( $e->getMessage() )
 				->to_response();
 		}

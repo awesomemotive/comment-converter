@@ -293,9 +293,9 @@ class CommentForm {
 		}
 
 		$options = array(
-			self::FOLLOW_OPTION_COMMENT_REPLIES => esc_html__( 'Follow replies to my comment', 'comment-notifications' ),
-			self::FOLLOW_OPTION_ALL_COMMENTS    => esc_html__( 'Follow all comments and replies by email', 'comment-notifications' ),
-			self::FOLLOW_OPTION_NO_FOLLOW       => esc_html__( 'Do not follow comments or replies', 'comment-notifications' ),
+			self::FOLLOW_OPTION_COMMENT_REPLIES => esc_html__( 'Follow replies to my comment', 'subscribe-to-comment-notifications-comment-converter' ),
+			self::FOLLOW_OPTION_ALL_COMMENTS    => esc_html__( 'Follow all comments and replies by email', 'subscribe-to-comment-notifications-comment-converter' ),
+			self::FOLLOW_OPTION_NO_FOLLOW       => esc_html__( 'Do not follow comments or replies', 'subscribe-to-comment-notifications-comment-converter' ),
 		);
 
 		$select_options = '';
@@ -305,7 +305,7 @@ class CommentForm {
 		}
 
 		return '<p class="comment-form-ccvtr-follow">
-			<label for="ccvtr-follow"> ' . esc_html__( 'Follow Comments', 'comment-notifications' ) . ' </label>
+			<label for="ccvtr-follow"> ' . esc_html__( 'Follow Comments', 'subscribe-to-comment-notifications-comment-converter' ) . ' </label>
 			<select id="ccvtr-follow" name="ccvtr-follow">' . $select_options . '</select>
 		</p>';
 	}
@@ -323,7 +323,7 @@ class CommentForm {
 		// This should help with theme compatibility.
 		return '<p class="comment-form-ccvtr-subscribe comment-form-cookies-consent">
 			<input id="ccvtr-subscribe" name="ccvtr-subscribe" type="checkbox" value="' . self::SUBSCRIBE_OPTION_YES . '" />
-			<label for="ccvtr-subscribe">' . esc_html__( 'Subscribe to our newsletter', 'comment-notifications' ) . '</label>
+			<label for="ccvtr-subscribe">' . esc_html__( 'Subscribe to our newsletter', 'subscribe-to-comment-notifications-comment-converter' ) . '</label>
 		</p>';
 	}
 

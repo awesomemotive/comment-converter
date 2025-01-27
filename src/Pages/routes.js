@@ -12,32 +12,32 @@ import { SingleFollower } from './SingleFollower';
 export const pageTree = [
 	{
 		// translators: Comment Converter is the name of the plugin.
-		label: __('Welcome to Comment Converter', 'comment-notifications'),
+		label: __('Welcome to Comment Converter', 'subscribe-to-comment-notifications-comment-converter'),
 		slug: 'getting-started',
 		path: '?page=comment-converter-getting-started',
 		hideInMenu: true,
 		component: GettingStarted,
 	},
 	{
-		label: __('Dashboard', 'comment-notifications'),
+		label: __('Dashboard', 'subscribe-to-comment-notifications-comment-converter'),
 		slug: 'dashboard',
 		path: '?page=comment-converter-dashboard',
 		hideInMenu: true,
 		component: Dashboard,
 	},
 	{
-		label: __('Followers', 'comment-notifications'),
+		label: __('Followers', 'subscribe-to-comment-notifications-comment-converter'),
 		slug: 'followers',
 		path: '?page=comment-converter-followers',
 		items: [
 			{
-				label: __('Followers', 'comment-notifications'),
+				label: __('Followers', 'subscribe-to-comment-notifications-comment-converter'),
 				slug: 'followers',
 				path: '?page=comment-converter-followers',
 				component: Followers,
 			},
 			{
-				label: __('Single Follower', 'comment-notifications'),
+				label: __('Single Follower', 'subscribe-to-comment-notifications-comment-converter'),
 				slug: 'follower',
 				path: '?page=comment-converter-follower',
 				hideInMenu: true,
@@ -46,18 +46,18 @@ export const pageTree = [
 		],
 	},
 	{
-		label: __('Notifications', 'comment-notifications'),
+		label: __('Notifications', 'subscribe-to-comment-notifications-comment-converter'),
 		slug: 'comment-form',
 		path: '?page=comment-converter-comment-form',
 		items: [
 			{
-				label: __('Comment Form', 'comment-notifications'),
+				label: __('Comment Form', 'subscribe-to-comment-notifications-comment-converter'),
 				slug: 'comment-form',
 				path: '?page=comment-converter-comment-form',
 				component: CommentForm,
 			},
 			{
-				label: __('Emails', 'comment-notifications'),
+				label: __('Emails', 'subscribe-to-comment-notifications-comment-converter'),
 				slug: 'emails',
 				path: '?page=comment-converter-emails',
 				component: Emails,
@@ -65,25 +65,25 @@ export const pageTree = [
 		],
 	},
 	/* {
-		label: __('Integrations', 'comment-notifications'),
+		label: __('Integrations', 'subscribe-to-comment-notifications-comment-converter'),
 		slug: 'integrations',
 		path: '?page=comment-converter-integrations',
 		component: Integrations,
 	}, */
 	{
-		label: __('Options', 'comment-notifications'),
+		label: __('Options', 'subscribe-to-comment-notifications-comment-converter'),
 		slug: 'options',
 		path: '?page=comment-converter-options',
 		component: Options,
 	},
 	{
-		label: __('About Us', 'comment-notifications'),
+		label: __('About Us', 'subscribe-to-comment-notifications-comment-converter'),
 		slug: 'about-us',
 		path: '?page=comment-converter-about-us',
 		component: AboutUs,
 	},
 	{
-		label: __('Upgrade to Pro', 'comment-notifications'),
+		label: __('Upgrade to Pro', 'subscribe-to-comment-notifications-comment-converter'),
 		slug: 'upgrade',
 		path: '?page=comment-converter-upgrade',
 		redirect: true,

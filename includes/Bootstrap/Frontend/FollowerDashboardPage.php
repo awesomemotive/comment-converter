@@ -95,7 +95,7 @@ class FollowerDashboardPage {
 			$page_args,
 			array(
 				'page_path'  => $this->settings->get_follower_dashboard_page_path(),
-				'page_title' => __( 'Follower Dashboard', 'comment-notifications' ),
+				'page_title' => __( 'Follower Dashboard', 'subscribe-to-comment-notifications-comment-converter' ),
 			)
 		);
 
@@ -158,6 +158,11 @@ class FollowerDashboardPage {
 		// Prevent the Follower Dashboard page from being indexed and followed by search engines.
 		add_filter( 'wp_robots', array( $this, 'add_nofollow_noindex' ), 9999 );
 
+		// Add title filters before resetting post
+		add_filter( 'document_title_parts', array( $this, 'filter_document_title' ) );
+		add_filter( 'pre_get_document_title', array( $this, 'filter_pre_document_title' ) );
+
+
 		// Process the action before loading the page.
 		$page_args = $this->process_action( $action );
 
@@ -172,9 +177,36 @@ class FollowerDashboardPage {
 				'post_name'    => 'ccvtr-follower-dashboard',
 				'post_content' => $output,
 				'is_page'      => true,
-				'is_single'    => true,
+				'is_single'    => false,
 			)
 		);
+	}
+
+	/**
+	 * Filters the document title parts.
+	 *
+	 * @since 0.9.1
+	 *
+	 * @param array $title_parts The existing document title parts.
+	 *
+	 * @return array The modified document title parts.
+	 */
+	public function filter_document_title( $title_parts ) {
+		$title_parts['title'] = $this->args['page_title'];
+		return $title_parts;
+	}
+
+	/**
+	 * Filters the pre-document title.
+	 *
+	 * @since 0.9.1
+	 *
+	 * @param string $title The existing pre-document title.
+	 *
+	 * @return string The modified pre-document title.
+	 */
+	public function filter_pre_document_title( $title ) {
+		return $this->args['page_title'] . ' - ' . get_bloginfo( 'name' );
 	}
 
 	/**
@@ -195,7 +227,7 @@ class FollowerDashboardPage {
 					$this->args['follower_id'] = $curr_follower->id;
 				}
 			} catch ( TokenAuthenticationException $e ) {
-				$this->args['error'] = __( 'Follower not found.', 'comment-notifications' );
+				$this->args['error'] = __( 'Follower not found.', 'subscribe-to-comment-notifications-comment-converter' );
 			}
 		}
 
@@ -239,7 +271,7 @@ class FollowerDashboardPage {
 			'isDoubleOptInEnabled'      => $this->settings->is_double_optin_enabled(),
 		);
 		wp_localize_script( 'ccvtr-follower-dashboard-script', 'ccData', $js_data );
-		wp_set_script_translations( 'ccvtr-follower-dashboard-script', 'comment-notifications', Utils::dir_path( 'languages' ) );
+		wp_set_script_translations( 'ccvtr-follower-dashboard-script', 'subscribe-to-comment-notifications-comment-converter', Utils::dir_path( 'languages' ) );
 		wp_enqueue_script( 'ccvtr-follower-dashboard-script' );
 		wp_enqueue_style( 'dashicons' );
 	}
@@ -328,30 +360,30 @@ class FollowerDashboardPage {
 			// 4. The token should already be a secure way to authenticate the follower.
 			// phpcs:disable WordPress.Security.NonceVerification.Recommended
 			if ( empty( $_GET['ccvtk'] ) || empty( $_GET['ccvfi'] ) ) {
-				throw new UserFacingException( __( 'Invalid link. Missing required information.', 'comment-notifications' ) );
+				throw new UserFacingException( __( 'Invalid link. Missing required information.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			$follow_id = absint( $_GET['ccvfi'] );
 			// phpcs:enable WordPress.Security.NonceVerification.Recommended
 
 			if ( 0 > $follow_id ) {
-				throw new UserFacingException( __( 'Invalid subscription.', 'comment-notifications' ) );
+				throw new UserFacingException( __( 'Invalid subscription.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			$follow = $this->follow_control->get_follow_by_id( $follow_id );
 
 			if ( empty( $follow ) ) {
-				throw new UserFacingException( __( 'Subscription not found.', 'comment-notifications' ) );
+				throw new UserFacingException( __( 'Subscription not found.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			$follower = $this->parse_token();
 
 			if ( ! $follower || is_wp_error( $follower ) ) {
-				throw new UserFacingException( __( 'Invalid link. Authentication failure.', 'comment-notifications' ) );
+				throw new UserFacingException( __( 'Invalid link. Authentication failure.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			if ( (int) $follow->follower_id !== (int) $follower->id ) {
-				throw new UserFacingException( __( 'Invalid link. Authorization failure.', 'comment-notifications' ) );
+				throw new UserFacingException( __( 'Invalid link. Authorization failure.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			switch ( $action ) {
@@ -373,7 +405,7 @@ class FollowerDashboardPage {
 		} catch ( UserFacingException $e ) {
 			$page_args['error'] = $e->getMessage();
 		} catch ( \Exception $e ) {
-			$page_args['error'] = __( 'An expected error occurred. Please try again. If the issue persists, kindly contact the site administrator for further assistance.', 'comment-notifications' );
+			$page_args['error'] = __( 'An expected error occurred. Please try again. If the issue persists, kindly contact the site administrator for further assistance.', 'subscribe-to-comment-notifications-comment-converter' );
 		}
 
 		return $page_args;
@@ -401,7 +433,7 @@ class FollowerDashboardPage {
 			$follower = $this->parse_token();
 
 			if ( is_wp_error( $follower ) ) {
-				throw new UserFacingException( __( 'Invalid link. Authentication failure.', 'comment-notifications' ) );
+				throw new UserFacingException( __( 'Invalid link. Authentication failure.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			if ( $follower ) {
@@ -410,7 +442,7 @@ class FollowerDashboardPage {
 		} catch ( UserFacingException $e ) {
 			$page_args['error'] = $e->getMessage();
 		} catch ( \Exception $e ) {
-			$page_args['error'] = __( 'An expected error occurred. Please try again. If the issue persists, kindly contact the site administrator for further assistance.', 'comment-notifications' );
+			$page_args['error'] = __( 'An expected error occurred. Please try again. If the issue persists, kindly contact the site administrator for further assistance.', 'subscribe-to-comment-notifications-comment-converter' );
 		}
 
 		return $page_args;

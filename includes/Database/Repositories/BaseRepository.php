@@ -236,12 +236,12 @@ abstract class BaseRepository {
 
 			if ( is_null( $value ) ) {
 				// phpcs:ignore WordPress.DB.PreparedSQLPlaceholders.UnsupportedPlaceholder
-				$set_attrs[] = $wpdb->prepare( "`%i` = NULL", $field );
+				$set_attrs[] = $wpdb->prepare( "%i = NULL", $field );
 				continue;
 			}
 
 			// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQLPlaceholders.UnsupportedPlaceholder -- $field already prepared.
-			$set_attrs[] = $wpdb->prepare( "`%i` = %s", $field, $value );
+			$set_attrs[] = $wpdb->prepare( "%i = %s", $field, $value );
 		}
 
 		return implode( ', ', $set_attrs );
@@ -265,13 +265,13 @@ abstract class BaseRepository {
 
 			if ( is_null( $value ) ) {
 				// phpcs:ignore WordPress.DB.PreparedSQLPlaceholders.UnsupportedPlaceholder
-				$where[] = $wpdb->prepare( "`%i` IS NULL", $field );
+				$where[] = $wpdb->prepare( "%i IS NULL", $field );
 				continue;
 			}
 
 			if ( 'NOT NULL' === $value ) {
 				// phpcs:ignore WordPress.DB.PreparedSQLPlaceholders.UnsupportedPlaceholder
-				$where[] = $wpdb->prepare( "`%i` IS NOT NULL", $field );
+				$where[] = $wpdb->prepare( "%i IS NOT NULL", $field );
 				continue;
 			}
 
@@ -285,7 +285,7 @@ abstract class BaseRepository {
 				$where[] = $wpdb->prepare("%i IN (" . implode( ', ', $value ) . ")", $field );
 			} else {
 				// phpcs:ignore WordPress.DB.PreparedSQL.InterpolatedNotPrepared, WordPress.DB.PreparedSQLPlaceholders.UnsupportedPlaceholder, WordPress.DB.PreparedSQL.NotPrepared -- Already prepared.
-				$where[] = $wpdb->prepare( "`%i` = %s", $field, $value );
+				$where[] = $wpdb->prepare( "%i = %s", $field, $value );
 			}
 		}
 

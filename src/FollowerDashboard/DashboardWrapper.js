@@ -17,7 +17,9 @@ export const DashboardWrapper = () => {
 	if (!followerId) {
 		return (
 			<PageBody>
-				<OutputMessage error={__('Follower not found.', 'comment-notifications')} />
+				<OutputMessage
+					error={__('Follower not found.', 'subscribe-to-comment-notifications-comment-converter')}
+				/>
 			</PageBody>
 		);
 	}

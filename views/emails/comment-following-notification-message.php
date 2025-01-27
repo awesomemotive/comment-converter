@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 									<table>
 										<tr>
 											<td style="font-family: Helvetica, Arial, sans-serif; color: #1F2858; font-size: 14px; line-height: 1.3; font-weight: 400; padding-bottom: 22px;">
-												<?php esc_html_e( 'There is a new comment on:', 'comment-notifications' ); ?>
+												<?php esc_html_e( 'There is a new comment on:', 'subscribe-to-comment-notifications-comment-converter' ); ?>
 												<br />
 												<a href="<?php echo esc_url( get_permalink( $ccvtr_comment->comment_post_ID ) ); ?>" style="font-family: Helvetica, Arial, sans-serif; color: #067CE1; font-size: 24px; line-height: 1.3; font-weight: 700; text-decoration: none;"><?php echo esc_html( get_the_title( $ccvtr_comment->comment_post_ID ) ); ?></a>
 											</td>
@@ -40,13 +40,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 												<p style="color: #454D74; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1; font-weight: 400; padding: 8px 0 17px;">
 													<!-- [View_Comment] -->
-													<a href="<?php echo esc_url( get_comment_link( $ccvtr_comment ) ); ?>" style="color: #067CE1; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1; font-weight: 400; text-decoration-line: underline;"><?php esc_html_e( 'View Comment', 'comment-notifications' ); ?></a>
-													<?php esc_html_e( 'Posted by', 'comment-notifications' ); ?>
+													<a href="<?php echo esc_url( get_comment_link( $ccvtr_comment ) ); ?>" style="color: #067CE1; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1; font-weight: 400; text-decoration-line: underline;"><?php esc_html_e( 'View Comment', 'subscribe-to-comment-notifications-comment-converter' ); ?></a>
+													<?php esc_html_e( 'Posted by', 'subscribe-to-comment-notifications-comment-converter' ); ?>
 													<a href="<?php echo esc_url( get_comment_link( $ccvtr_comment ) ); ?>" style="color: #067CE1; font-family: Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1; font-weight: 400; text-decoration-line: underline;"><?php echo esc_html( get_comment_author( $ccvtr_comment ) ); ?></a>
 												</p>
 
 												<!-- [Reply_To_Comment] -->
-												<a href="<?php echo esc_url( get_comment_link( $ccvtr_comment ) ); ?>" style="color: #067CE1; font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1; font-weight: 700; text-decoration-line: underline;"><?php esc_html_e( 'Reply to Comment', 'comment-notifications' ); ?></a>
+												<a href="<?php echo esc_url( get_comment_link( $ccvtr_comment ) ); ?>" style="color: #067CE1; font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1; font-weight: 700; text-decoration-line: underline;"><?php esc_html_e( 'Reply to Comment', 'subscribe-to-comment-notifications-comment-converter' ); ?></a>
 											</td>
 										</tr>
 									</table>
@@ -59,7 +59,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 										<table>
 											<tr>
 												<td style="color: #454D74; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; padding: 22px 0;">
-												<?php esc_html_e( 'You have requested to be notified any time a new reply is added to your comment on:', 'comment-notifications' ); ?>
+												<?php esc_html_e( 'You have requested to be notified any time a new reply is added to your comment on:', 'subscribe-to-comment-notifications-comment-converter' ); ?>
 													<br />
 													&lsquo;<a href="<?php echo esc_url( get_permalink( $data['comments'][0]->comment_post_ID ) ); ?>" style="color: #067CE1; font-family: Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 700; line-height: 1.3; text-decoration-line: underline;"><?php echo esc_html( get_the_title( $data['comments'][0]->comment_post_ID ) ); ?></a>&rsquo;
 												</td>
@@ -78,7 +78,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 												</div>
 												<p style="color: #6C7781; font-family: Helvetica, Arial, sans-serif; font-size: 11px;">
 													<!-- [Manage_Subscriptions] -->
-													<a href="[Manage_Subscriptions_Url]" style="color: #15C; font-family: Helvetica, Arial, sans-serif; text-decoration-line: underline;"><?php esc_html_e( 'Manage Subscriptions', 'comment-notifications' ); ?></a>
+													<a href="[Manage_Subscriptions_Url]" style="color: #15C; font-family: Helvetica, Arial, sans-serif; text-decoration-line: underline;"><?php esc_html_e( 'Manage Subscriptions', 'subscribe-to-comment-notifications-comment-converter' ); ?></a>
 												</p>
 											</td>
 										</tr>

@@ -48,19 +48,19 @@ export const OptinMonster = () => {
 		installActivatePlugin(omPlugin);
 	};
 
-	let actionButtonText = __('Activated', 'comment-notifications');
+	let actionButtonText = __('Activated', 'subscribe-to-comment-notifications-comment-converter');
 	if (!omPlugin.active) {
-		actionButtonText = __('Activate Plugin', 'comment-notifications');
+		actionButtonText = __('Activate Plugin', 'subscribe-to-comment-notifications-comment-converter');
 
 		if (omPlugin.updating) {
-			actionButtonText = __('Activating…', 'comment-notifications');
+			actionButtonText = __('Activating…', 'subscribe-to-comment-notifications-comment-converter');
 		}
 
 		if (!omPlugin.installed) {
-			actionButtonText = __('Install Plugin', 'comment-notifications');
+			actionButtonText = __('Install Plugin', 'subscribe-to-comment-notifications-comment-converter');
 
 			if (omPlugin.updating) {
-				actionButtonText = __('Installing…', 'comment-notifications');
+				actionButtonText = __('Installing…', 'subscribe-to-comment-notifications-comment-converter');
 			}
 		}
 	}
@@ -72,7 +72,9 @@ export const OptinMonster = () => {
 			ctaButton={
 				<>
 					<div className="flex flex-col">
-						<PrimaryButton size="xlarge" onClick={handlePluginActionClick}>{actionButtonText}</PrimaryButton>
+						<PrimaryButton size="xlarge" onClick={handlePluginActionClick}>
+							{actionButtonText}
+						</PrimaryButton>
 						{installResult.isError && (
 							<Alert className="mt-4" type="error">
 								{parseErrorResponse(installResult.error)}
@@ -81,20 +83,28 @@ export const OptinMonster = () => {
 					</div>
 				</>
 			}
-			ctaExtra={<TextLink size="small" href="https://optinmonster.com" target="_blank" rel="noopener noreferrer">{__('Learn More', 'comment-notifications')}</TextLink>}
+			ctaExtra={
+				<TextLink size="small" href="https://optinmonster.com" target="_blank" rel="noopener noreferrer">
+					{__('Learn More', 'subscribe-to-comment-notifications-comment-converter')}
+				</TextLink>
+			}
 			subtitle={
 				<>
 					{__(
 						'Get OptinMonster To Boost Your Email List Growth Even More!',
-						'comment-notifications'
+						'subscribe-to-comment-notifications-comment-converter'
 					)}
+					<br />
 					{__(
-						'The Most Powerful Lead Generation and Customer Acquisition Software … Without the High Costs',
-						'comment-notifications'
+						'The Most Powerful Lead Generation and Customer Acquisition Software … Without the High Costs.',
+						'subscribe-to-comment-notifications-comment-converter'
 					)}
 				</>
 			}
-			title={__('OptinMonster', 'comment-notifications')}
+			title={__(
+				'Want to Grow Your Email List Right Now?',
+				'subscribe-to-comment-notifications-comment-converter'
+			)}
 		/>
 	);
 };

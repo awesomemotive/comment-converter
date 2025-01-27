@@ -128,7 +128,7 @@ class RestApiException extends Exception {
 	 * @return RestApiException A new RestApiException with a generic error message and a 500 error code.
 	 */
 	public static function unexpected_error( \Throwable $ex = null ) {
-		$ex = ( new RestApiException( __( 'An unexpected error occurred.', 'comment-notifications' ), 500, $ex ) );
+		$ex = ( new RestApiException( __( 'An unexpected error occurred.', 'subscribe-to-comment-notifications-comment-converter' ), 500, $ex ) );
 
 		if ( ! empty( $ex ) ) {
 			$ex->set_extra_error( $ex->getMessage() );

@@ -14,13 +14,13 @@ export const Welcome = () => {
 				<h1 className="text-primaryText text-[32px] leading-8 font-bold mb-2.5">
 					{
 						/* translators: Comment Converter is the name of the plugin. */
-						__('Welcome to Comment Converter!', 'comment-notifications')
+						__('Welcome to Comment Converter!', 'subscribe-to-comment-notifications-comment-converter')
 					}
 				</h1>
 				<p className="text-primaryText100 text-xl leading-7 mb-3.5 font-normal max-w-[780px]">
 					{__(
 						'The #1 way to turn commenters and visitors into engaged subscribers, leads and sales.',
-						'comment-notifications'
+						'subscribe-to-comment-notifications-comment-converter'
 					)}
 				</p>
 			</div>
@@ -35,7 +35,7 @@ export const Welcome = () => {
 				>
 					<img
 						src={urls.assets('dashboard/getting-started-card.png')}
-						alt={__('Getting Started Guide', 'comment-notifications')}
+						alt={__('Getting Started Guide', 'subscribe-to-comment-notifications-comment-converter')}
 					/>
 				</a>
 			</div>
@@ -43,32 +43,43 @@ export const Welcome = () => {
 			{/* CTA */}
 			<div className="px-0 pt-10 pb-[30px]">
 				<p className="text-primaryText100 text-xl leading-7 font-normal max-w-[700px] mb-[30px]">
-					{__('You’re now growing your community and influence with every comment.', 'comment-notifications')}
+					{__(
+						'You’re now growing your community and influence with every comment.',
+						'subscribe-to-comment-notifications-comment-converter'
+					)}
 					<br />
 					{__(
 						'To learn more about how to get even more comments and engagement, check out our Experts Guide to Getting More Blog Comments below.',
-						'comment-notifications'
+						'subscribe-to-comment-notifications-comment-converter'
 					)}
 				</p>
 				<p className="text-primaryText100 text-xl leading-7 font-normal max-w-[700px]">
 					{__(
 						'P.S. We’ve got tons of new features ready to roll out soon with our Pro version. Click the button below to be notified as soon as it launches.',
-						'comment-notifications'
+						'subscribe-to-comment-notifications-comment-converter'
 					)}
 				</p>
 				<div className="flex items-center justify-center w-full pt-5">
 					<SecondaryButton
 						as="a"
 						className="mr-5"
-						href={urls.marketing('the-experts-guide-to-getting-more-blog-comments/?utm_source=plugin&utm_medium=onboarding')}
+						href={urls.marketing(
+							'the-experts-guide-to-getting-more-blog-comments/?utm_source=plugin&utm_medium=onboarding'
+						)}
 						size="xlarge"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
-						{__('Read The Guide', 'comment-notifications')}
+						{__('Read The Guide', 'subscribe-to-comment-notifications-comment-converter')}
 					</SecondaryButton>
-					<PrimaryButton as="a" href={urls.upgrade({ utmMedium: 'welcomedashboard' })} target="_blank" rel="noopener noreferrer" size="xlarge">
-						{__('Join Pro Waitlist', 'comment-notifications')}
+					<PrimaryButton
+						as="a"
+						href={urls.upgrade({ utmMedium: 'welcomedashboard' })}
+						target="_blank"
+						rel="noopener noreferrer"
+						size="xlarge"
+					>
+						{__('Join Pro Waitlist', 'subscribe-to-comment-notifications-comment-converter')}
 					</PrimaryButton>
 				</div>
 			</div>

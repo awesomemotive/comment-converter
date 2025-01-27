@@ -164,6 +164,7 @@ class Pages {
 		wp_enqueue_style( 'ccvtr-app-style', Utils::dir_url( 'build/style-index.css' ), array(), $asset_file['version'] );
 		wp_register_script( 'ccvtr-app-script', Utils::dir_url( 'build/index.js' ), $asset_file['dependencies'], $asset_file['version'], true );
 		$js_data = array(
+			'adminBaseUrl'     => Urls::admin(),
 			'assetsUrl'        => Utils::dir_url( 'assets/' ),
 			'dropdownValues'   => $this->get_admin_app_dropdown_values(),
 			'loggedInUserData' => array(
@@ -174,7 +175,7 @@ class Pages {
 			),
 		);
 		wp_localize_script( 'ccvtr-app-script', 'ccData', $js_data );
-		wp_set_script_translations( 'ccvtr-app-script', 'comment-notifications', Utils::dir_path( 'languages' ) );
+		wp_set_script_translations( 'ccvtr-app-script', 'subscribe-to-comment-notifications-comment-converter', Utils::dir_path( 'languages' ) );
 		wp_enqueue_script( 'ccvtr-app-script' );
 
 		wp_enqueue_editor();
@@ -222,7 +223,7 @@ class Pages {
 			$this->pages[] = array(
 				'slug'        => $main_page_slug,
 				'parent_slug' => $main_page_slug,
-				'title'       => __( 'Dashboard', 'comment-notifications' ),
+				'title'       => __( 'Dashboard', 'subscribe-to-comment-notifications-comment-converter' ),
 				'callback'    => array( $this, 'render_admin_app' ),
 			);
 
@@ -230,7 +231,7 @@ class Pages {
 				'slug'           => 'comment-converter-getting-started',
 				'parent_slug'    => $main_page_slug,
 				// translators: Comment Converter is the name of the plugin.
-				'title'          => __( 'Welcome to Comment Converter', 'comment-notifications' ),
+				'title'          => __( 'Welcome to Comment Converter', 'subscribe-to-comment-notifications-comment-converter' ),
 				'callback'       => array( $this, 'render_admin_app' ),
 				'hidden'         => true, // This is a welcome page and as such should not be shown in the menu.
 				'menu_highlight' => $main_page_slug,
@@ -239,14 +240,14 @@ class Pages {
 			$this->pages[] = array(
 				'slug'        => 'comment-converter-followers',
 				'parent_slug' => $main_page_slug,
-				'title'       => __( 'Followers', 'comment-notifications' ),
+				'title'       => __( 'Followers', 'subscribe-to-comment-notifications-comment-converter' ),
 				'callback'    => array( $this, 'render_admin_app' ),
 			);
 
 			$this->pages[] = array(
 				'slug'           => 'comment-converter-follower',
 				'parent_slug'    => $main_page_slug,
-				'title'          => __( 'Single Follower', 'comment-notifications' ),
+				'title'          => __( 'Single Follower', 'subscribe-to-comment-notifications-comment-converter' ),
 				'callback'       => array( $this, 'render_admin_app' ),
 				'hidden'         => true, // This is a sub page and as such should not be shown in the menu.
 				'menu_highlight' => 'comment-converter-followers',
@@ -255,14 +256,14 @@ class Pages {
 			$this->pages[] = array(
 				'slug'        => 'comment-converter-comment-form',
 				'parent_slug' => $main_page_slug,
-				'title'       => __( 'Notifications', 'comment-notifications' ),
+				'title'       => __( 'Notifications', 'subscribe-to-comment-notifications-comment-converter' ),
 				'callback'    => array( $this, 'render_admin_app' ),
 			);
 
 			$this->pages[] = array(
 				'slug'           => 'comment-converter-emails',
 				'parent_slug'    => $main_page_slug,
-				'title'          => __( 'Notifications', 'comment-notifications' ),
+				'title'          => __( 'Notifications', 'subscribe-to-comment-notifications-comment-converter' ),
 				'callback'       => array( $this, 'render_admin_app' ),
 				'hidden'         => true, // This is a sub page and as such should not be shown in the menu.
 				'menu_highlight' => 'comment-converter-comment-form',
@@ -272,7 +273,7 @@ class Pages {
 			$this->pages[] = array(
 				'slug'        => 'comment-converter-integrations',
 				'parent_slug' => $main_page_slug,
-				'title'       => __( 'Integrations', 'comment-notifications' ),
+				'title'       => __( 'Integrations', 'subscribe-to-comment-notifications-comment-converter' ),
 				'callback'    => array( $this, 'render_admin_app' ),
 			);
 			*/
@@ -280,14 +281,14 @@ class Pages {
 			$this->pages[] = array(
 				'slug'        => 'comment-converter-options',
 				'parent_slug' => $main_page_slug,
-				'title'       => __( 'Options', 'comment-notifications' ),
+				'title'       => __( 'Options', 'subscribe-to-comment-notifications-comment-converter' ),
 				'callback'    => array( $this, 'render_admin_app' ),
 			);
 
 			$this->pages[] = array(
 				'slug'        => 'comment-converter-about-us',
 				'parent_slug' => $main_page_slug,
-				'title'       => __( 'About Us', 'comment-notifications' ),
+				'title'       => __( 'About Us', 'subscribe-to-comment-notifications-comment-converter' ),
 				'callback'    => array( $this, 'render_admin_app' ),
 			);
 
@@ -298,8 +299,8 @@ class Pages {
 					'parent_slug' => $main_page_slug,
 					// TODO: replace Pro level slug and names here.
 					'title'       => 'vbp_pro' === $this->options->get_level()
-						? __( 'Upgrade to Growth', 'comment-notifications' )
-						: __( 'Upgrade to Pro', 'comment-notifications' ),
+						? __( 'Upgrade to Growth', 'subscribe-to-comment-notifications-comment-converter' )
+						: __( 'Upgrade to Pro', 'subscribe-to-comment-notifications-comment-converter' ),
 					'redirect'    => esc_url_raw( Urls::upgrade( 'pluginmenu' ) ),
 					'callback'    => '__return_null',
 				);
@@ -404,7 +405,7 @@ class Pages {
 		$url = 'https://wordpress.org/support/plugin/comment-converter/reviews?filter=5#new-post';
 
 		/* translators: %1$s - Comment Converter plugin reviews url - Comment Converter is the name of the plugin. */
-		$text = sprintf( __( 'Please rate <strong>Comment Converter</strong> <a class="stars" href="%1$s" target="_blank" rel="noopener">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href="%1$s" target="_blank" rel="noopener noreferrer">WordPress.org</a> to help us spread the word. Thank you from the Comment Converter team!', 'comment-notifications' ), $url );
+		$text = sprintf( __( 'Please rate <strong>Comment Converter</strong> <a class="stars" href="%1$s" target="_blank" rel="noopener">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href="%1$s" target="_blank" rel="noopener noreferrer">WordPress.org</a> to help us spread the word. Thank you from the Comment Converter team!', 'subscribe-to-comment-notifications-comment-converter' ), $url );
 
 		return $text;
 	}

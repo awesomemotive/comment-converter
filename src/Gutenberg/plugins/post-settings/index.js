@@ -100,7 +100,7 @@ registerPlugin('comment-converter-post-settings', {
 		};
 
 		const reviewDiscussionSettingsAction = {
-			label: __('Review settings', 'comment-notifications'),
+			label: __('Review settings', 'subscribe-to-comment-notifications-comment-converter'),
 			url: urls.discussionSettings,
 			variant: 'link',
 		};
@@ -109,26 +109,26 @@ registerPlugin('comment-converter-post-settings', {
 			<PluginDocumentSettingPanel name="comment-converter-panel" title="Comment Converter">
 				<ThemeProvider theme={theme}>
 					<CheckboxControl
-						label={__('Allow comment following', 'comment-notifications')}
+						label={__('Allow comment following', 'subscribe-to-comment-notifications-comment-converter')}
 						checked={!!meta.ccvtr_enable_comment_following}
 						onChange={toggleCommentFollowing}
 					/>
 					{/* TODO: the checkbox below should be disabled and up-selled when not PRO */}
-					{/* <Tooltip text={__('This feature requires a PRO subscription.', 'comment-notifications')}>
+					{/* <Tooltip text={__('This feature requires a PRO subscription.', 'subscribe-to-comment-notifications-comment-converter')}>
 						<div>
 							<CheckboxControl
 								checked={!!meta.ccvtr_enable_comment_subscribing}
-								label={__('Allow subscription to email list', 'comment-notifications')}
+								label={__('Allow subscription to email list', 'subscribe-to-comment-notifications-comment-converter')}
 								onChange={toggleCommentSubscribing}
 							/>
 						</div>
 					</Tooltip> */}
 					<BadgeWrapper>
-						{__('Total followers from this post', 'comment-notifications')}
+						{__('Total followers from this post', 'subscribe-to-comment-notifications-comment-converter')}
 						{counts && null !== counts.followers ? <Badge>{counts.followers}</Badge> : <em>...</em>}
 					</BadgeWrapper>
 					{/* <BadgeWrapper>
-						{__('Total subscribers from this post', 'comment-notifications')}
+						{__('Total subscribers from this post', 'subscribe-to-comment-notifications-comment-converter')}
 						{counts && null !== counts.subscribers ? <Badge>{counts.subscribers}</Badge> : <em>...</em>}
 					</BadgeWrapper> */}
 					<Button
@@ -137,7 +137,7 @@ registerPlugin('comment-converter-post-settings', {
 						rel="noopener noreferrer"
 						isLink
 					>
-						{__('View Followers', 'comment-notifications')}
+						{__('View Followers', 'subscribe-to-comment-notifications-comment-converter')}
 					</Button>
 					{null !== isEmailRequired && !isEmailRequired ? (
 						<StyledNotice status="warning" isDismissible={false} actions={[reviewDiscussionSettingsAction]}>
@@ -146,7 +146,7 @@ registerPlugin('comment-converter-post-settings', {
 									// translators: Comment Converter is the name of the plugin.
 									__html: __(
 										'Currently your <strong>WordPress discussion settings</strong> do not require an email when commenting. We recommend changing this so that Comment Converter can perform correctly. ',
-										'comment-notifications'
+										'subscribe-to-comment-notifications-comment-converter'
 									),
 								}}
 							/>

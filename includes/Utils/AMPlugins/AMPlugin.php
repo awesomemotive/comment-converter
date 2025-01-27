@@ -66,7 +66,7 @@ class AMPlugin implements \JsonSerializable, \ArrayAccess {
 		$this->id = $plugin_id;
 		$data     = $plugins->get_list();
 		if ( empty( $data[ $this->id ] ) ) {
-			throw new \Exception( esc_html__( 'Plugin info not found.', 'comment-notifications' ) );
+			throw new \Exception( esc_html__( 'Plugin info not found.', 'subscribe-to-comment-notifications-comment-converter' ) );
 		}
 
 		$this->plugin_data = $data[ $this->id ];
@@ -123,11 +123,11 @@ class AMPlugin implements \JsonSerializable, \ArrayAccess {
 		list( $installed, $active, $which ) = $this->exists_checks();
 
 		$this->plugin_data['status'] = ! $installed
-			? __( 'Not Installed', 'comment-notifications' )
+			? __( 'Not Installed', 'subscribe-to-comment-notifications-comment-converter' )
 			: (
 				$active
-					? __( 'Active', 'comment-notifications' )
-					: __( 'Inactive', 'comment-notifications' )
+					? __( 'Active', 'subscribe-to-comment-notifications-comment-converter' )
+					: __( 'Inactive', 'subscribe-to-comment-notifications-comment-converter' )
 			);
 
 		$this->plugin_data['installed'] = $installed;

@@ -6,7 +6,7 @@ import { WhiteModal } from './WhiteModal';
 export function ConfirmationModal(props) {
 	return (
 		<ConfirmationModalBase
-			confirmText={__('Proceed', 'comment-notifications')}
+			confirmText={__('Proceed', 'subscribe-to-comment-notifications-comment-converter')}
 			{...props}
 			ModalComponent={WhiteModal}
 			ConfirmButtonComponent={PrimaryButton}

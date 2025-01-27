@@ -144,7 +144,10 @@ export const Form = (props) => {
 							{(!formState[name] || (Array.isArray(formState[name]) && !formState[name].length)) &&
 								required && (
 									<Alert className="mt-2.5" type="error">
-										{__('Invalid empty value.', 'comment-notifications')}
+										{__(
+											'Invalid empty value.',
+											'subscribe-to-comment-notifications-comment-converter'
+										)}
 									</Alert>
 								)}
 						</div>
@@ -155,10 +158,10 @@ export const Form = (props) => {
 				<div className="flex flex-col items-start pl-[300px] rtl:!pl-0 rtl:pr-[300px]">
 					<div className="flex flex-row items-center">
 						<SubmitButton onSubmit={handleSubmit} submissionStatus={submissionStatus}>
-							{__('Update Settings', 'comment-notifications')}
+							{__('Update Settings', 'subscribe-to-comment-notifications-comment-converter')}
 						</SubmitButton>
 						<SecondaryButton onClick={handleCancel} className="ml-[5px] rtl:!ml-0 rtl:mr-[5px]">
-							{__('Cancel', 'comment-notifications')}
+							{__('Cancel', 'subscribe-to-comment-notifications-comment-converter')}
 						</SecondaryButton>
 					</div>
 

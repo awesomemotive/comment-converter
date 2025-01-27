@@ -102,7 +102,7 @@ class ClassicEditor {
 			add_meta_box(
 				'ccvtr-classic-post-settings',
 				// translators: Comment Converter is the name of the plugin.
-				esc_html__( 'Comment Converter', 'comment-notifications' ),
+				esc_html__( 'Comment Converter', 'subscribe-to-comment-notifications-comment-converter' ),
 				array( $this, 'output_side_panel' ),
 				$post_type,
 				'side',
@@ -133,7 +133,7 @@ class ClassicEditor {
 		<br />
 		<label for="ccvtr_enable_comment_following" class="selectit">
 			<input type="checkbox" name="ccvtr_enable_comment_following" id="ccvtr_enable_comment_following" value="1" <?php checked( ! empty( $enabled ) ); ?> />
-			<?php esc_html_e( 'Allow comment following', 'comment-notifications' ); ?>
+			<?php esc_html_e( 'Allow comment following', 'subscribe-to-comment-notifications-comment-converter' ); ?>
 		</label>
 		<?php
 	}
@@ -152,12 +152,12 @@ class ClassicEditor {
 		$url   = Urls::internal_admin( 'followers', array( 'post_id' => $post->ID ) );
 		?>
 		<div style="margin: 1em 0; display: flex; flex-direction: row; align-items: center; justify-content: space-between;">
-			<?php esc_html_e( 'Total followers from this post', 'comment-notifications' ); ?>
+			<?php esc_html_e( 'Total followers from this post', 'subscribe-to-comment-notifications-comment-converter' ); ?>
 			<span class="ccvtr-follower-badge"><?php echo esc_html( $count ); ?></span>
 		</div>
 		<p>
 			<a href="<?php echo esc_url( $url ); ?>" target="_blank">
-				<?php esc_html_e( 'View followers', 'comment-notifications' ); ?>
+				<?php esc_html_e( 'View followers', 'subscribe-to-comment-notifications-comment-converter' ); ?>
 			</a>
 		</p>
 		<?php

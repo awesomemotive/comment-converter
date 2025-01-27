@@ -12,12 +12,20 @@ export const SubmitButton = (props) => {
 
 	let StatusIcon = null;
 
+	// Reset the submission status icon after 2 seconds.
+	const resetStatusIcon = () => {
+		setTimeout(() => {
+			submissionStatus.reset();
+		}, 2000);
+	};
+
 	if (submissionStatus.isLoading) {
 		StatusIcon = IconRefresh;
 	} else if (submissionStatus.isError) {
 		StatusIcon = IconWarning;
 	} else if (submissionStatus.isSuccess) {
 		StatusIcon = IconCheck2;
+		resetStatusIcon();
 	}
 
 	return (

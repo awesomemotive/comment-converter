@@ -27,7 +27,7 @@ class Schema {
 	 *
 	 * @var string $db_version The version of the database schema.
 	 */
-	protected $db_version = '1.0.0';
+	protected $db_version = '0.9.1';
 
 	/**
 	 * The character set and collation for the database schema.

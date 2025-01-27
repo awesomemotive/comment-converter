@@ -66,10 +66,10 @@ export const SingleFollower = () => {
 			<div className="flex flex-row w-full mb-4">
 				<div className="flex items-center w-1/2">
 					<h1 className="mr-2 rtl:!mr-0 rtl:ml-2 text-lg font-bold text-primaryText">
-						{__('Follower Profile', 'comment-notifications')}
+						{__('Follower Profile', 'subscribe-to-comment-notifications-comment-converter')}
 					</h1>
 					<SecondaryButton size="small" onClick={handleBackClick}>
-						{__('Go Back', 'comment-notifications')}
+						{__('Go Back', 'subscribe-to-comment-notifications-comment-converter')}
 					</SecondaryButton>
 				</div>
 				<div className="flex items-end justify-end w-1/2">
@@ -77,10 +77,10 @@ export const SingleFollower = () => {
 						{!copied ? (
 							<>
 								<IconDuplicate className="mr-[5px] rtl:!mr-0 rtl:ml-[5px]" />
-								{__('Profile Dashboard Link', 'comment-notifications')}
+								{__('Profile Dashboard Link', 'subscribe-to-comment-notifications-comment-converter')}
 							</>
 						) : (
-							__('Copied!', 'comment-notifications')
+							__('Copied!', 'subscribe-to-comment-notifications-comment-converter')
 						)}
 					</TextLinkButton>
 				</div>
@@ -88,7 +88,9 @@ export const SingleFollower = () => {
 			<WhiteBox className="mb-8">
 				<FollowerForm data={data} onSave={handleSaveSettings} submissionStatus={updateFollowerResult} />
 			</WhiteBox>
-			<div className="text-sm font-bold text-primaryText">{__('Followed Comments', 'comment-notifications')}</div>
+			<div className="text-sm font-bold text-primaryText">
+				{__('Followed Comments', 'subscribe-to-comment-notifications-comment-converter')}
+			</div>
 			<FollowsTable
 				columns={[columns.FOLLOWED_FROM, columns.FOLLOW_TYPE, columns.CREATED, columns.ACTION]}
 				disableFilter={true}

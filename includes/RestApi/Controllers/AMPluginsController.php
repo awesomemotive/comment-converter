@@ -85,19 +85,19 @@ class AMPluginsController extends BaseController {
 
 			// Check the nonce.
 			if ( empty( $nonce ) || ! wp_verify_nonce( $nonce, 'ccvtr_am_plugin_action_nonce' ) ) {
-				throw new AuthorizationException( esc_html__( 'Security token invalid!', 'comment-notifications' ) );
+				throw new AuthorizationException( esc_html__( 'Security token invalid!', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			$id = $this->get_param( $request, 'id', 'string' );
 			if ( empty( $id ) ) {
-				throw new InvalidParamException( esc_html__( 'Plugin Id required.', 'comment-notifications' ) );
+				throw new InvalidParamException( esc_html__( 'Plugin Id required.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			$plugin = $this->am_plugins->get( $id );
 
 			if ( empty( $plugin['installed'] ) ) {
 				if ( empty( $plugin['url'] ) ) {
-					throw new InvalidParamException( esc_html__( 'Plugin install URL required.', 'comment-notifications' ) );
+					throw new InvalidParamException( esc_html__( 'Plugin install URL required.', 'subscribe-to-comment-notifications-comment-converter' ) );
 				}
 
 				return new \WP_REST_Response( $this->am_plugins->install_plugin( $plugin ), 200 );

@@ -73,7 +73,7 @@ class PostSettings {
 			'adminBaseUrl'         => Urls::admin(),
 		);
 		wp_localize_script( 'ccvtr-gutenberg-plugin-post-settings', 'ccData', $js_data );
-		wp_set_script_translations( 'ccvtr-gutenberg-plugin-post-settings', 'comment-notifications', Utils::dir_path( 'languages' ) );
+		wp_set_script_translations( 'ccvtr-gutenberg-plugin-post-settings', 'subscribe-to-comment-notifications-comment-converter', Utils::dir_path( 'languages' ) );
 		wp_enqueue_script( 'ccvtr-gutenberg-plugin-post-settings' );
 	}
 }

@@ -20,7 +20,7 @@ export function SearchBox(props) {
 	return (
 		<div className="flex items-center gap-x-1.5">
 			<TextInput
-				label={__('Search:', 'comment-notifications')}
+				label={__('Search:', 'subscribe-to-comment-notifications-comment-converter')}
 				labelHidden={true}
 				name="s"
 				onChange={handleSearchInputChange}
@@ -30,7 +30,7 @@ export function SearchBox(props) {
 				value={value || ''}
 			/>
 			<SecondaryButton onClick={onSearchClick} size="small">
-				{__('Search', 'comment-notifications')}
+				{__('Search', 'subscribe-to-comment-notifications-comment-converter')}
 			</SecondaryButton>
 		</div>
 	);

@@ -23,7 +23,9 @@ export const FollowTypeSelectInput = (props) => {
 	const [updateFollows, updateFollowsResult] = useUpdateFollowsMutation();
 
 	// Don't show option to follow replies if we don't have a comment ID to follow.
-	const parsedFollowTypeOptions = followTypeOptions.filter((option) => (option.value !== FOLLOW_TYPE_COMMENT_REPLIES || commentId));
+	const parsedFollowTypeOptions = followTypeOptions.filter(
+		(option) => option.value !== FOLLOW_TYPE_COMMENT_REPLIES || commentId
+	);
 
 	/**
 	 * Handle the change event of the follow type dropdown.
@@ -60,6 +62,13 @@ export const FollowTypeSelectInput = (props) => {
 		'text-primaryRed': updateFollowsResult.isError,
 	});
 
+	// Reset the submission status icon after 2 seconds.
+	const resetStatusIcon = () => {
+		setTimeout(() => {
+			updateFollowsResult.reset();
+		}, 2000);
+	};
+
 	let StatusIcon = null;
 
 	if (updateFollowsResult.isLoading) {
@@ -68,6 +77,7 @@ export const FollowTypeSelectInput = (props) => {
 		StatusIcon = IconWarning;
 	} else if (updateFollowsResult.isSuccess) {
 		StatusIcon = IconCheck2;
+		resetStatusIcon();
 	}
 
 	return (

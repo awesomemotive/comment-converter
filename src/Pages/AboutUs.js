@@ -40,37 +40,37 @@ export const AboutUs = () => {
 					<p className="mb-5 text-lg font-bold leading-6 text-primaryText">
 						{__(
 							'When we started Comment Converter, we had one goal in mind: to help small businesses grow and compete with the big guys.',
-							'comment-notifications'
+							'subscribe-to-comment-notifications-comment-converter'
 						)}
 					</p>
 					<p className="mb-5 text-base font-normal leading-6 text-primaryText100">
 						{__(
 							'We were tired of seeing only the companies with the deepest pockets get access to quality lead generation software to grow their list, leads and sales. So we set out to create a best-in-class tool at a price even small businesses could afford.',
-							'comment-notifications'
+							'subscribe-to-comment-notifications-comment-converter'
 						)}
 					</p>
 					<p className="mb-5 text-base font-normal leading-6 text-primaryText100">
 						{__(
 							'With decades of experience building community online, we understand that someone leaving a comment on your blog is one of your MOST engaged visitors… and yet, most websites do nothing to harness the power of that moment.',
-							'comment-notifications'
+							'subscribe-to-comment-notifications-comment-converter'
 						)}
 					</p>
 					<p className="mb-5 text-base font-normal leading-6 text-primaryText100">
 						{__(
 							'With Comment Converter, you now can!',
-							'comment-notifications'
+							'subscribe-to-comment-notifications-comment-converter'
 						)}
 					</p>
 					<p className="mb-5 text-base font-normal leading-6 text-primaryText100">
 						{__(
 							'From the blogger just getting started or small independent local businesses, to growing eCommerce stores and even Fortune 500 companies… we help the most reputable brands online make targeted offers to the right person, at the right time.',
-							'comment-notifications'
+							'subscribe-to-comment-notifications-comment-converter'
 						)}
 					</p>
 					<p className="mb-5 text-base font-normal leading-6 text-primaryText100">
 						{__(
 							'Thank you for the opportunity to help you win and win more often!',
-							'comment-notifications'
+							'subscribe-to-comment-notifications-comment-converter'
 						)}
 					</p>
 				</div>
@@ -79,12 +79,12 @@ export const AboutUs = () => {
 						src={urls.assets('images/cc-team.jpg')}
 						alt={
 							// translators: Comment Converter is the name of the plugin.
-							__('The Comment Converter Team', 'comment-notifications')
+							__('The Comment Converter Team', 'subscribe-to-comment-notifications-comment-converter')
 						}
 					/>
 					<div className="text-sm text-primaryText75 mt-[6px] text-center">
 						{/* translators: Comment Converter is the name of the plugin. */}
-						{__('Comment Converter Team', 'comment-notifications')}
+						{__('Comment Converter Team', 'subscribe-to-comment-notifications-comment-converter')}
 					</div>
 				</div>
 			</WhiteBox>
@@ -96,19 +96,31 @@ export const AboutUs = () => {
 						'text-primaryGreen': plugin.active,
 					});
 
-					let actionButtonText = __('Activated', 'comment-notifications');
+					let actionButtonText = __('Activated', 'subscribe-to-comment-notifications-comment-converter');
 					if (!plugin.active) {
-						actionButtonText = __('Activate Plugin', 'comment-notifications');
+						actionButtonText = __(
+							'Activate Plugin',
+							'subscribe-to-comment-notifications-comment-converter'
+						);
 
 						if (plugin.updating) {
-							actionButtonText = __('Activating…', 'comment-notifications');
+							actionButtonText = __(
+								'Activating…',
+								'subscribe-to-comment-notifications-comment-converter'
+							);
 						}
 
 						if (!plugin.installed) {
-							actionButtonText = __('Install Plugin', 'comment-notifications');
+							actionButtonText = __(
+								'Install Plugin',
+								'subscribe-to-comment-notifications-comment-converter'
+							);
 
 							if (plugin.updating) {
-								actionButtonText = __('Installing…', 'comment-notifications');
+								actionButtonText = __(
+									'Installing…',
+									'subscribe-to-comment-notifications-comment-converter'
+								);
 							}
 						}
 					}
@@ -117,7 +129,11 @@ export const AboutUs = () => {
 						<ShadowBox className="bg-white basis-1/2 max-w-[calc(50%-8px)]" key={plugin.id}>
 							<div className="border-b border-neutral40 grow flex py-6 px-[30px] w-full">
 								<div>
-									<img className="max-w-[50px] mr-[30px] rtl:!mr-0 rtl:ml-[30px]" src={plugin.icon} alt={plugin.name} />
+									<img
+										className="max-w-[50px] mr-[30px] rtl:!mr-0 rtl:ml-[30px]"
+										src={plugin.icon}
+										alt={plugin.name}
+									/>
 								</div>
 								<div className="flex flex-col">
 									<span className="font-bold text-base text-primaryText mb-2.5">{plugin.name}</span>
@@ -127,7 +143,7 @@ export const AboutUs = () => {
 							<div className="flex items-center justify-between py-4 px-[30px] w-full">
 								<div>
 									<span className="text-sm text-primaryText100 mr-2.5 rtl:!mr-0 rtl:ml-2.5">
-										{__('Status', 'comment-notifications')}:
+										{__('Status', 'subscribe-to-comment-notifications-comment-converter')}:
 									</span>
 									<span className={statusClasses}>{plugin.status}</span>
 								</div>

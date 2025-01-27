@@ -171,7 +171,7 @@ class FollowByEmail {
 		// By default, depending on the WP version, WP will not automatically enqueue the view script for dynamic blocks.
 		if ( ! empty( $block->block_type->view_script ) ) {
 			wp_enqueue_script( $block->block_type->view_script );
-			wp_set_script_translations( $block->block_type->view_script, 'comment-notifications', Utils::dir_path( 'languages' ) );
+			wp_set_script_translations( $block->block_type->view_script, 'subscribe-to-comment-notifications-comment-converter', Utils::dir_path( 'languages' ) );
 		}
 
 		// The data attribures will allows us to auto-fill the modal form when we can.

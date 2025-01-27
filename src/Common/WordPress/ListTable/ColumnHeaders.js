@@ -32,7 +32,7 @@ export function ColumnHeaders(props) {
 		<Fragment>
 			<td {...checkColumnExtraProps} className="pl-4 rtl:!pl-0 rtl:pr-4 border-l-1 w-[40px] align-middle">
 				<CheckboxInput
-					label={__('Select All', 'comment-notifications')}
+					label={__('Select All', 'subscribe-to-comment-notifications-comment-converter')}
 					labelHidden={true}
 					name="select_all"
 					onChange={onSelectAllRows}
@@ -53,10 +53,12 @@ export function ColumnHeaders(props) {
 					"before:font-['dashicons'] before:text-primaryText before:text-xl invisible",
 					{
 						"asc before:content-['\f142'] before:content-['\\f142']": sortOrder === 'asc', // Arrow up when sorting ascending.
-						"group-hover:before:content-['\f140'] group-hover:before:content-['\\f140']": sortBy === slug && sortOrder === 'asc', // Invert arrow when hovering.
+						"group-hover:before:content-['\f140'] group-hover:before:content-['\\f140']":
+							sortBy === slug && sortOrder === 'asc', // Invert arrow when hovering.
 
 						"desc before:content-['\f140'] before:content-['\\f140']": sortOrder === 'desc', // Arrow down when sorting descending.
-						"group-hover:before:content-['\f142'] group-hover:before:content-['\\f142']": sortBy === slug && sortOrder === 'desc', // Invert arrow when hovering.
+						"group-hover:before:content-['\f142'] group-hover:before:content-['\\f142']":
+							sortBy === slug && sortOrder === 'desc', // Invert arrow when hovering.
 
 						'group-hover:before:!visible': sortable, // Show the arrow when hovering.
 						'before:!visible': sortBy === slug, // Show the arrow when sorting.

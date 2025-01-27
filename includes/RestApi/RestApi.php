@@ -235,7 +235,7 @@ class RestApi {
 	 * @return \WP_Error A WP_Error object indicating that the route is invalid.
 	 */
 	public function fallback( $request ) {
-		return new \WP_Error( 'rest_invalid_handler', __( 'Invalid route.', 'comment-notifications' ), array( 'status' => 500 ) );
+		return new \WP_Error( 'rest_invalid_handler', __( 'Invalid route.', 'subscribe-to-comment-notifications-comment-converter' ), array( 'status' => 500 ) );
 	}
 
 	/**
@@ -267,7 +267,7 @@ class RestApi {
 		$route = str_replace( '/' . $this->namespace . '/', '', $route );
 
 		if ( ! isset( $routes[ $route ] ) ) {
-			return new \WP_Error( 'rest_invalid_route', __( 'Invalid route.', 'comment-notifications' ), array( 'status' => 404 ) );
+			return new \WP_Error( 'rest_invalid_route', __( 'Invalid route.', 'subscribe-to-comment-notifications-comment-converter' ), array( 'status' => 404 ) );
 		}
 
 		$route = $routes[ $route ];
@@ -287,7 +287,7 @@ class RestApi {
 		}
 
 		if ( ! isset( $route['callback'] ) ) {
-			return new \WP_Error( 'rest_invalid_handler', __( 'The handler for the route is invalid', 'comment-notifications' ), array( 'status' => 500 ) );
+			return new \WP_Error( 'rest_invalid_handler', __( 'The handler for the route is invalid', 'subscribe-to-comment-notifications-comment-converter' ), array( 'status' => 500 ) );
 		}
 
 		$callback = $route['callback'];

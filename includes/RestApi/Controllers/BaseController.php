@@ -58,7 +58,7 @@ abstract class BaseController {
 
 		if ( empty( $json ) ) {
 			// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
-			throw new InvalidParamException( __( 'The payload is required.', 'comment-notifications' ) );
+			throw new InvalidParamException( __( 'The payload is required.', 'subscribe-to-comment-notifications-comment-converter' ) );
 		}
 
 		$validated_json = array();
@@ -67,7 +67,7 @@ abstract class BaseController {
 			if ( ! isset( $json[ $section ] ) ) {
 				// phpcs:disable WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
 				/* translators: 1: JSON property name. */
-				throw new InvalidParamException( sprintf( __( 'Missing JSON property: %1$s', 'comment-notifications' ), $section ) );
+				throw new InvalidParamException( sprintf( __( 'Missing JSON property: %1$s', 'subscribe-to-comment-notifications-comment-converter' ), $section ) );
 				// phpcs:enable WordPress.Security.EscapeOutput.ExceptionNotEscaped
 			}
 
@@ -107,7 +107,7 @@ abstract class BaseController {
 			if ( ! isset( $json[ $section ] ) ) {
 				// phpcs:disable WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
 				/* translators: 1: JSON property name. */
-				throw new InvalidParamException( sprintf( __( 'Missing JSON property: %1$s', 'comment-notifications' ), $section ) );
+				throw new InvalidParamException( sprintf( __( 'Missing JSON property: %1$s', 'subscribe-to-comment-notifications-comment-converter' ), $section ) );
 				// phpcs:enable WordPress.Security.EscapeOutput.ExceptionNotEscaped
 			}
 
@@ -151,7 +151,7 @@ abstract class BaseController {
 
 			if ( 2 < count( $rules ) ) {
 				// phpcs:ignore WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
-				throw new \Exception( __( 'Invalid validation rule.', 'comment-notifications' ) );
+				throw new \Exception( __( 'Invalid validation rule.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 
 			foreach ( $rules as $rule ) {
@@ -167,7 +167,7 @@ abstract class BaseController {
 		if ( $is_required && empty( $value ) ) {
 			// phpcs:disable WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
 			/* translators: Invalid param error. 1: the param name. */
-			throw new InvalidParamException( sprintf( __( 'Missing required value for "%1$s" param.', 'comment-notifications' ), $name ) );
+			throw new InvalidParamException( sprintf( __( 'Missing required value for "%1$s" param.', 'subscribe-to-comment-notifications-comment-converter' ), $name ) );
 			// phpcs:enable WordPress.Security.EscapeOutput.ExceptionNotEscaped
 		}
 
@@ -176,7 +176,7 @@ abstract class BaseController {
 		if ( ! $valid ) {
 			// phpcs:disable WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
 			/* translators: Invalid param error. 1: the invalid value, 2: the param name. */
-			throw new InvalidParamException( sprintf( __( 'Invalid value "%1$s" for "%2$s" param.', 'comment-notifications' ), $value, $name ) );
+			throw new InvalidParamException( sprintf( __( 'Invalid value "%1$s" for "%2$s" param.', 'subscribe-to-comment-notifications-comment-converter' ), $value, $name ) );
 			// phpcs:enable WordPress.Security.EscapeOutput.ExceptionNotEscaped
 		}
 
@@ -185,7 +185,7 @@ abstract class BaseController {
 		if ( ! empty( $value ) && ! empty( $valid_options ) && ! in_array( $value, $valid_options, true ) ) {
 			// phpcs:disable WordPress.Security.EscapeOutput.ExceptionNotEscaped -- The exceptions are not meant to be outputted as HTML.
 			/* translators: Invalid param error. 1: the invalid value, 2: the param name. */
-			throw new InvalidParamException( sprintf( __( 'Invalid value "%1$s" for "%2$s" param.', 'comment-notifications' ), $value, $name ) );
+			throw new InvalidParamException( sprintf( __( 'Invalid value "%1$s" for "%2$s" param.', 'subscribe-to-comment-notifications-comment-converter' ), $value, $name ) );
 			// phpcs:enable WordPress.Security.EscapeOutput.ExceptionNotEscaped
 		}
 

@@ -11,7 +11,7 @@ export const MostFollowed = ({ data }) => {
 	const { goToPage } = useNavigation();
 
 	return (
-		<Accordion title={__('Most Followed', 'comment-notifications')}>
+		<Accordion title={__('Most Followed', 'subscribe-to-comment-notifications-comment-converter')}>
 			{data && data.length > 0 && (
 				<List>
 					{data.map((item) => {
@@ -24,8 +24,13 @@ export const MostFollowed = ({ data }) => {
 									className="flex-nowrap justify-between items-center w-full !text-primaryText hover:!text-primaryBlue hover:!no-underline"
 								>
 									<div className="flex items-center">
-										<Icon width="15" height="15" className="mr-2.5 rtl:!mr-0 rtl:ml-2.5 text-neutral900" />
-										{item.post.title || __('(no title)', 'comment-notifications')}
+										<Icon
+											width="15"
+											height="15"
+											className="mr-2.5 rtl:!mr-0 rtl:ml-2.5 text-neutral900"
+										/>
+										{item.post.title ||
+											__('(no title)', 'subscribe-to-comment-notifications-comment-converter')}
 									</div>
 									<div>
 										<BadgeFollowerCount>{item.count}</BadgeFollowerCount>

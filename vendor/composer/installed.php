@@ -1,19 +1,19 @@
 <?php return array(
     'root' => array(
-        'name' => 'awesomemotive/comment-converter-plugin',
+        'name' => 'awesomemotive/subscribe-to-comment-notifications-comment-converter',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '88f95b32a6062d1108624837983c067f5471763d',
+        'reference' => '0fdbdecb3056beb21260952f73821067970c38a0',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => false,
     ),
     'versions' => array(
-        'awesomemotive/comment-converter-plugin' => array(
+        'awesomemotive/subscribe-to-comment-notifications-comment-converter' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '88f95b32a6062d1108624837983c067f5471763d',
+            'reference' => '0fdbdecb3056beb21260952f73821067970c38a0',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

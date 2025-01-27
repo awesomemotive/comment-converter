@@ -16,19 +16,22 @@ export const OptionsForm = (props) => {
 	const rows = [
 		{
 			// translators: Comment Converter is the name of the plugin.
-			label: __('Enable Comment Converter on these types of content', 'comment-notifications'),
+			label: __(
+				'Enable Comment Converter on these types of content',
+				'subscribe-to-comment-notifications-comment-converter'
+			),
 			name: 'enabled_post_types',
 			required: true,
 			body: (inputProps) => <CheckboxGroup {...inputProps} options={getPostTypeOptions()} />,
 		},
 		{
-			label: __('Follower dashboard slug', 'comment-notifications'),
+			label: __('Follower dashboard slug', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'follower_dashboard_page_path',
 			required: true,
 			body: (inputProps) => <TextInput {...inputProps} className="w-full" />,
 		},
 		{
-			label: __('Following badge', 'comment-notifications'),
+			label: __('Following badge', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'following_badge_path',
 			body: (inputProps, formState) => {
 				// Give preference to the currently uploaded badge, then fallback to the one saved in the settings already.
@@ -39,9 +42,12 @@ export const OptionsForm = (props) => {
 				return (
 					<div>
 						<span className="text-sm text-primaryText">
-							{__('Default Icons', 'comment-notifications')}
+							{__('Default Icons', 'subscribe-to-comment-notifications-comment-converter')}
 							<span className="ml-2 text-xs italic text-primaryText100">
-								{__('Customize the color of default icons', 'comment-notifications')}
+								{__(
+									'Customize the color of default icons',
+									'subscribe-to-comment-notifications-comment-converter'
+								)}
 							</span>
 						</span>
 						<div className="flex my-2">
@@ -52,7 +58,10 @@ export const OptionsForm = (props) => {
 							/>
 							<ColorInput
 								className="ml-2 rtl:!ml-0 rtl:mr-2"
-								label={__('Following badge color', 'comment-notifications')}
+								label={__(
+									'Following badge color',
+									'subscribe-to-comment-notifications-comment-converter'
+								)}
 								labelHidden={true}
 								name="following_badge_color"
 								value={formState.following_badge_color}
@@ -62,7 +71,7 @@ export const OptionsForm = (props) => {
 						{/* {uploadedBadgeSrc ? (
 							<>
 								<span className="inline-block mt-6 text-sm text-primaryText">
-									{__('Uploaded Icon', 'comment-notifications')}
+									{__('Uploaded Icon', 'subscribe-to-comment-notifications-comment-converter')}
 								</span>
 								<div className="flex mt-2">
 									<RadioButtonInput
@@ -78,11 +87,11 @@ export const OptionsForm = (props) => {
 						) : null}
 						<FileInput
 							className="mt-4"
-							buttonText={__('Upload Image', 'comment-notifications')}
-							label={__('Following badge upload', 'comment-notifications')}
+							buttonText={__('Upload Image', 'subscribe-to-comment-notifications-comment-converter')}
+							label={__('Following badge upload', 'subscribe-to-comment-notifications-comment-converter')}
 							labelHidden={true}
 							name="following_badge_upload"
-							placeholder={__('(recommended image size 64 x 64 px)', 'comment-notifications')}
+							placeholder={__('(recommended image size 64 x 64 px)', 'subscribe-to-comment-notifications-comment-converter')}
 							value={
 								formState.following_badge_upload instanceof File ? formState.following_badge_upload : null
 							}
@@ -93,41 +102,44 @@ export const OptionsForm = (props) => {
 			},
 		},
 		{
-			label: __('Enable double opt-in', 'comment-notifications'),
+			label: __('Enable double opt-in', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'is_double_optin_enabled',
 			body: (inputProps, formState) => (
 				<YesNoSwitch {...inputProps} value="yes" checked={!!formState.is_double_optin_enabled} />
 			),
 		},
 		{
-			label: __('Enable author engagement', 'comment-notifications'),
+			label: __('Enable author engagement', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'should_authors_auto_follow',
-			helpText: __('Automatically subscribe Authors to comments and replies to their own articles.', 'comment-notifications'),
+			helpText: __(
+				'Automatically subscribe Authors to comments and replies to their own articles.',
+				'subscribe-to-comment-notifications-comment-converter'
+			),
 			body: (inputProps, formState) => (
 				<YesNoSwitch {...inputProps} value="yes" checked={!!formState.should_authors_auto_follow} />
 			),
 		},
 		{
-			label: __('Allow only logged in users to follow', 'comment-notifications'),
+			label: __('Allow only logged in users to follow', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'allow_only_logged_in_users',
 			body: (inputProps, formState) => (
 				<YesNoSwitch {...inputProps} value="yes" checked={!!formState.allow_only_logged_in_users} />
 			),
 		},
 		/* {
-			label: __('Display powered by logo', 'comment-notifications'),
+			label: __('Display powered by logo', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'display_powered_by_logo',
 			body: (inputProps, formState) => (
 				<YesNoSwitch {...inputProps} value="yes" checked={!!formState.display_powered_by_logo} />
 			),
 		},
 		{
-			label: __('Affiliate URL', 'comment-notifications'),
+			label: __('Affiliate URL', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'affiliate_url',
 			body: (inputProps) => <TextInput {...inputProps} />,
 		}, */
 		{
-			label: __('Disallow List', 'comment-notifications'),
+			label: __('Disallow List', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'blocklisted_emails',
 			body: (inputProps, _formState, actions) => {
 				/**
@@ -140,7 +152,14 @@ export const OptionsForm = (props) => {
 				const handleCheckEmail = (newEmail) => {
 					const isValid = isValidEmail(newEmail);
 
-					actions.setError(!isValid ? __('Only valid emails are allowed.', 'comment-notifications') : null);
+					actions.setError(
+						!isValid
+							? __(
+									'Only valid emails are allowed.',
+									'subscribe-to-comment-notifications-comment-converter'
+								)
+							: null
+					);
 
 					return isValid;
 				};
@@ -148,7 +167,7 @@ export const OptionsForm = (props) => {
 				return (
 					<TextListInput
 						{...inputProps}
-						buttonText={__('Add Email', 'comment-notifications')}
+						buttonText={__('Add Email', 'subscribe-to-comment-notifications-comment-converter')}
 						onBeforeChange={handleCheckEmail}
 					/>
 				);

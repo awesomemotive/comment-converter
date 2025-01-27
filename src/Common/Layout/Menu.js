@@ -41,7 +41,7 @@ export function Menu(props) {
 								to={item.path}
 								reloadDocument={item.redirect}
 								className={classnames(
-									'text-neutral90 hover:text-primaryText text-[15px] cursor-pointer',
+									'text-neutral90 hover:text-primaryText text-[15px] cursor-pointer shadow-none',
 									{ 'text-primaryText': isMenuActive }
 								)}
 							>
@@ -60,7 +60,7 @@ export function Menu(props) {
 												to={subItem.path}
 												reloadDocument={subItem.redirect}
 												className={classnames(
-													'text-neutral90 hover:text-primaryText text-[12px] cursor-pointer',
+													'text-neutral90 hover:text-primaryText text-[12px] cursor-pointer shadow-none',
 													{ 'text-primaryText': subItem.slug === activeItem }
 												)}
 											>

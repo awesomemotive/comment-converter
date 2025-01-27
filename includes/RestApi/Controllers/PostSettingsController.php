@@ -61,7 +61,7 @@ class PostSettingsController extends BaseController {
 			$post_id = $this->get_param( $request, 'post_id', 'int' );
 
 			if ( empty( $post_id ) ) {
-				throw new InvalidParamException( esc_html__( 'The post id param is required.', 'comment-notifications' ), 400 );
+				throw new InvalidParamException( esc_html__( 'The post id param is required.', 'subscribe-to-comment-notifications-comment-converter' ), 400 );
 			}
 		} catch ( RestApiException $e ) {
 			return $e->to_response();

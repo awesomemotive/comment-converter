@@ -6,19 +6,17 @@ import classNames from 'classnames';
 
 const links = [
 	{
-		title: __('Suggest a Feature', 'comment-notifications'),
-		url: urls.marketing(
-			'my-account/support/?topic=feature&utm_source=plugin&utm_medium=quicklinks'
-		),
+		title: __('Suggest a Feature', 'subscribe-to-comment-notifications-comment-converter'),
+		url: urls.marketing('my-account/support/?topic=feature&utm_source=plugin&utm_medium=quicklinks'),
 		IconComponent: IconLightbulb,
 	},
 	/*{
-		title: __('Join Our Community', 'comment-notifications'),
+		title: __('Join Our Community', 'subscribe-to-comment-notifications-comment-converter'),
 		url: 'https://www.facebook.com/groups/optinmonsterinnercircle/',
 		IconComponent: IconComments,
 	},*/
 	{
-		title: __('Support & Docs', 'comment-notifications'),
+		title: __('Support & Docs', 'subscribe-to-comment-notifications-comment-converter'),
 		url: urls.marketing('docs/?topic=feature&utm_source=plugin&utm_medium=quicklinks'),
 		IconComponent: IconLifeRing,
 	},
@@ -100,7 +98,9 @@ export function QuickLinks() {
 				})}
 			</div>
 			<button className={flyoutButtonClasses} onClick={handleFlyoutClick}>
-				<div className={flyoutBtnLabelClasses}>{__('See Quick Links', 'comment-notifications')}</div>
+				<div className={flyoutBtnLabelClasses}>
+					{__('See Quick Links', 'subscribe-to-comment-notifications-comment-converter')}
+				</div>
 				<IconLogoStroke width={60} height={60} />
 			</button>
 		</div>

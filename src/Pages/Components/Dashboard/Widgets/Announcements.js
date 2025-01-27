@@ -13,7 +13,7 @@ export const Announcements = () => {
 	return (
 		formattedAnnouncements &&
 		formattedAnnouncements.length > 0 && (
-			<Accordion title={__('Announcements', 'comment-notifications')}>
+			<Accordion title={__('Announcements', 'subscribe-to-comment-notifications-comment-converter')}>
 				<List>
 					{formattedAnnouncements.map((item) => (
 						<ListItem key={item.id}>
@@ -44,7 +44,7 @@ export const Announcements = () => {
 								rel="noopener noreferrer"
 								href={item.link}
 							>
-								{__('Learn More', 'comment-notifications')}
+								{__('Learn More', 'subscribe-to-comment-notifications-comment-converter')}
 							</SecondaryButton>
 						</ListItem>
 					))}
@@ -56,7 +56,7 @@ export const Announcements = () => {
 						rel="noopener noreferrer"
 						size="small"
 					>
-						{__('More Announcements →', 'comment-notifications')}
+						{__('More Announcements →', 'subscribe-to-comment-notifications-comment-converter')}
 					</TextLink>
 				</div>
 			</Accordion>

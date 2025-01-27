@@ -234,23 +234,26 @@ export const FollowsTable = (props) => {
 			const followerName = follows.length ? follows[0].follower.name : followerId;
 
 			// translators: %d: The name or ID of the follower
-			scopedBy = sprintf(__('Follower "%s"', 'comment-notifications'), followerName);
+			scopedBy = sprintf(
+				__('Follower "%s"', 'subscribe-to-comment-notifications-comment-converter'),
+				followerName
+			);
 		}
 
 		if (postId) {
 			const postTitle = follows.length ? follows[0].post.post_title : postId;
 
 			// translators: %s: The title or ID of the post
-			scopedBy = sprintf(__('Post "%s"', 'comment-notifications'), postTitle);
+			scopedBy = sprintf(__('Post "%s"', 'subscribe-to-comment-notifications-comment-converter'), postTitle);
 		}
 
 		if (commentId) {
 			// translators: %s: The ID of the comment
-			scopedBy = sprintf(__('Comment "%s"', 'comment-notifications'), commentId);
+			scopedBy = sprintf(__('Comment "%s"', 'subscribe-to-comment-notifications-comment-converter'), commentId);
 		}
 
 		// translators: %s: the string representing the parameter
-		scopedBy = sprintf(__('View Follows for %s', 'comment-notifications'), scopedBy);
+		scopedBy = sprintf(__('View Follows for %s', 'subscribe-to-comment-notifications-comment-converter'), scopedBy);
 	}
 
 	return (
@@ -266,7 +269,7 @@ export const FollowsTable = (props) => {
 						{scopedBy}
 					</span>
 					<TextLinkButton size="small" onClick={handleResetScopedQuery}>
-						{__('View All', 'comment-notifications')}
+						{__('View All', 'subscribe-to-comment-notifications-comment-converter')}
 					</TextLinkButton>
 				</div>
 			) : null}
@@ -314,10 +317,10 @@ export const FollowsTable = (props) => {
 				{...rest}
 			/>
 			<DeleteConfirmationModal
-				title={__('Delete', 'comment-notifications')}
+				title={__('Delete', 'subscribe-to-comment-notifications-comment-converter')}
 				message={__(
 					'This action will remove the follow(s), associated notifications, and all records.',
-					'comment-notifications'
+					'subscribe-to-comment-notifications-comment-converter'
 				)}
 				onConfirmClick={handleDeleteConfirmation}
 				onCancelClick={handleDeleteClose}

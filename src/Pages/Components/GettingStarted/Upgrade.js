@@ -19,15 +19,17 @@ export const Upgrade = (props) => {
 							{features.map((featureTitle, index) => (
 								<li
 									key={index}
-									className="flex items-center text-base leading-[21px] font-bold min-w-[250px] max-w-[calc(50%-20px)] text-white mb-0"
+									className="flex items-center text-base leading-[21px] font-bold min-w-[250px] max-w-[calc(50%-10px)] text-white mb-0"
 								>
-									<IconCheck className="inline-flex mr-4 text-[#16B45E]" width="15" height="12" />
+									<IconCheck className="inline-flex mr-2 text-[#16B45E]" width="15" height="12" />
 									{featureTitle}
 								</li>
 							))}
 						</ul>
 					)}
-					<em className="text-neutral50 italic text-[12px] mt-[18px]">*{__('Coming Soon', 'comment-notifications')}</em>
+					<em className="text-neutral50 italic text-[12px] mt-[18px]">
+						*{__('Coming Soon', 'subscribe-to-comment-notifications-comment-converter')}
+					</em>
 				</div>
 
 				<div className="flex flex-col min-w-[235px] justify-center">
@@ -40,7 +42,7 @@ export const Upgrade = (props) => {
 						<span className="text-[64px] leading-[50px] font-bold">39</span>
 					</div>
 
-					<p className="text-sm font-normal text-white">{__('per year', 'comment-notifications')}</p> */}
+					<p className="text-sm font-normal text-white">{__('per year', 'subscribe-to-comment-notifications-comment-converter')}</p> */}
 
 					<PrimaryButton
 						as="a"
@@ -52,7 +54,7 @@ export const Upgrade = (props) => {
 						size="xlarge"
 						target="_blank"
 					>
-						{__('Join the Pro Waitlist', 'comment-notifications')}
+						{__('Join the Pro Waitlist', 'subscribe-to-comment-notifications-comment-converter')}
 					</PrimaryButton>
 				</div>
 			</div>

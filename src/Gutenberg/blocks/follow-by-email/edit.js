@@ -8,7 +8,7 @@ export default function Edit({ attributes, setAttributes }) {
 			<InspectorControls>
 				<PanelBody>
 					<TextControl
-						label={__('TEXT', 'comment-notifications')}
+						label={__('TEXT', 'subscribe-to-comment-notifications-comment-converter')}
 						onChange={(val) => setAttributes({ text: val })}
 						value={attributes.text}
 					/>

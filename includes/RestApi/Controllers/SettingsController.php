@@ -133,7 +133,7 @@ class SettingsController extends BaseController {
 			);
 		} catch ( InvalidParamException $e ) {
 			// Replace message with more generic and frontend friendly.
-			return ( new InvalidParamException( __( 'The settings could not be saved due to invalid values.', 'comment-notifications' ) ) )
+			return ( new InvalidParamException( __( 'The settings could not be saved due to invalid values.', 'subscribe-to-comment-notifications-comment-converter' ) ) )
 				->set_extra_error( $e->getMessage() )
 				->to_response();
 		} catch ( RestApiException $e ) {
@@ -234,7 +234,7 @@ class SettingsController extends BaseController {
 			$to = $this->get_param( $request, 'to', 'email' );
 
 			if ( empty( $to ) ) {
-				throw new InvalidParamException( __( 'A valid "to" parameter is required.', 'comment-notifications' ) );
+				throw new InvalidParamException( __( 'A valid "to" parameter is required.', 'subscribe-to-comment-notifications-comment-converter' ) );
 			}
 		} catch ( RestApiException $e ) {
 			return $e->to_response();
@@ -243,7 +243,7 @@ class SettingsController extends BaseController {
 		$success = $this->build_or_send_email_preview( 'send', $to );
 
 		if ( ! $success ) {
-			return new \WP_REST_Response( array( 'error' => __( 'The test email could not be sent.', 'comment-notifications', ) ), 400 );
+			return new \WP_REST_Response( array( 'error' => __( 'The test email could not be sent.', 'subscribe-to-comment-notifications-comment-converter', ) ), 400 );
 		}
 
 		return new \WP_REST_Response(

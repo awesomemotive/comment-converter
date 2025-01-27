@@ -69,7 +69,7 @@ export const FollowerForm = (props) => {
 				<div className="flex w-1/2">
 					<TextInput
 						className="w-full"
-						label={__('Name', 'comment-notifications')}
+						label={__('Name', 'subscribe-to-comment-notifications-comment-converter')}
 						name="name"
 						value={formState.name}
 						onChange={handleFormChange}
@@ -78,7 +78,7 @@ export const FollowerForm = (props) => {
 				<div className="flex w-1/2">
 					<SelectInput
 						className="w-full"
-						label={__('Default follow setting', 'comment-notifications')}
+						label={__('Default follow setting', 'subscribe-to-comment-notifications-comment-converter')}
 						name="default_follow_type"
 						value={formState.default_follow_type}
 						options={followTypeOptions}
@@ -90,7 +90,7 @@ export const FollowerForm = (props) => {
 				<div className="flex w-1/2">
 					<TextInput
 						className="w-full"
-						label={__('Notification email', 'comment-notifications')}
+						label={__('Notification email', 'subscribe-to-comment-notifications-comment-converter')}
 						type="email"
 						name="notification_email"
 						value={formState.notification_email}
@@ -100,7 +100,7 @@ export const FollowerForm = (props) => {
 				<div className="flex w-1/2">
 					<SelectInput
 						className="w-full"
-						label={__('Notification frequency', 'comment-notifications')}
+						label={__('Notification frequency', 'subscribe-to-comment-notifications-comment-converter')}
 						name="notification_frequency"
 						value={formState.notification_frequency}
 						options={notificationFrequencyOptions}
@@ -111,10 +111,10 @@ export const FollowerForm = (props) => {
 			<div className="flex flex-col items-start">
 				<div className="flex flex-row items-center">
 					<SubmitButton onSubmit={handleFormSave} submissionStatus={submissionStatus}>
-						{__('Update Settings', 'comment-notifications')}
+						{__('Update Settings', 'subscribe-to-comment-notifications-comment-converter')}
 					</SubmitButton>
 					<SecondaryButton onClick={handleCancel} className="ml-[5px] rtl:!ml-0 rtl:mr-[5px]">
-						{__('Cancel', 'comment-notifications')}
+						{__('Cancel', 'subscribe-to-comment-notifications-comment-converter')}
 					</SecondaryButton>
 				</div>
 				{submissionStatus?.isError && (

@@ -10,18 +10,24 @@ import { assets } from '../../utils/urls';
 export function EmailPreview(props) {
 	const { content, subject, title, titleHelp, onClose } = props;
 
-	const parsedSubject = subject.replace(/\[Post_Title\]/gi, __('Post Title Here', 'comment-notifications'));
+	const parsedSubject = subject.replace(
+		/\[Post_Title\]/gi,
+		__('Post Title Here', 'subscribe-to-comment-notifications-comment-converter')
+	);
 
 	const parsedContent = content
-		.replace(/\[Post_Title\]/gi, __('Post Title Here', 'comment-notifications'))
+		.replace(/\[Post_Title\]/gi, __('Post Title Here', 'subscribe-to-comment-notifications-comment-converter'))
 		.replace(
 			/\[Comment_Content\]/gi,
 			__(
 				'This is an example comment that would appear inside the email for the follower to read and decide to take action on.',
-				'comment-notifications'
+				'subscribe-to-comment-notifications-comment-converter'
 			)
 		)
-		.replace(/\[Comment_Author\]/gi, __("Comment Author's name", 'comment-notifications'));
+		.replace(
+			/\[Comment_Author\]/gi,
+			__("Comment Author's name", 'subscribe-to-comment-notifications-comment-converter')
+		);
 
 	const [contentRef, setContentRef] = useState(null);
 	const mountNode = contentRef?.contentWindow?.document?.body;
@@ -42,7 +48,7 @@ export function EmailPreview(props) {
 			header={
 				<>
 					<SecondaryButton size="small" onClick={onClose}>
-						{__('Go Back', 'comment-notifications')}
+						{__('Go Back', 'subscribe-to-comment-notifications-comment-converter')}
 					</SecondaryButton>
 					<span className="ml-4 text-xl text-primaryText font-bold">
 						<HelpTip content={titleHelp}>{title}</HelpTip>

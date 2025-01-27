@@ -60,15 +60,21 @@ export const Upsell = ({ size }) => {
 					<h2 className={headingClass}>
 						{
 							/* translators: Comment Converter is the name of the plugin. */
-							__('Turn Comment Followers into Subscribers With Comment Converter Pro.', 'comment-notifications')
+							__(
+								'Turn Comment Followers into Subscribers With Comment Converter Pro.',
+								'subscribe-to-comment-notifications-comment-converter'
+							)
 						}
 					</h2>
 					<p className={paragraphClass}>
 						{'small' === size
-							? __('Effortlessly add commenters to your email marketing list.', 'comment-notifications')
+							? __(
+									'Effortlessly add commenters to your email marketing list.',
+									'subscribe-to-comment-notifications-comment-converter'
+								)
 							: __(
 									'Effortlessly add commenters to your email marketing list to keep the conversation flowing.',
-									'comment-notifications'
+									'subscribe-to-comment-notifications-comment-converter'
 								)}
 					</p>
 				</div>
@@ -83,7 +89,7 @@ export const Upsell = ({ size }) => {
 						size={buttonSize}
 						target="_blank"
 					>
-						{__('Go Pro Today', 'comment-notifications')}
+						{__('Go Pro Today', 'subscribe-to-comment-notifications-comment-converter')}
 					</PrimaryButton>
 				</div>
 			</div>

@@ -43,9 +43,9 @@ export function EmailPreviewInline(props) {
 				<div className="flex flex-row items-end">
 					<StyledTextInput
 						className="text-xs text-primaryText"
-						label={__('Send a test email:', 'comment-notifications')}
+						label={__('Send a test email:', 'subscribe-to-comment-notifications-comment-converter')}
 						onChange={setEmail}
-						placeholder={__('Enter your email…', 'comment-notifications')}
+						placeholder={__('Enter your email…', 'subscribe-to-comment-notifications-comment-converter')}
 						value={email}
 						size="medium"
 					/>
@@ -54,7 +54,7 @@ export function EmailPreviewInline(props) {
 						onSubmit={handleSubmit}
 						submissionStatus={sendTestEmailResult}
 					>
-						{__('Send Test Email', 'comment-notifications')}
+						{__('Send Test Email', 'subscribe-to-comment-notifications-comment-converter')}
 					</SubmitButton>
 				</div>
 				{sendTestEmailResult?.isError && (
@@ -64,7 +64,10 @@ export function EmailPreviewInline(props) {
 				)}
 				{isInvalid && (
 					<Alert className="mt-2.5" type="error">
-						{__('Please, enter a valid email address.', 'comment-notifications')}
+						{__(
+							'Please, enter a valid email address.',
+							'subscribe-to-comment-notifications-comment-converter'
+						)}
 					</Alert>
 				)}
 			</div>

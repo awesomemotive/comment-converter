@@ -203,7 +203,7 @@ class FollowingBadge {
 		$asset_file = include Utils::dir_path( 'build/frontend/following-badge-placer.asset.php' );
 		wp_enqueue_style( 'ccvtr-following-badge-placer-style', Utils::dir_url( 'build/frontend/style-following-badge-placer.css' ), array(), $asset_file['version'] );
 		wp_register_script( 'ccvtr-following-badge-placer-script', Utils::dir_url( 'build/frontend/following-badge-placer.js' ), $asset_file['dependencies'], $asset_file['version'], true );
-		wp_set_script_translations( 'ccvtr-following-badge-placer-script', 'comment-notifications', Utils::dir_path( 'languages' ) );
+		wp_set_script_translations( 'ccvtr-following-badge-placer-script', 'subscribe-to-comment-notifications-comment-converter', Utils::dir_path( 'languages' ) );
 
 		$js_data = array();
 
@@ -311,7 +311,7 @@ class FollowingBadge {
 		return $this->get_following_badge_output(
 			array(
 				'link'    => $this->settings->get_follower_dashboard_url(),
-				'tooltip' => __( "You're following the replies for this comment.", 'comment-notifications' ),
+				'tooltip' => __( "You're following the replies for this comment.", 'subscribe-to-comment-notifications-comment-converter' ),
 			)
 		);
 	}
@@ -327,7 +327,7 @@ class FollowingBadge {
 		return $this->get_following_badge_output(
 			array(
 				'link'    => $this->settings->get_follower_dashboard_url(),
-				'tooltip' => __( "You're following all comments for this post.", 'comment-notifications' ),
+				'tooltip' => __( "You're following all comments for this post.", 'subscribe-to-comment-notifications-comment-converter' ),
 			)
 		);
 	}

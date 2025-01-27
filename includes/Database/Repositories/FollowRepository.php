@@ -817,6 +817,12 @@ class FollowRepository extends BaseRepository {
 			$columns = $wpdb->prepare( "%i.*", $this->table_name );
 		}
 
+		$wp_comments_table = $wpdb->prefix . 'comments';
+
+		// Join with comments table to only get approved comments
+		// phpcs:ignore WordPress.DB.PreparedSQLPlaceholders.UnsupportedPlaceholder
+		$join .= $wpdb->prepare( " INNER JOIN %i ON %i.comment_id = %i.comment_ID AND %i.comment_approved = '1'", $wp_comments_table, $this->table_name, $wp_comments_table, $wp_comments_table );
+
 		// phpcs:ignore WordPress.DB.PreparedSQLPlaceholders.UnsupportedPlaceholder, WordPress.DB.PreparedSQL.InterpolatedNotPrepared
 		return $wpdb->prepare( "SELECT {$columns} FROM %i {$join} {$where} {$order} {$limit}", $this->table_name );
 	}

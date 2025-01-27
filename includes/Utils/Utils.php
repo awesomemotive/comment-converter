@@ -67,7 +67,7 @@ class Utils {
 	/**
 	 * The access capability required for access to Comment Converter pages/settings.
 	 *
-	 * @since  1.0.0
+	 * @since  0.9.1
 	 *
 	 * @param  string|null $slug The menu slug. Null by default.
 	 *
@@ -80,7 +80,7 @@ class Utils {
 	/**
 	 * Check if user has access capability required for access to Comment Converter pages/settings.
 	 *
-	 * @since  1.0.0
+	 * @since  0.9.1
 	 *
 	 * @param  string|null $slug The menu slug. Null by default.
 	 *

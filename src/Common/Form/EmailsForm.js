@@ -24,7 +24,11 @@ export const EmailsForm = (props) => {
 		const handleBlur = (event) => {
 			const isValid = isValidEmail(event.target.value);
 
-			actions.setError(!isValid ? __('Please, enter a valid email address.', 'comment-notifications') : null);
+			actions.setError(
+				!isValid
+					? __('Please, enter a valid email address.', 'subscribe-to-comment-notifications-comment-converter')
+					: null
+			);
 		};
 
 		return <TextInput type="email" onBlur={handleBlur} {...inputProps} />;
@@ -32,18 +36,18 @@ export const EmailsForm = (props) => {
 
 	const emailRows = [
 		{
-			label: __('Sender name', 'comment-notifications'),
+			label: __('Sender name', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'sender_name',
 			required: true,
 			body: (inputProps) => <TextInput {...inputProps} />,
 		},
 		{
-			label: __('From email address', 'comment-notifications'),
+			label: __('From email address', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'from_email',
 			body: renderEmailFieldBody,
 		},
 		{
-			label: __('Reply to email address', 'comment-notifications'),
+			label: __('Reply to email address', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'reply_to',
 			body: renderEmailFieldBody,
 		},
@@ -51,7 +55,7 @@ export const EmailsForm = (props) => {
 
 	const emailPreviewRows = [
 		{
-			label: __('Email preview', 'comment-notifications'),
+			label: __('Email preview', 'subscribe-to-comment-notifications-comment-converter'),
 			name: 'email_preview',
 			body: (inputProps) => <EmailPreviewInline value={inputProps.value} />,
 		},

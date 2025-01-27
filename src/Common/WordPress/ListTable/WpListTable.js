@@ -259,7 +259,9 @@ export function WpListTable(props) {
 		return (
 			<tr className="no-items">
 				<td className="colspanchange" colSpan={parsedColumns.length + 1}>
-					{__('No records found.', 'comment-notifications')}
+					<span className="text-sm text-primaryText px-3">
+						{__('No records found.', 'subscribe-to-comment-notifications-comment-converter')}
+					</span>
 				</td>
 			</tr>
 		);
@@ -272,12 +274,7 @@ export function WpListTable(props) {
 	 */
 	const renderRows = () => {
 		return rows.map((row) => {
-			const {
-				id,
-				classes: extraRowClasses = '',
-				data = [],
-				redHighlight = false,
-			} = row;
+			const { id, classes: extraRowClasses = '', data = [], redHighlight = false } = row;
 
 			const rowClasses = classNames(
 				'border-b last:border-b-0 border-[#C9D0D6] odd:bg-[#F2F3F9]',
@@ -301,7 +298,7 @@ export function WpListTable(props) {
 					<th scope="row" className="p-0">
 						<div className={checkCellClasses}>
 							<CheckboxInput
-								label={__('Select', 'comment-notifications')}
+								label={__('Select', 'subscribe-to-comment-notifications-comment-converter')}
 								labelHidden={true}
 								name="selected[]"
 								data-id={id}
@@ -355,7 +352,7 @@ export function WpListTable(props) {
 
 		const pageText = sprintf(
 			/* translators: 1: Start of the range, 2: End of the range, 3: Total items */
-			__('Showing %1$d to %2$d of %3$d entries', 'comment-notifications'),
+			__('Showing %1$d to %2$d of %3$d entries', 'subscribe-to-comment-notifications-comment-converter'),
 			start,
 			end,
 			totalItems
@@ -363,9 +360,7 @@ export function WpListTable(props) {
 
 		return (
 			<div className="WPListTable__pageNav flex items-center gap-x-[10px]">
-				<span className="text-xs displaying-num text-primaryText">
-					{pageText}
-				</span>
+				<span className="text-xs displaying-num text-primaryText">{pageText}</span>
 				<PaginationControls
 					currPage={paginationControl.current}
 					displayPageInput={false}
@@ -456,15 +451,11 @@ export function WpListTable(props) {
 			{renderTableTopNav()}
 			<table className={tableClasses}>
 				<thead className="h-12">
-					<tr className="h-12 border border-[#C9D0D6]">
-						{renderColumnHeaders()}
-					</tr>
+					<tr className="h-12 border border-[#C9D0D6]">{renderColumnHeaders()}</tr>
 				</thead>
 				<tbody>{renderRowsOrPlaceholder()}</tbody>
 				<tfoot>
-					<tr className="h-12 border border-[#C9D0D6]">
-						{renderColumnHeaders()}
-					</tr>
+					<tr className="h-12 border border-[#C9D0D6]">{renderColumnHeaders()}</tr>
 				</tfoot>
 			</table>
 			{renderTableBottomNav()}
